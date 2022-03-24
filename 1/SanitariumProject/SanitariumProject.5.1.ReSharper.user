@@ -1,0 +1,245 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/d:Properties/f:Resources.resx" caret="5945" fromTop="16" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.Designer.cs" caret="9519" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="484" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="581" fromTop="21" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:App.Config" caret="134" fromTop="3" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1591" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DepartmentForm.cs" caret="1397" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:CategoryForm.cs" caret="1310" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:GroupForm.cs" caret="1287" fromTop="14" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SpecimenForm.cs" caret="1395" fromTop="21" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1244" fromTop="22" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="869" fromTop="6" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2708" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SpecimenForm.cs" caret="982" fromTop="0" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SpecimenForm.cs" caret="1705" fromTop="13" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SpecimenForm.cs" caret="2195" fromTop="13" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="488" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1548" fromTop="24" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1017" fromTop="22" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1247" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1410" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1824" fromTop="27" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1079" fromTop="0" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1962" fromTop="0" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1962" fromTop="40" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1405" fromTop="19" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1645" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1675" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="500" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1289" fromTop="29" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1579" fromTop="14" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1874" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2163" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2354" fromTop="21" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2454" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="804" fromTop="11" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SpecimenForm.cs" caret="1395" fromTop="21" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1244" fromTop="22" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="653" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1116" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="3827" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="3789" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2708" fromTop="12" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="MotherForm`0" priority="10" />
+      <Item value="var" priority="40" />
+      <Item value="DepartmentForm`0" priority="1" />
+      <Item value="new" priority="31" />
+      <Item value="obj" priority="23" />
+      <Item value="this" priority="21" />
+      <Item value="SANITARIUMEntities`0" priority="11" />
+      <Item value="DepartmentInfo`0" priority="1" />
+      <Item value="objTB" priority="1" />
+      <Item value="txtDepName" priority="3" />
+      <Item value="Convert`0" priority="9" />
+      <Item value="objDb" priority="1" />
+      <Item value="MessageBox`0" priority="7" />
+      <Item value="Manager`0" priority="2" />
+      <Item value="from" priority="6" />
+      <Item value="context" priority="5" />
+      <Item value="select" priority="5" />
+      <Item value="dip" priority="0" />
+      <Item value="return" priority="5" />
+      <Item value="q" priority="5" />
+      <Item value="cbxDepName" priority="6" />
+      <Item value="list" priority="2" />
+      <Item value="FillErrorEventArgs`0" priority="0" />
+      <Item value="string" priority="9" />
+      <Item value="OutdoorForm`0" priority="2" />
+      <Item value="FastForm`0" priority="2" />
+      <Item value="Outdoor`0" priority="0" />
+      <Item value="sssssssssssssssss`0" priority="0" />
+      <Item value="sender" priority="1" />
+      <Item value="GroupInfo`0" priority="1" />
+      <Item value="tbobj" priority="17" />
+      <Item value="cbxGrpName" priority="6" />
+      <Item value="dbobj" priority="9" />
+      <Item value="GroupForm`0" priority="0" />
+      <Item value="txtGrpName" priority="2" />
+      <Item value="grp" priority="0" />
+      <Item value="SpecimenInfo`0" priority="2" />
+      <Item value="txtSpeciName" priority="2" />
+      <Item value="try" priority="1" />
+      <Item value="if" priority="6" />
+      <Item value="TextBox`0" priority="0" />
+      <Item value="else" priority="6" />
+      <Item value="txtCatName" priority="2" />
+      <Item value="CategoryInfo`0" priority="1" />
+      <Item value="CategoryForm`0" priority="0" />
+      <Item value="cbxCatName" priority="2" />
+      <Item value="SpecimenForm`0" priority="0" />
+      <Item value="Speci" priority="1" />
+      <Item value="cbxSpeciName" priority="5" />
+      <Item value="txtSubCatName" priority="2" />
+      <Item value="SubCategoryInfo`0" priority="1" />
+      <Item value="cbxSubCatName" priority="6" />
+      <Item value="SubCat" priority="0" />
+      <Item value="SubCategoryForm`0" priority="0" />
+      <Item value="DiognosisTestDetailForm`0" priority="0" />
+      <Item value="txtTestName" priority="2" />
+      <Item value="txtRoom" priority="2" />
+      <Item value="txtCost" priority="2" />
+      <Item value="DignosticTestDetail`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.DepartmentForm">
+      <Item value="MdiParent" priority="1" />
+      <Item value="Show`0" priority="1" />
+      <Item value="Close`0" priority="0" />
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.DepartmentInfo">
+      <Item value="DepartmentName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Trim`0" priority="7" />
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt32`0" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.SANITARIUMEntities">
+      <Item value="AddToDepartmentInfoes`0" priority="0" />
+      <Item value="SaveChanges`0" priority="5" />
+      <Item value="DepartmentInfoes" priority="0" />
+      <Item value="AddToGroupInfoes`0" priority="0" />
+      <Item value="GroupInfoes" priority="0" />
+      <Item value="AddToSpecimenInfoes`0" priority="0" />
+      <Item value="AddToCategoryInfoes`0" priority="0" />
+      <Item value="CategoryInfoes" priority="0" />
+      <Item value="SpecimenInfoes" priority="1" />
+      <Item value="AddToSubCategoryInfoes`0" priority="0" />
+      <Item value="SubCategoryInfoes" priority="0" />
+      <Item value="AddToDignosticTestDetails`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="ToList`1" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ComboBox">
+      <Item value="DisplayMember" priority="3" />
+      <Item value="ValueMember" priority="6" />
+      <Item value="DataSource" priority="2" />
+      <Item value="SelectedValue" priority="8" />
+      <Item value="SelectedItem" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.MotherForm">
+      <Item value="MdiParent" priority="0" />
+      <Item value="ShowDialog`0" priority="2" />
+      <Item value="Close`0" priority="2" />
+      <Item value="Hide`0" priority="0" />
+      <Item value="Closed" priority="1" />
+      <Item value="Show`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.OutdoorForm">
+      <Item value="Close`0" priority="0" />
+      <Item value="MdiParent" priority="0" />
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.FastForm">
+      <Item value="Close`0" priority="2" />
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="Hide`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.MotherForm1">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.sssssssssssssssss">
+      <Item value="Hide`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.GroupInfo">
+      <Item value="GroupName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.GroupForm">
+      <Item value="MdiParent" priority="0" />
+      <Item value="Show`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.SpecimenInfo">
+      <Item value="SpecimenName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.CategoryInfo">
+      <Item value="CategoryName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.CategoryForm">
+      <Item value="MdiParent" priority="0" />
+      <Item value="Show`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.SpecimenForm">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.SubCategoryInfo">
+      <Item value="SubCategoryName" priority="0" />
+      <Item value="CategoryId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.SubCategoryForm">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.DignosticTestDetail">
+      <Item value="TestName" priority="0" />
+      <Item value="DepartmentId" priority="0" />
+      <Item value="CategoryId" priority="0" />
+      <Item value="SubCategoryId" priority="0" />
+      <Item value="GroupId" priority="0" />
+      <Item value="SpecimenId" priority="0" />
+      <Item value="TestCost" priority="0" />
+      <Item value="RoomNo" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

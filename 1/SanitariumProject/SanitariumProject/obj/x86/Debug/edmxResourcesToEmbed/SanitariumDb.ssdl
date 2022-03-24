@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SANITARIUMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SANITARIUMModelStoreContainer">
+    <EntitySet Name="CategoryInfo" EntityType="SANITARIUMModel.Store.CategoryInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DepartmentInfo" EntityType="SANITARIUMModel.Store.DepartmentInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DignosticTestDetail" EntityType="SANITARIUMModel.Store.DignosticTestDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GroupInfo" EntityType="SANITARIUMModel.Store.GroupInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SpecimenInfo" EntityType="SANITARIUMModel.Store.SpecimenInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SubCategoryInfo" EntityType="SANITARIUMModel.Store.SubCategoryInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="SANITARIUMModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_DignosticTestDetail_CategoryName" Association="SANITARIUMModel.Store.FK_DignosticTestDetail_CategoryName">
+      <End Role="CategoryInfo" EntitySet="CategoryInfo" />
+      <End Role="DignosticTestDetail" EntitySet="DignosticTestDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosticTestDetail_DepartmentInfo" Association="SANITARIUMModel.Store.FK_DignosticTestDetail_DepartmentInfo">
+      <End Role="DepartmentInfo" EntitySet="DepartmentInfo" />
+      <End Role="DignosticTestDetail" EntitySet="DignosticTestDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosticTestDetail_GroupInfo" Association="SANITARIUMModel.Store.FK_DignosticTestDetail_GroupInfo">
+      <End Role="GroupInfo" EntitySet="GroupInfo" />
+      <End Role="DignosticTestDetail" EntitySet="DignosticTestDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosticTestDetail_SpecimenInfo" Association="SANITARIUMModel.Store.FK_DignosticTestDetail_SpecimenInfo">
+      <End Role="SpecimenInfo" EntitySet="SpecimenInfo" />
+      <End Role="DignosticTestDetail" EntitySet="DignosticTestDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosticTestDetail_SubCategoryInfo" Association="SANITARIUMModel.Store.FK_DignosticTestDetail_SubCategoryInfo">
+      <End Role="SubCategoryInfo" EntitySet="SubCategoryInfo" />
+      <End Role="DignosticTestDetail" EntitySet="DignosticTestDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubCategoryInfo_CategoryInfo" Association="SANITARIUMModel.Store.FK_SubCategoryInfo_CategoryInfo">
+      <End Role="CategoryInfo" EntitySet="CategoryInfo" />
+      <End Role="SubCategoryInfo" EntitySet="SubCategoryInfo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CategoryInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DepartmentInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DignosticTestDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TestName" Type="varchar" MaxLength="200" />
+    <Property Name="DepartmentId" Type="int" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="SubCategoryId" Type="int" />
+    <Property Name="GroupId" Type="int" />
+    <Property Name="SpecimenId" Type="int" />
+    <Property Name="TestCost" Type="int" />
+    <Property Name="RoomNo" Type="int" />
+    <Property Name="Date" Type="date" />
+  </EntityType>
+  <EntityType Name="GroupInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SpecimenInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SpecimenName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SubCategoryInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SubCategoryName" Type="varchar" MaxLength="50" />
+    <Property Name="CategoryId" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_DignosticTestDetail_CategoryName">
+    <End Role="CategoryInfo" Type="SANITARIUMModel.Store.CategoryInfo" Multiplicity="0..1" />
+    <End Role="DignosticTestDetail" Type="SANITARIUMModel.Store.DignosticTestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosticTestDetail">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosticTestDetail_DepartmentInfo">
+    <End Role="DepartmentInfo" Type="SANITARIUMModel.Store.DepartmentInfo" Multiplicity="0..1" />
+    <End Role="DignosticTestDetail" Type="SANITARIUMModel.Store.DignosticTestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DepartmentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosticTestDetail">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosticTestDetail_GroupInfo">
+    <End Role="GroupInfo" Type="SANITARIUMModel.Store.GroupInfo" Multiplicity="0..1" />
+    <End Role="DignosticTestDetail" Type="SANITARIUMModel.Store.DignosticTestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosticTestDetail">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosticTestDetail_SpecimenInfo">
+    <End Role="SpecimenInfo" Type="SANITARIUMModel.Store.SpecimenInfo" Multiplicity="0..1" />
+    <End Role="DignosticTestDetail" Type="SANITARIUMModel.Store.DignosticTestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpecimenInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosticTestDetail">
+        <PropertyRef Name="SpecimenId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosticTestDetail_SubCategoryInfo">
+    <End Role="SubCategoryInfo" Type="SANITARIUMModel.Store.SubCategoryInfo" Multiplicity="0..1" />
+    <End Role="DignosticTestDetail" Type="SANITARIUMModel.Store.DignosticTestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubCategoryInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosticTestDetail">
+        <PropertyRef Name="SubCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubCategoryInfo_CategoryInfo">
+    <End Role="CategoryInfo" Type="SANITARIUMModel.Store.CategoryInfo" Multiplicity="0..1" />
+    <End Role="SubCategoryInfo" Type="SANITARIUMModel.Store.SubCategoryInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubCategoryInfo">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>
