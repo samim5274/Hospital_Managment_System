@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,6 +57,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.dgvTestName = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTestName)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -316,7 +319,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(242, 41);
             this.btnSave.TabIndex = 33;
-            this.btnSave.Text = "Saved";
+            this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -346,12 +349,33 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // dgvTestName
+            // 
+            this.dgvTestName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTestName.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvTestName.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTestName.Location = new System.Drawing.Point(687, 137);
+            this.dgvTestName.Name = "dgvTestName";
+            this.dgvTestName.RowTemplate.Height = 24;
+            this.dgvTestName.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTestName.Size = new System.Drawing.Size(484, 496);
+            this.dgvTestName.TabIndex = 36;
+            // 
             // DiognosisTestDetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1225, 714);
+            this.Controls.Add(this.dgvTestName);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnSave);
@@ -383,6 +407,7 @@
             this.Name = "DiognosisTestDetailForm";
             this.Text = "DiognosisTestDetailForm";
             this.Load += new System.EventHandler(this.DiognosisTestDetailForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTestName)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,5 +443,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.DataGridView dgvTestName;
     }
 }

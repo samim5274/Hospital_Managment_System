@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SANITARIUMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+    <Schema Namespace="SANITARIUMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="SANITARIUMModelStoreContainer">
           <EntitySet Name="CategoryInfo" EntityType="SANITARIUMModel.Store.CategoryInfo" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="DepartmentInfo" EntityType="SANITARIUMModel.Store.DepartmentInfo" store:Type="Tables" Schema="dbo" />
@@ -65,7 +65,6 @@
           <Property Name="SpecimenId" Type="int" />
           <Property Name="TestCost" Type="int" />
           <Property Name="RoomNo" Type="int" />
-          <Property Name="Date" Type="date" />
         </EntityType>
         <EntityType Name="GroupInfo">
           <Key>
@@ -172,6 +171,7 @@
           </ReferentialConstraint>
         </Association>
         <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ALL_TEST_NAME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
           <Parameter Name="owner_id" Type="int" Mode="In" />
@@ -202,8 +202,7 @@
           <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
         </Function>
         <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SANITARIUMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
@@ -239,13 +238,14 @@
             <End Role="SubCategoryInfo" EntitySet="SubCategoryInfoes" />
             <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
           </AssociationSet>
+          <FunctionImport Name="SP_ALL_TEST_NAME" ReturnType="Collection(SANITARIUMModel.SP_ALL_TEST_NAME_Result)" />
         </EntityContainer>
         <EntityType Name="CategoryInfo">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="CategoryName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="CategoryName" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_CategoryName" FromRole="CategoryInfo" ToRole="DignosticTestDetail" />
           <NavigationProperty Name="SubCategoryInfoes" Relationship="SANITARIUMModel.FK_SubCategoryInfo_CategoryInfo" FromRole="CategoryInfo" ToRole="SubCategoryInfo" />
         </EntityType>
@@ -253,24 +253,23 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="DepartmentName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="DepartmentName" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo" FromRole="DepartmentInfo" ToRole="DignosticTestDetail" />
         </EntityType>
         <EntityType Name="DignosticTestDetail">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="TestName" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
-          <Property Name="DepartmentId" Type="Int32" />
-          <Property Name="CategoryId" Type="Int32" />
-          <Property Name="SubCategoryId" Type="Int32" />
-          <Property Name="GroupId" Type="Int32" />
-          <Property Name="SpecimenId" Type="Int32" />
-          <Property Name="TestCost" Type="Int32" />
-          <Property Name="RoomNo" Type="Int32" />
-          <Property Name="Date" Type="DateTime" />
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TestName" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="DepartmentId" />
+          <Property Type="Int32" Name="CategoryId" />
+          <Property Type="Int32" Name="SubCategoryId" />
+          <Property Type="Int32" Name="GroupId" />
+          <Property Type="Int32" Name="SpecimenId" />
+          <Property Type="Int32" Name="TestCost" />
+          <Property Type="Int32" Name="RoomNo" />
           <NavigationProperty Name="CategoryInfo" Relationship="SANITARIUMModel.FK_DignosticTestDetail_CategoryName" FromRole="DignosticTestDetail" ToRole="CategoryInfo" />
           <NavigationProperty Name="DepartmentInfo" Relationship="SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo" FromRole="DignosticTestDetail" ToRole="DepartmentInfo" />
           <NavigationProperty Name="GroupInfo" Relationship="SANITARIUMModel.FK_DignosticTestDetail_GroupInfo" FromRole="DignosticTestDetail" ToRole="GroupInfo" />
@@ -281,25 +280,25 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="GroupName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="GroupName" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_GroupInfo" FromRole="GroupInfo" ToRole="DignosticTestDetail" />
         </EntityType>
         <EntityType Name="SpecimenInfo">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="SpecimenName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="SpecimenName" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SpecimenInfo" FromRole="SpecimenInfo" ToRole="DignosticTestDetail" />
         </EntityType>
         <EntityType Name="SubCategoryInfo">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="SubCategoryName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
-          <Property Name="CategoryId" Type="Int32" />
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="SubCategoryName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CategoryId" />
           <NavigationProperty Name="CategoryInfo" Relationship="SANITARIUMModel.FK_SubCategoryInfo_CategoryInfo" FromRole="SubCategoryInfo" ToRole="CategoryInfo" />
           <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SubCategoryInfo" FromRole="SubCategoryInfo" ToRole="DignosticTestDetail" />
         </EntityType>
@@ -307,15 +306,15 @@
           <Key>
             <PropertyRef Name="diagram_id" />
           </Key>
-          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="principal_id" Nullable="false" />
+          <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="version" />
+          <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <Association Name="FK_DignosticTestDetail_CategoryName">
-          <End Role="CategoryInfo" Type="SANITARIUMModel.CategoryInfo" Multiplicity="0..1" />
-          <End Role="DignosticTestDetail" Type="SANITARIUMModel.DignosticTestDetail" Multiplicity="*" />
+          <End Type="SANITARIUMModel.CategoryInfo" Role="CategoryInfo" Multiplicity="0..1" />
+          <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="CategoryInfo">
               <PropertyRef Name="Id" />
@@ -326,8 +325,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_SubCategoryInfo_CategoryInfo">
-          <End Role="CategoryInfo" Type="SANITARIUMModel.CategoryInfo" Multiplicity="0..1" />
-          <End Role="SubCategoryInfo" Type="SANITARIUMModel.SubCategoryInfo" Multiplicity="*" />
+          <End Type="SANITARIUMModel.CategoryInfo" Role="CategoryInfo" Multiplicity="0..1" />
+          <End Type="SANITARIUMModel.SubCategoryInfo" Role="SubCategoryInfo" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="CategoryInfo">
               <PropertyRef Name="Id" />
@@ -338,8 +337,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_DignosticTestDetail_DepartmentInfo">
-          <End Role="DepartmentInfo" Type="SANITARIUMModel.DepartmentInfo" Multiplicity="0..1" />
-          <End Role="DignosticTestDetail" Type="SANITARIUMModel.DignosticTestDetail" Multiplicity="*" />
+          <End Type="SANITARIUMModel.DepartmentInfo" Role="DepartmentInfo" Multiplicity="0..1" />
+          <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="DepartmentInfo">
               <PropertyRef Name="Id" />
@@ -350,8 +349,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_DignosticTestDetail_GroupInfo">
-          <End Role="GroupInfo" Type="SANITARIUMModel.GroupInfo" Multiplicity="0..1" />
-          <End Role="DignosticTestDetail" Type="SANITARIUMModel.DignosticTestDetail" Multiplicity="*" />
+          <End Type="SANITARIUMModel.GroupInfo" Role="GroupInfo" Multiplicity="0..1" />
+          <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="GroupInfo">
               <PropertyRef Name="Id" />
@@ -362,8 +361,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_DignosticTestDetail_SpecimenInfo">
-          <End Role="SpecimenInfo" Type="SANITARIUMModel.SpecimenInfo" Multiplicity="0..1" />
-          <End Role="DignosticTestDetail" Type="SANITARIUMModel.DignosticTestDetail" Multiplicity="*" />
+          <End Type="SANITARIUMModel.SpecimenInfo" Role="SpecimenInfo" Multiplicity="0..1" />
+          <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="SpecimenInfo">
               <PropertyRef Name="Id" />
@@ -374,8 +373,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_DignosticTestDetail_SubCategoryInfo">
-          <End Role="SubCategoryInfo" Type="SANITARIUMModel.SubCategoryInfo" Multiplicity="0..1" />
-          <End Role="DignosticTestDetail" Type="SANITARIUMModel.DignosticTestDetail" Multiplicity="*" />
+          <End Type="SANITARIUMModel.SubCategoryInfo" Role="SubCategoryInfo" Multiplicity="0..1" />
+          <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="SubCategoryInfo">
               <PropertyRef Name="Id" />
@@ -385,7 +384,17 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        <ComplexType Name="SP_ALL_TEST_NAME_Result">
+          <Property Type="String" Name="TestName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="DepartmentName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="SubCategoryName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="GroupName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="SpecimenName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="TestCost" Nullable="true" />
+          <Property Type="Int32" Name="RoomNo" Nullable="true" />
+        </ComplexType>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -394,71 +403,84 @@
           <EntitySetMapping Name="CategoryInfoes">
             <EntityTypeMapping TypeName="SANITARIUMModel.CategoryInfo">
               <MappingFragment StoreEntitySet="CategoryInfo">
-                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DepartmentInfoes">
             <EntityTypeMapping TypeName="SANITARIUMModel.DepartmentInfo">
               <MappingFragment StoreEntitySet="DepartmentInfo">
-                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DignosticTestDetails">
             <EntityTypeMapping TypeName="SANITARIUMModel.DignosticTestDetail">
               <MappingFragment StoreEntitySet="DignosticTestDetail">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="TestName" ColumnName="TestName" />
-                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
-                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
-                <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />
-                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
-                <ScalarProperty Name="SpecimenId" ColumnName="SpecimenId" />
-                <ScalarProperty Name="TestCost" ColumnName="TestCost" />
                 <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="TestCost" ColumnName="TestCost" />
+                <ScalarProperty Name="SpecimenId" ColumnName="SpecimenId" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="GroupInfoes">
             <EntityTypeMapping TypeName="SANITARIUMModel.GroupInfo">
               <MappingFragment StoreEntitySet="GroupInfo">
-                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SpecimenInfoes">
             <EntityTypeMapping TypeName="SANITARIUMModel.SpecimenInfo">
               <MappingFragment StoreEntitySet="SpecimenInfo">
-                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="SpecimenName" ColumnName="SpecimenName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SubCategoryInfoes">
             <EntityTypeMapping TypeName="SANITARIUMModel.SubCategoryInfo">
               <MappingFragment StoreEntitySet="SubCategoryInfo">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
                 <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sysdiagrams">
             <EntityTypeMapping TypeName="SANITARIUMModel.sysdiagram">
               <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
                 <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_ALL_TEST_NAME" FunctionName="SANITARIUMModel.Store.SP_ALL_TEST_NAME">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SANITARIUMModel.SP_ALL_TEST_NAME_Result">
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="SpecimenName" ColumnName="SpecimenName" />
+                <ScalarProperty Name="TestCost" ColumnName="TestCost" />
+                <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
@@ -480,45 +502,44 @@
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
       <Diagram Name="SanitariumDb">
-        <EntityTypeShape EntityType="SANITARIUMModel.CategoryInfo" Width="1.5" PointX="0.75" PointY="3.625" Height="1.787985026041667" IsExpanded="true" />
-        <EntityTypeShape EntityType="SANITARIUMModel.DepartmentInfo" Width="1.5" PointX="3" PointY="3.75" Height="1.5956835937499996" IsExpanded="true" />
-        <EntityTypeShape EntityType="SANITARIUMModel.DignosticTestDetail" Width="1.5" PointX="5.25" PointY="4.875" Height="3.9033007812499996" IsExpanded="true" />
-        <EntityTypeShape EntityType="SANITARIUMModel.GroupInfo" Width="1.5" PointX="3" PointY="1" Height="1.5956835937499996" IsExpanded="true" />
-        <EntityTypeShape EntityType="SANITARIUMModel.SpecimenInfo" Width="1.5" PointX="3" PointY="11.375" Height="1.5956835937499996" IsExpanded="true" />
-        <EntityTypeShape EntityType="SANITARIUMModel.SubCategoryInfo" Width="1.5" PointX="3" PointY="8.125" Height="1.9802864583333317" IsExpanded="true" />
-        <EntityTypeShape EntityType="SANITARIUMModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" Height="1.9802864583333317" IsExpanded="true" />
-        <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_CategoryName" ManuallyRouted="false">
-          <ConnectorPoint PointX="2.25" PointY="3.65625" />
-          <ConnectorPoint PointX="4.791666666666667" PointY="3.6562499999999996" />
-          <ConnectorPoint PointX="4.958333333333333" PointY="3.65625" />
-          <ConnectorPoint PointX="6" PointY="3.65625" />
-          <ConnectorPoint PointX="6" PointY="4.875" />
+        <EntityTypeShape EntityType="SANITARIUMModel.CategoryInfo" Width="1.5" PointX="0.75" PointY="3.5" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SANITARIUMModel.DepartmentInfo" Width="1.5" PointX="3" PointY="3.5" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="SANITARIUMModel.DignosticTestDetail" Width="1.5" PointX="5.25" PointY="4.75" Height="3.7109993489583353" />
+        <EntityTypeShape EntityType="SANITARIUMModel.GroupInfo" Width="1.5" PointX="3" PointY="0.875" Height="1.5956835937500031" />
+        <EntityTypeShape EntityType="SANITARIUMModel.SpecimenInfo" Width="1.5" PointX="3" PointY="11.25" Height="1.5956835937500031" />
+        <EntityTypeShape EntityType="SANITARIUMModel.SubCategoryInfo" Width="1.5" PointX="3" PointY="7.875" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="SANITARIUMModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" Height="1.9802864583333388" />
+        <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_CategoryName" >
+          <ConnectorPoint PointX="2.25" PointY="5.2230843098958335" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="5.2230843098958326" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="5.2230843098958335" />
+          <ConnectorPoint PointX="5.25" PointY="5.2230843098958335" />
         </AssociationConnector>
-        <AssociationConnector Association="SANITARIUMModel.FK_SubCategoryInfo_CategoryInfo" ManuallyRouted="false">
-          <ConnectorPoint PointX="1.5" PointY="5.4129850260416674" />
-          <ConnectorPoint PointX="1.5" PointY="9.1151432291666659" />
-          <ConnectorPoint PointX="3" PointY="9.1151432291666659" />
+        <AssociationConnector Association="SANITARIUMModel.FK_SubCategoryInfo_CategoryInfo" >
+          <ConnectorPoint PointX="1.5" PointY="5.2879850260416674" />
+          <ConnectorPoint PointX="1.5" PointY="8.86514322916667" />
+          <ConnectorPoint PointX="3" PointY="8.86514322916667" />
         </AssociationConnector>
-        <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo" ManuallyRouted="false">
-          <ConnectorPoint PointX="4.5" PointY="5.110341796875" />
-          <ConnectorPoint PointX="4.791666666666667" PointY="5.1103417968749989" />
-          <ConnectorPoint PointX="4.958333333333333" PointY="5.110341796875" />
-          <ConnectorPoint PointX="5.25" PointY="5.110341796875" />
+        <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo" >
+          <ConnectorPoint PointX="4.5" PointY="4.922841796875" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="4.9228417968749989" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="4.922841796875" />
+          <ConnectorPoint PointX="5.25" PointY="4.922841796875" />
         </AssociationConnector>
-        <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_GroupInfo" ManuallyRouted="false">
-          <ConnectorPoint PointX="4.5" PointY="2.5956835937499996" />
-          <ConnectorPoint PointX="4.875" PointY="2.9706835937499996" />
-          <ConnectorPoint PointX="4.875" PointY="6.9755732890625008" />
-          <ConnectorPoint PointX="5.25" PointY="6.9755732890625008" />
+        <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_GroupInfo" >
+          <ConnectorPoint PointX="4.5" PointY="2.4706835937500031" />
+          <ConnectorPoint PointX="4.875" PointY="2.8456835937500031" />
+          <ConnectorPoint PointX="4.875" PointY="6.8732938294270856" />
+          <ConnectorPoint PointX="5.25" PointY="6.8732938294270856" />
         </AssociationConnector>
-        <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_SpecimenInfo" ManuallyRouted="false">
-          <ConnectorPoint PointX="4.5" PointY="12.172841796875" />
-          <ConnectorPoint PointX="6" PointY="12.172841796875" />
-          <ConnectorPoint PointX="6" PointY="8.77830078125" />
+        <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_SpecimenInfo" >
+          <ConnectorPoint PointX="4.5" PointY="12.047841796875002" />
+          <ConnectorPoint PointX="6" PointY="12.047841796875002" />
+          <ConnectorPoint PointX="6" PointY="8.4609993489583353" />
         </AssociationConnector>
-        <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_SubCategoryInfo" ManuallyRouted="false">
-          <ConnectorPoint PointX="4.5" PointY="8.451650390625" />
-          <ConnectorPoint PointX="5.25" PointY="8.451650390625" />
+        <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_SubCategoryInfo" >
+          <ConnectorPoint PointX="4.5" PointY="8.1679996744791676" />
+          <ConnectorPoint PointX="5.25" PointY="8.1679996744791676" />
         </AssociationConnector>
       </Diagram>
     </Diagrams>

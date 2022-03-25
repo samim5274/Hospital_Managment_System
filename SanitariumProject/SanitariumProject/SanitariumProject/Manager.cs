@@ -41,5 +41,12 @@ namespace SanitariumProject
             var q = from Speci in context.SpecimenInfoes select Speci;
             return q.ToList();
         }
+
+        internal List<SP_ALL_TEST_NAME_Result> GetAllGrid()
+        {
+            var context = new SANITARIUMEntities();
+            var q = context.SP_ALL_TEST_NAME();
+            return q.ToList();
+        }
     }
 }

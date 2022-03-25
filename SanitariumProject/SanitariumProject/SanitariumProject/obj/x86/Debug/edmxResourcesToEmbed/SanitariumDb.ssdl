@@ -60,7 +60,6 @@
     <Property Name="SpecimenId" Type="int" />
     <Property Name="TestCost" Type="int" />
     <Property Name="RoomNo" Type="int" />
-    <Property Name="Date" Type="date" />
   </EntityType>
   <EntityType Name="GroupInfo">
     <Key>
@@ -167,6 +166,7 @@
     </ReferentialConstraint>
   </Association>
   <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_ALL_TEST_NAME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
     <Parameter Name="owner_id" Type="int" Mode="In" />

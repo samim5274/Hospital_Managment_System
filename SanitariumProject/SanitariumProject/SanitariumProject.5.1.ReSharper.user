@@ -18,14 +18,11 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:CategoryForm.cs" caret="1310" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:GroupForm.cs" caret="1287" fromTop="14" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SpecimenForm.cs" caret="1395" fromTop="21" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1244" fromTop="22" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="869" fromTop="6" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1463" fromTop="22" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="494" fromTop="12" />
     </RecentFiles>
     <RecentEdits>
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="488" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1548" fromTop="24" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1017" fromTop="22" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1247" fromTop="23" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1410" fromTop="23" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1824" fromTop="27" />
@@ -35,24 +32,27 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1405" fromTop="19" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1645" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1675" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1291" fromTop="29" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1581" fromTop="14" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1876" fromTop="23" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2165" fromTop="20" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2356" fromTop="21" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2456" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1497" fromTop="29" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1787" fromTop="14" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2082" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2371" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2562" fromTop="21" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2662" fromTop="23" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="804" fromTop="11" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SpecimenForm.cs" caret="1395" fromTop="21" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1244" fromTop="22" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1118" fromTop="23" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2710" fromTop="12" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="3821" fromTop="22" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="3949" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4064" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1324" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2916" fromTop="12" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4184" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4299" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="653" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="653" fromTop="0" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="678" fromTop="24" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1463" fromTop="22" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="859" fromTop="16" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4056" fromTop="14" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="494" fromTop="12" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4087" fromTop="12" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4322" fromTop="12" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -69,27 +69,27 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="MotherForm`0" priority="10" />
-      <Item value="var" priority="40" />
+      <Item value="var" priority="44" />
       <Item value="DepartmentForm`0" priority="1" />
-      <Item value="new" priority="31" />
-      <Item value="obj" priority="23" />
+      <Item value="new" priority="34" />
+      <Item value="obj" priority="24" />
       <Item value="this" priority="22" />
-      <Item value="SANITARIUMEntities`0" priority="11" />
+      <Item value="SANITARIUMEntities`0" priority="12" />
       <Item value="DepartmentInfo`0" priority="1" />
       <Item value="objTB" priority="1" />
       <Item value="txtDepName" priority="3" />
       <Item value="Convert`0" priority="9" />
       <Item value="objDb" priority="1" />
       <Item value="MessageBox`0" priority="7" />
-      <Item value="Manager`0" priority="2" />
+      <Item value="Manager`0" priority="3" />
       <Item value="from" priority="6" />
-      <Item value="context" priority="5" />
+      <Item value="context" priority="6" />
       <Item value="select" priority="5" />
       <Item value="dip" priority="0" />
-      <Item value="return" priority="5" />
-      <Item value="q" priority="5" />
+      <Item value="return" priority="6" />
+      <Item value="q" priority="6" />
       <Item value="cbxDepName" priority="6" />
-      <Item value="list" priority="2" />
+      <Item value="list" priority="3" />
       <Item value="FillErrorEventArgs`0" priority="0" />
       <Item value="string" priority="9" />
       <Item value="OutdoorForm`0" priority="2" />
@@ -130,6 +130,9 @@
       <Item value="btnSave" priority="1" />
       <Item value="false" priority="0" />
       <Item value="true" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="SP_ALL_TEST_NAME_Result`0" priority="0" />
+      <Item value="dgvTestName" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.DepartmentForm">
       <Item value="MdiParent" priority="1" />
@@ -163,6 +166,7 @@
       <Item value="AddToSubCategoryInfoes`0" priority="0" />
       <Item value="SubCategoryInfoes" priority="0" />
       <Item value="AddToDignosticTestDetails`0" priority="0" />
+      <Item value="SP_ALL_TEST_NAME`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
       <Item value="Show`0" priority="7" />
@@ -249,6 +253,12 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.Button">
       <Item value="Enabled" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectResult`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridView">
+      <Item value="DataSource" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

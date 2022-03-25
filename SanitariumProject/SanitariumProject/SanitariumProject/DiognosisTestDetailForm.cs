@@ -24,6 +24,14 @@ namespace SanitariumProject
             FillGroup();
             FillSpecimen();
             ClearText();
+            FillGrid();
+        }
+
+        private void FillGrid()
+        {
+            var obj = new Manager();
+            var list = obj.GetAllGrid();
+            dgvTestName.DataSource = list;
         }
 
 
@@ -108,6 +116,7 @@ namespace SanitariumProject
                 dbobj.SaveChanges();
                 MessageBox.Show("Save Succeesed");
                 ClearText();
+                FillGrid();
             }
         }
 
