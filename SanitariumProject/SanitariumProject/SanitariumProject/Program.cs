@@ -15,7 +15,7 @@ namespace SanitariumProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FastForm());
+            Application.Run(new MotherForm());
         }
     }
 }

@@ -9,50 +9,54 @@
   <RecentFiles>
     <RecentFiles>
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/d:Properties/f:Resources.resx" caret="5945" fromTop="16" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.Designer.cs" caret="9519" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="484" fromTop="17" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="581" fromTop="21" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.Designer.cs" caret="10230" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:App.Config" caret="757" fromTop="3" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1591" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DepartmentForm.cs" caret="1397" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:CategoryForm.cs" caret="1310" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:GroupForm.cs" caret="1287" fromTop="14" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SpecimenForm.cs" caret="1395" fromTop="21" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="869" fromTop="6" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1463" fromTop="22" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="494" fromTop="12" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="461" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:CreateUserForm.cs" caret="1341" fromTop="13" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1866" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.Designer.cs" caret="26773" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.Designer.cs" caret="8919" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="486" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2090" fromTop="25" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1474" fromTop="16" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6632" fromTop="26" />
     </RecentFiles>
     <RecentEdits>
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1247" fromTop="23" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1410" fromTop="23" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1824" fromTop="27" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1079" fromTop="0" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1962" fromTop="0" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="1962" fromTop="40" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1405" fromTop="19" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1645" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1675" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1497" fromTop="29" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1787" fromTop="14" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2082" fromTop="23" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2371" fromTop="20" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2562" fromTop="21" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2662" fromTop="23" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="804" fromTop="11" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SpecimenForm.cs" caret="1395" fromTop="21" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1244" fromTop="22" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1324" fromTop="23" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="2916" fromTop="12" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4184" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4299" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="653" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="653" fromTop="0" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="678" fromTop="24" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1463" fromTop="22" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="859" fromTop="16" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4056" fromTop="14" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="494" fromTop="12" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4322" fromTop="12" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="3128" fromTop="2" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6758" fromTop="2" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4354" fromTop="11" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.Designer.cs" caret="26773" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="480" fromTop="13" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2244" fromTop="14" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.Designer.cs" caret="8919" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2121" fromTop="10" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2256" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2244" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.Designer.cs" caret="8919" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2256" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="486" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1486" fromTop="22" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="627" fromTop="11" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4447" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4447" fromTop="26" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4447" fromTop="23" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="627" fromTop="13" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1474" fromTop="16" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6758" fromTop="26" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6735" fromTop="24" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6596" fromTop="21" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1324" fromTop="26" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4669" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4669" fromTop="30" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4693" fromTop="14" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="5487" fromTop="26" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="5697" fromTop="24" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6023" fromTop="15" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -68,71 +72,99 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="MotherForm`0" priority="10" />
-      <Item value="var" priority="44" />
+      <Item value="MotherForm`0" priority="12" />
+      <Item value="var" priority="59" />
       <Item value="DepartmentForm`0" priority="1" />
-      <Item value="new" priority="34" />
-      <Item value="obj" priority="24" />
-      <Item value="this" priority="22" />
-      <Item value="SANITARIUMEntities`0" priority="12" />
+      <Item value="new" priority="45" />
+      <Item value="obj" priority="30" />
+      <Item value="this" priority="28" />
+      <Item value="SANITARIUMEntities`0" priority="17" />
       <Item value="DepartmentInfo`0" priority="1" />
       <Item value="objTB" priority="1" />
       <Item value="txtDepName" priority="3" />
-      <Item value="Convert`0" priority="9" />
+      <Item value="Convert`0" priority="10" />
       <Item value="objDb" priority="1" />
-      <Item value="MessageBox`0" priority="7" />
-      <Item value="Manager`0" priority="3" />
-      <Item value="from" priority="6" />
-      <Item value="context" priority="6" />
-      <Item value="select" priority="5" />
+      <Item value="MessageBox`0" priority="15" />
+      <Item value="Manager`0" priority="4" />
+      <Item value="from" priority="8" />
+      <Item value="context" priority="8" />
+      <Item value="select" priority="7" />
       <Item value="dip" priority="0" />
-      <Item value="return" priority="6" />
-      <Item value="q" priority="6" />
-      <Item value="cbxDepName" priority="6" />
-      <Item value="list" priority="3" />
+      <Item value="return" priority="7" />
+      <Item value="q" priority="8" />
+      <Item value="cbxDepName" priority="9" />
+      <Item value="list" priority="4" />
       <Item value="FillErrorEventArgs`0" priority="0" />
-      <Item value="string" priority="9" />
+      <Item value="string" priority="14" />
       <Item value="OutdoorForm`0" priority="2" />
-      <Item value="FastForm`0" priority="2" />
+      <Item value="FastForm`0" priority="3" />
       <Item value="Outdoor`0" priority="0" />
       <Item value="sssssssssssssssss`0" priority="0" />
-      <Item value="sender" priority="1" />
+      <Item value="sender" priority="2" />
       <Item value="GroupInfo`0" priority="1" />
-      <Item value="tbobj" priority="17" />
-      <Item value="cbxGrpName" priority="6" />
-      <Item value="dbobj" priority="9" />
+      <Item value="tbobj" priority="31" />
+      <Item value="cbxGrpName" priority="7" />
+      <Item value="dbobj" priority="14" />
       <Item value="GroupForm`0" priority="0" />
       <Item value="txtGrpName" priority="2" />
       <Item value="grp" priority="0" />
       <Item value="SpecimenInfo`0" priority="2" />
       <Item value="txtSpeciName" priority="2" />
-      <Item value="try" priority="1" />
-      <Item value="if" priority="7" />
+      <Item value="try" priority="3" />
+      <Item value="if" priority="15" />
       <Item value="TextBox`0" priority="0" />
-      <Item value="else" priority="7" />
+      <Item value="else" priority="11" />
       <Item value="txtCatName" priority="2" />
       <Item value="CategoryInfo`0" priority="1" />
       <Item value="CategoryForm`0" priority="0" />
-      <Item value="cbxCatName" priority="2" />
+      <Item value="cbxCatName" priority="3" />
       <Item value="SpecimenForm`0" priority="0" />
       <Item value="Speci" priority="1" />
-      <Item value="cbxSpeciName" priority="5" />
+      <Item value="cbxSpeciName" priority="6" />
       <Item value="txtSubCatName" priority="2" />
       <Item value="SubCategoryInfo`0" priority="1" />
-      <Item value="cbxSubCatName" priority="6" />
+      <Item value="cbxSubCatName" priority="9" />
       <Item value="SubCat" priority="0" />
       <Item value="SubCategoryForm`0" priority="0" />
-      <Item value="DiognosisTestDetailForm`0" priority="0" />
-      <Item value="txtTestName" priority="3" />
-      <Item value="txtRoom" priority="3" />
-      <Item value="txtCost" priority="3" />
+      <Item value="DiognosisTestDetailForm`0" priority="1" />
+      <Item value="txtTestName" priority="7" />
+      <Item value="txtRoom" priority="4" />
+      <Item value="txtCost" priority="4" />
       <Item value="DignosticTestDetail`0" priority="0" />
-      <Item value="btnSave" priority="1" />
-      <Item value="false" priority="0" />
-      <Item value="true" priority="0" />
+      <Item value="btnSave" priority="3" />
+      <Item value="false" priority="3" />
+      <Item value="true" priority="1" />
       <Item value="List" priority="0" />
       <Item value="SP_ALL_TEST_NAME_Result`0" priority="0" />
-      <Item value="dgvTestName" priority="0" />
+      <Item value="dgvTestName" priority="2" />
+      <Item value="CreateUserForm`0" priority="0" />
+      <Item value="UserInfo`0" priority="1" />
+      <Item value="txtUsername" priority="5" />
+      <Item value="txtPassword" priority="6" />
+      <Item value="Application`0" priority="0" />
+      <Item value="LoginForm`0" priority="1" />
+      <Item value="using" priority="0" />
+      <Item value="where" priority="0" />
+      <Item value="log" priority="2" />
+      <Item value="WarningException`0" priority="0" />
+      <Item value="MessageBoxButtons`0" priority="2" />
+      <Item value="MessageBoxIcon`0" priority="2" />
+      <Item value="label3" priority="0" />
+      <Item value="DataGridViewRow`0" priority="0" />
+      <Item value="e" priority="2" />
+      <Item value="row" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="btnLogin" priority="2" />
+      <Item value="Button`0" priority="0" />
+      <Item value="SanitariumProject" priority="0" />
+      <Item value="tsName" priority="0" />
+      <Item value="cbxScarch" priority="6" />
+      <Item value="x" priority="0" />
+      <Item value="txtScarch" priority="2" />
+      <Item value="int" priority="0" />
+      <Item value="btnUpdate" priority="1" />
+      <Item value="OK" priority="0" />
+      <Item value="Warning" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.DepartmentForm">
       <Item value="MdiParent" priority="1" />
@@ -144,18 +176,20 @@
       <Item value="DepartmentName" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
-      <Item value="Text" priority="25" />
+      <Item value="Text" priority="45" />
+      <Item value="Scale`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
-      <Item value="Trim`0" priority="7" />
-      <Item value="ToString`0" priority="1" />
+      <Item value="Trim`0" priority="12" />
+      <Item value="ToString`0" priority="2" />
+      <Item value="FirstOrDefault`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Convert">
-      <Item value="ToInt32`0" priority="9" />
+      <Item value="ToInt32`0" priority="10" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.SANITARIUMEntities">
       <Item value="AddToDepartmentInfoes`0" priority="0" />
-      <Item value="SaveChanges`0" priority="5" />
+      <Item value="SaveChanges`0" priority="7" />
       <Item value="DepartmentInfoes" priority="0" />
       <Item value="AddToGroupInfoes`0" priority="0" />
       <Item value="GroupInfoes" priority="0" />
@@ -167,22 +201,30 @@
       <Item value="SubCategoryInfoes" priority="0" />
       <Item value="AddToDignosticTestDetails`0" priority="0" />
       <Item value="SP_ALL_TEST_NAME`0" priority="0" />
+      <Item value="AddToUserInfoes`0" priority="0" />
+      <Item value="UserInfoes" priority="0" />
+      <Item value="DignosticTestDetails" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
-      <Item value="Show`0" priority="7" />
+      <Item value="Show`0" priority="15" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
-      <Item value="ToList`1" priority="5" />
+      <Item value="ToList`1" priority="6" />
+      <Item value="SingleOrDefault`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.ComboBox">
-      <Item value="DisplayMember" priority="3" />
-      <Item value="ValueMember" priority="6" />
-      <Item value="DataSource" priority="2" />
-      <Item value="SelectedValue" priority="8" />
-      <Item value="SelectedItem" priority="0" />
+      <Item value="DisplayMember" priority="4" />
+      <Item value="ValueMember" priority="7" />
+      <Item value="DataSource" priority="3" />
+      <Item value="SelectedValue" priority="20" />
+      <Item value="SelectedItem" priority="5" />
+      <Item value="SelectedText" priority="2" />
+      <Item value="SelectedIndex" priority="2" />
+      <Item value="Text" priority="0" />
+      <Item value="SelectAll`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
-      <Item value="Empty" priority="9" />
+      <Item value="Empty" priority="14" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.MotherForm">
       <Item value="MdiParent" priority="0" />
@@ -199,8 +241,9 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.FastForm">
       <Item value="Close`0" priority="2" />
-      <Item value="ShowDialog`0" priority="0" />
+      <Item value="ShowDialog`0" priority="1" />
       <Item value="Hide`0" priority="0" />
+      <Item value="Closed" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.MotherForm1">
       <Item value="Close`0" priority="0" />
@@ -239,26 +282,81 @@
       <Item value="Close`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.DignosticTestDetail">
-      <Item value="TestName" priority="0" />
-      <Item value="DepartmentId" priority="0" />
-      <Item value="CategoryId" priority="0" />
-      <Item value="SubCategoryId" priority="0" />
-      <Item value="GroupId" priority="0" />
-      <Item value="SpecimenId" priority="0" />
-      <Item value="TestCost" priority="0" />
-      <Item value="RoomNo" priority="0" />
+      <Item value="TestName" priority="3" />
+      <Item value="DepartmentId" priority="1" />
+      <Item value="CategoryId" priority="1" />
+      <Item value="SubCategoryId" priority="1" />
+      <Item value="GroupId" priority="1" />
+      <Item value="SpecimenId" priority="1" />
+      <Item value="TestCost" priority="1" />
+      <Item value="RoomNo" priority="1" />
+      <Item value="Id" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.DiognosisTestDetailForm">
       <Item value="Close`0" priority="0" />
+      <Item value="dgvTestName" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.Button">
-      <Item value="Enabled" priority="1" />
+      <Item value="Enabled" priority="5" />
+      <Item value="Focus`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Data.Objects.ObjectResult`1">
       <Item value="ToList`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.DataGridView">
       <Item value="DataSource" priority="0" />
+      <Item value="Rows" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.CreateUserForm">
+      <Item value="MdiParent" priority="0" />
+      <Item value="Show`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.UserInfo">
+      <Item value="Username" priority="1" />
+      <Item value="Password" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Application">
+      <Item value="Exit`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBoxButtons">
+      <Item value="OK" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBoxIcon">
+      <Item value="Error" priority="0" />
+      <Item value="Warning" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.LoginForm">
+      <Item value="Close`0" priority="0" />
+      <Item value="Hide`0" priority="0" />
+      <Item value="ActiveControl" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewCellEventArgs">
+      <Item value="RowIndex" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewRow">
+      <Item value="Cells" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewCell">
+      <Item value="Value" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Where`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="FirstOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

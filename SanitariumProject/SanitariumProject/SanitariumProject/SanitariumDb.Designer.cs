@@ -187,6 +187,22 @@ namespace SanitariumProject
             }
         }
         private ObjectSet<sysdiagram> _sysdiagrams;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<UserInfo> UserInfoes
+        {
+            get
+            {
+                if ((_UserInfoes == null))
+                {
+                    _UserInfoes = base.CreateObjectSet<UserInfo>("UserInfoes");
+                }
+                return _UserInfoes;
+            }
+        }
+        private ObjectSet<UserInfo> _UserInfoes;
 
         #endregion
 
@@ -246,6 +262,14 @@ namespace SanitariumProject
         public void AddTosysdiagrams(sysdiagram sysdiagram)
         {
             base.AddObject("sysdiagrams", sysdiagram);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the UserInfoes EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToUserInfoes(UserInfo userInfo)
+        {
+            base.AddObject("UserInfoes", userInfo);
         }
 
         #endregion
@@ -1481,6 +1505,111 @@ namespace SanitariumProject
         private global::System.Byte[] _definition;
         partial void OndefinitionChanging(global::System.Byte[] value);
         partial void OndefinitionChanged();
+
+        #endregion
+
+    
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="SANITARIUMModel", Name="UserInfo")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class UserInfo : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new UserInfo object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        public static UserInfo CreateUserInfo(global::System.Int32 id)
+        {
+            UserInfo userInfo = new UserInfo();
+            userInfo.Id = id;
+            return userInfo;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Username
+        {
+            get
+            {
+                return _Username;
+            }
+            set
+            {
+                OnUsernameChanging(value);
+                ReportPropertyChanging("Username");
+                _Username = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Username");
+                OnUsernameChanged();
+            }
+        }
+        private global::System.String _Username;
+        partial void OnUsernameChanging(global::System.String value);
+        partial void OnUsernameChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Password
+        {
+            get
+            {
+                return _Password;
+            }
+            set
+            {
+                OnPasswordChanging(value);
+                ReportPropertyChanging("Password");
+                _Password = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Password");
+                OnPasswordChanged();
+            }
+        }
+        private global::System.String _Password;
+        partial void OnPasswordChanging(global::System.String value);
+        partial void OnPasswordChanged();
 
         #endregion
 

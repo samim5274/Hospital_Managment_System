@@ -45,6 +45,7 @@ namespace SanitariumProject
             cbxGrpName.SelectedValue = string.Empty;
             cbxDepName.SelectedValue = string.Empty;
             cbxCatName.SelectedValue = string.Empty;
+            txtScarch.Text = string.Empty;
         }
 
         private void FillDepartment()
@@ -94,7 +95,7 @@ namespace SanitariumProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtTestName.Text == "" && txtCost.Text == "" && txtRoom.Text == "")
+            if (txtTestName.Text == "" || txtCost.Text == "" || txtRoom.Text == "")
             {
                 MessageBox.Show("Some value is messing.please chick the all iteam and then save.Thank you.");
             }
@@ -128,6 +129,58 @@ namespace SanitariumProject
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnScarch_Click(object sender, EventArgs e)
+        {
+            if (txtScarch.Text == "")
+            {
+                MessageBox.Show("Plase write the test id",@"Message",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            else
+            {
+                try
+                {
+                    var dbobj = new SANITARIUMEntities();
+                    var tbobj =
+                        dbobj.DignosticTestDetails.ToList().Where(x => x.Id == int.Parse(txtScarch.Text.Trim())).FirstOrDefault();
+
+                    txtTestName.Text = tbobj.TestName.Trim();
+                    cbxDepName.SelectedValue = tbobj.DepartmentId;
+                    cbxCatName.SelectedValue = tbobj.CategoryId;
+                    cbxSubCatName.SelectedValue = tbobj.SubCategoryId;
+                    cbxGrpName.SelectedValue = tbobj.GroupId;
+                    cbxSpeciName.SelectedValue = tbobj.SpecimenId;
+                    txtCost.Text = tbobj.TestCost.ToString();
+                    txtRoom.Text = tbobj.RoomNo.ToString();
+                    btnSave.Enabled = false;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Data not found.Please try another test id.",@"Message",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            var dbobj = new SANITARIUMEntities();
+            var tbobj =
+                dbobj.DignosticTestDetails.ToList().Where(x => x.Id == int.Parse(txtScarch.Text.Trim())).FirstOrDefault();
+
+            tbobj.TestName = txtTestName.Text.Trim();
+            tbobj.DepartmentId = Convert.ToInt32(cbxDepName.SelectedValue);
+            tbobj.CategoryId = Convert.ToInt32(cbxCatName.SelectedValue);
+            tbobj.SubCategoryId = Convert.ToInt32(cbxSubCatName.SelectedValue);
+            tbobj.GroupId = Convert.ToInt32(cbxGrpName.SelectedValue);
+            tbobj.SpecimenId = Convert.ToInt32(cbxSpeciName.SelectedValue);
+            tbobj.TestCost = Convert.ToInt32(txtCost.Text.Trim());
+            tbobj.RoomNo = Convert.ToInt32(txtRoom.Text.Trim());
+
+            dbobj.SaveChanges();
+            MessageBox.Show("Edit Successfully.");
+            ClearText();
+            FillGrid();
         }
     }
 }

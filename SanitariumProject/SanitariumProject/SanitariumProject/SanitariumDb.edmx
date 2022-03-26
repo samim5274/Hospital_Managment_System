@@ -13,6 +13,7 @@
           <EntitySet Name="SpecimenInfo" EntityType="SANITARIUMModel.Store.SpecimenInfo" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="SubCategoryInfo" EntityType="SANITARIUMModel.Store.SubCategoryInfo" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="sysdiagrams" EntityType="SANITARIUMModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserInfo" EntityType="SANITARIUMModel.Store.UserInfo" store:Type="Tables" Schema="dbo" />
           <AssociationSet Name="FK_DignosticTestDetail_CategoryName" Association="SANITARIUMModel.Store.FK_DignosticTestDetail_CategoryName">
             <End Role="CategoryInfo" EntitySet="CategoryInfo" />
             <End Role="DignosticTestDetail" EntitySet="DignosticTestDetail" />
@@ -97,6 +98,14 @@
           <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
         </EntityType>
         <Association Name="FK_DignosticTestDetail_CategoryName">
           <End Role="CategoryInfo" Type="SANITARIUMModel.Store.CategoryInfo" Multiplicity="0..1" />
@@ -207,6 +216,7 @@
     <edmx:ConceptualModels>
       <Schema Namespace="SANITARIUMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityContainer Name="SANITARIUMEntities" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="SP_ALL_TEST_NAME" ReturnType="Collection(SANITARIUMModel.SP_ALL_TEST_NAME_Result)" />
           <EntitySet Name="CategoryInfoes" EntityType="SANITARIUMModel.CategoryInfo" />
           <EntitySet Name="DepartmentInfoes" EntityType="SANITARIUMModel.DepartmentInfo" />
           <EntitySet Name="DignosticTestDetails" EntityType="SANITARIUMModel.DignosticTestDetail" />
@@ -214,6 +224,7 @@
           <EntitySet Name="SpecimenInfoes" EntityType="SANITARIUMModel.SpecimenInfo" />
           <EntitySet Name="SubCategoryInfoes" EntityType="SANITARIUMModel.SubCategoryInfo" />
           <EntitySet Name="sysdiagrams" EntityType="SANITARIUMModel.sysdiagram" />
+          <EntitySet Name="UserInfoes" EntityType="SANITARIUMModel.UserInfo" />
           <AssociationSet Name="FK_DignosticTestDetail_CategoryName" Association="SANITARIUMModel.FK_DignosticTestDetail_CategoryName">
             <End Role="CategoryInfo" EntitySet="CategoryInfoes" />
             <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
@@ -238,8 +249,17 @@
             <End Role="SubCategoryInfo" EntitySet="SubCategoryInfoes" />
             <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
           </AssociationSet>
-          <FunctionImport Name="SP_ALL_TEST_NAME" ReturnType="Collection(SANITARIUMModel.SP_ALL_TEST_NAME_Result)" />
         </EntityContainer>
+        <ComplexType Name="SP_ALL_TEST_NAME_Result">
+          <Property Type="String" Name="TestName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="DepartmentName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="SubCategoryName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="GroupName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="SpecimenName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="TestCost" Nullable="true" />
+          <Property Type="Int32" Name="RoomNo" Nullable="true" />
+        </ComplexType>
         <EntityType Name="CategoryInfo">
           <Key>
             <PropertyRef Name="Id" />
@@ -311,6 +331,14 @@
           <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="Int32" Name="version" />
           <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_DignosticTestDetail_CategoryName">
           <End Type="SANITARIUMModel.CategoryInfo" Role="CategoryInfo" Multiplicity="0..1" />
@@ -384,22 +412,26 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <ComplexType Name="SP_ALL_TEST_NAME_Result">
-          <Property Type="String" Name="TestName" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="DepartmentName" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="SubCategoryName" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="GroupName" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="SpecimenName" Nullable="true" MaxLength="50" />
-          <Property Type="Int32" Name="TestCost" Nullable="true" />
-          <Property Type="Int32" Name="RoomNo" Nullable="true" />
-        </ComplexType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="SANITARIUMModelStoreContainer" CdmEntityContainer="SANITARIUMEntities">
+          <FunctionImportMapping FunctionImportName="SP_ALL_TEST_NAME" FunctionName="SANITARIUMModel.Store.SP_ALL_TEST_NAME">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SANITARIUMModel.SP_ALL_TEST_NAME_Result">
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="SpecimenName" ColumnName="SpecimenName" />
+                <ScalarProperty Name="TestCost" ColumnName="TestCost" />
+                <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
           <EntitySetMapping Name="CategoryInfoes">
             <EntityTypeMapping TypeName="SANITARIUMModel.CategoryInfo">
               <MappingFragment StoreEntitySet="CategoryInfo">
@@ -467,20 +499,15 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <FunctionImportMapping FunctionImportName="SP_ALL_TEST_NAME" FunctionName="SANITARIUMModel.Store.SP_ALL_TEST_NAME">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="SANITARIUMModel.SP_ALL_TEST_NAME_Result">
-                <ScalarProperty Name="TestName" ColumnName="TestName" />
-                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
-                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
-                <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
-                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
-                <ScalarProperty Name="SpecimenName" ColumnName="SpecimenName" />
-                <ScalarProperty Name="TestCost" ColumnName="TestCost" />
-                <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
+          <EntitySetMapping Name="UserInfoes">
+            <EntityTypeMapping TypeName="SANITARIUMModel.UserInfo">
+              <MappingFragment StoreEntitySet="UserInfo">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
@@ -509,6 +536,7 @@
         <EntityTypeShape EntityType="SANITARIUMModel.SpecimenInfo" Width="1.5" PointX="3" PointY="11.25" Height="1.5956835937500031" />
         <EntityTypeShape EntityType="SANITARIUMModel.SubCategoryInfo" Width="1.5" PointX="3" PointY="7.875" Height="1.9802864583333388" />
         <EntityTypeShape EntityType="SANITARIUMModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="SANITARIUMModel.UserInfo" Width="1.5" PointX="7.75" PointY="0.75" Height="1.5956835937500031" />
         <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_CategoryName" >
           <ConnectorPoint PointX="2.25" PointY="5.2230843098958335" />
           <ConnectorPoint PointX="4.791666666666667" PointY="5.2230843098958326" />

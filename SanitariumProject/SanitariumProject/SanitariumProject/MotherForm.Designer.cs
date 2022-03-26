@@ -37,10 +37,11 @@
             this.specimenDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.outdoorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saleOfTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indoorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.testSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,8 @@
             this.outdoorToolStripMenuItem,
             this.indoorToolStripMenuItem,
             this.accountToolStripMenuItem,
-            this.accountToolStripMenuItem1});
+            this.accountToolStripMenuItem1,
+            this.createAccountToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1225, 39);
@@ -123,6 +125,12 @@
             this.saleOfTestToolStripMenuItem.Text = "Test Detail";
             this.saleOfTestToolStripMenuItem.Click += new System.EventHandler(this.saleOfTestToolStripMenuItem_Click);
             // 
+            // testSaleToolStripMenuItem
+            // 
+            this.testSaleToolStripMenuItem.Name = "testSaleToolStripMenuItem";
+            this.testSaleToolStripMenuItem.Size = new System.Drawing.Size(176, 36);
+            this.testSaleToolStripMenuItem.Text = "Test Sale";
+            // 
             // indoorToolStripMenuItem
             // 
             this.indoorToolStripMenuItem.Font = new System.Drawing.Font("Titillium Web", 12F);
@@ -144,11 +152,13 @@
             this.accountToolStripMenuItem1.Size = new System.Drawing.Size(96, 35);
             this.accountToolStripMenuItem1.Text = "Account";
             // 
-            // testSaleToolStripMenuItem
+            // createAccountToolStripMenuItem
             // 
-            this.testSaleToolStripMenuItem.Name = "testSaleToolStripMenuItem";
-            this.testSaleToolStripMenuItem.Size = new System.Drawing.Size(176, 36);
-            this.testSaleToolStripMenuItem.Text = "Test Sale";
+            this.createAccountToolStripMenuItem.Font = new System.Drawing.Font("Titillium Web", 12F);
+            this.createAccountToolStripMenuItem.Name = "createAccountToolStripMenuItem";
+            this.createAccountToolStripMenuItem.Size = new System.Drawing.Size(155, 35);
+            this.createAccountToolStripMenuItem.Text = "Create Account";
+            this.createAccountToolStripMenuItem.Click += new System.EventHandler(this.createAccountToolStripMenuItem_Click);
             // 
             // MotherForm
             // 
@@ -184,6 +194,7 @@
         private System.Windows.Forms.ToolStripMenuItem saleOfTestToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem testSaleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createAccountToolStripMenuItem;
 
     }
 }
