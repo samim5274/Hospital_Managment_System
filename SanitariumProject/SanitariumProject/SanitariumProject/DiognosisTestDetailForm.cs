@@ -18,6 +18,7 @@ namespace SanitariumProject
 
         private void DiognosisTestDetailForm_Load(object sender, EventArgs e)
         {
+            dtpDateToday.Value = DateTime.Now;
             FillDepartment();
             FillCategory();
             FillSubcategory();
@@ -153,7 +154,6 @@ namespace SanitariumProject
                     cbxSpeciName.SelectedValue = tbobj.SpecimenId;
                     txtCost.Text = tbobj.TestCost.ToString();
                     txtRoom.Text = tbobj.RoomNo.ToString();
-                    btnSave.Enabled = false;
                 }
                 catch (Exception)
                 {
@@ -164,7 +164,13 @@ namespace SanitariumProject
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            var dbobj = new SANITARIUMEntities();
+            if (txtScarch.Text=="")
+            {
+                MessageBox.Show("Please fast scarch the test id.Then you can edit the test valu.Thank you.");
+            }
+            else
+            {
+                 var dbobj = new SANITARIUMEntities();
             var tbobj =
                 dbobj.DignosticTestDetails.ToList().Where(x => x.Id == int.Parse(txtScarch.Text.Trim())).FirstOrDefault();
 
@@ -181,55 +187,87 @@ namespace SanitariumProject
             MessageBox.Show("Edit Successfully.");
             ClearText();
             FillGrid();
+            }
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Test Name",new Font("Arial",14,FontStyle.Regular ), Brushes.Black, new Point(65,218));
-            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 218));
-            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------", 
-                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 250));
+            e.Graphics.DrawString("Hospital Management System", new Font("Arial", 38, FontStyle.Bold), Brushes.Black, new Point(40, 30));
+            e.Graphics.DrawString("Dhaka,Bangladesh-1750", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(270, 90));
+            e.Graphics.DrawString("Phone: +88017 6216 4746, +88015 3302 1557", new Font("Arial", 18, FontStyle.Regular), Brushes.Black, new Point(160, 120));
+            e.Graphics.DrawString("Dignostic Test Detail", new Font("Arial", 24, FontStyle.Regular), Brushes.Black, new Point(240, 160));
+            e.Graphics.DrawString("Test Id :  " + txtScarch.Text.Trim(), new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(40, 170));
+            e.Graphics.DrawString("Date / Time :  " + dtpDateToday.Value, new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(90, 600));
 
-            e.Graphics.DrawString("Department", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 318));
-            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 318));
             e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
-                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 350));
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 198));
 
-            e.Graphics.DrawString("Category", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 418));
-            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 418));
+            e.Graphics.DrawString("Test Name",new Font("Arial",14,FontStyle.Bold ), Brushes.Black, new Point(65,218));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 218));
+            //e.Graphics.DrawString("|", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(550, 218));
+            e.Graphics.DrawString(txtTestName.Text.Trim(), new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(218, 218));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------", 
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 240));
+
+            e.Graphics.DrawString("Department", new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(65, 260));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 260));
+            //e.Graphics.DrawString("|", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(550, 260));
+            e.Graphics.DrawString(cbxDepName.Text,new Font("Arial",14,FontStyle.Regular),Brushes.Black, new Point(218,260));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 282));
+
+            e.Graphics.DrawString("Category", new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(65, 302));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 302));
+            //e.Graphics.DrawString("|", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(550, 302));
+            e.Graphics.DrawString(cbxCatName.Text, new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(218, 302));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 324));
+
+            e.Graphics.DrawString("Subcategory", new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(65, 344));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 344));
+            //e.Graphics.DrawString("|", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(550, 344));
+            e.Graphics.DrawString(cbxSubCatName.Text, new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(218, 344));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 366));
+
+            e.Graphics.DrawString("Group", new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(65, 386));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 386));
+            //e.Graphics.DrawString("|", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(550, 386));
+            e.Graphics.DrawString(cbxGrpName.Text, new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(218, 386));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 408));
+
+            e.Graphics.DrawString("Specimen", new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(65, 428));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 428));
+            //e.Graphics.DrawString("|", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(550, 428));
+            e.Graphics.DrawString(cbxSpeciName.Text, new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(218, 428));
             e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
                 new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 450));
 
-            e.Graphics.DrawString("Subcategory", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 518));
-            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 518));
+            e.Graphics.DrawString("Room", new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(65, 470));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 470));
+            //e.Graphics.DrawString("|", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(550, 470));
+            e.Graphics.DrawString(txtRoom.Text.Trim(), new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(218, 470));
             e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
-                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 550));
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 492));
 
-            e.Graphics.DrawString("Group", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 618));
-            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 618));
+            e.Graphics.DrawString("Cost", new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(65, 512));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 512));
+            //e.Graphics.DrawString("|", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(550, 512));
+            e.Graphics.DrawString(txtCost.Text.Trim(), new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(218, 512));
             e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
-                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 650));
-
-            e.Graphics.DrawString("Specimen", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 718));
-            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 718));
-            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
-                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 750));
-
-            e.Graphics.DrawString("Room", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 818));
-            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 818));
-            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
-                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 850));
-
-            e.Graphics.DrawString("Cost", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 918));
-            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 918));
-            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
-                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 950));
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 534));
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
             printPreviewDialog1.Document = printDocument1;
             printPreviewDialog1.ShowDialog();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You cann't delete the test.Thank You");
         }
     }
 }

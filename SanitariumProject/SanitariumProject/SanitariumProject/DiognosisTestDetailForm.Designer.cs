@@ -66,6 +66,7 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.dtpDateToday = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTestName)).BeginInit();
             this.SuspendLayout();
             // 
@@ -402,6 +403,7 @@
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnUpdate.Enabled = false;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnUpdate.Location = new System.Drawing.Point(282, 647);
@@ -423,6 +425,7 @@
             this.btnDelete.TabIndex = 41;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnPrint
             // 
@@ -451,12 +454,20 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // dtpDateToday
+            // 
+            this.dtpDateToday.Location = new System.Drawing.Point(97, 105);
+            this.dtpDateToday.Name = "dtpDateToday";
+            this.dtpDateToday.Size = new System.Drawing.Size(200, 22);
+            this.dtpDateToday.TabIndex = 43;
+            // 
             // DiognosisTestDetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1225, 754);
+            this.Controls.Add(this.dtpDateToday);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -540,5 +551,6 @@
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.DateTimePicker dtpDateToday;
     }
 }
