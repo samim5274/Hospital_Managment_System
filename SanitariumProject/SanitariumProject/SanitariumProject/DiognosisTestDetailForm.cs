@@ -182,5 +182,54 @@ namespace SanitariumProject
             ClearText();
             FillGrid();
         }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Test Name",new Font("Arial",14,FontStyle.Regular ), Brushes.Black, new Point(65,218));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 218));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------", 
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 250));
+
+            e.Graphics.DrawString("Department", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 318));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 318));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 350));
+
+            e.Graphics.DrawString("Category", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 418));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 418));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 450));
+
+            e.Graphics.DrawString("Subcategory", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 518));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 518));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 550));
+
+            e.Graphics.DrawString("Group", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 618));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 618));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 650));
+
+            e.Graphics.DrawString("Specimen", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 718));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 718));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 750));
+
+            e.Graphics.DrawString("Room", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 818));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 818));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 850));
+
+            e.Graphics.DrawString("Cost", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(65, 918));
+            e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 918));
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
+                new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 950));
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
+        }
     }
 }
