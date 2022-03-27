@@ -32,3 +32,4 @@ E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\Sani
 E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.csproj.GenerateResource.Cache
 E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.exe
 E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.pdb
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.DiognosisTestDetailForm2.resources

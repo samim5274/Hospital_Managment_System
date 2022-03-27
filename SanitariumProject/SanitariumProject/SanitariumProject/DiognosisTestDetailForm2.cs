@@ -9,19 +9,18 @@ using System.Windows.Forms;
 
 namespace SanitariumProject
 {
-    public partial class DiognosisTestDetailForm : Form
+    public partial class DiognosisTestDetailForm2 : Form
     {
-        public DiognosisTestDetailForm()
+        public DiognosisTestDetailForm2()
         {
             InitializeComponent();
         }
 
-        private void DiognosisTestDetailForm_Load(object sender, EventArgs e)
+        private void DiognosisTestDetailForm2_Load(object sender, EventArgs e)
         {
-            dtpDateToday.Value = DateTime.Now;
             FillDepartment();
             FillCategory();
-            FillSubcategory();
+            FillSubCategory();
             FillGroup();
             FillSpecimen();
             ClearText();
@@ -34,7 +33,6 @@ namespace SanitariumProject
             var list = obj.GetAllGrid();
             dgvTestName.DataSource = list;
         }
-
 
         private void ClearText()
         {
@@ -67,7 +65,7 @@ namespace SanitariumProject
             cbxCatName.DataSource = list;
         }
 
-        private void FillSubcategory()
+        private void FillSubCategory()
         {
             var obj = new Manager();
             var list = obj.GettAllCategory();
@@ -94,7 +92,7 @@ namespace SanitariumProject
             cbxSpeciName.DataSource = list;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             if (txtTestName.Text == "" || txtCost.Text == "" || txtRoom.Text == "")
             {
@@ -117,26 +115,14 @@ namespace SanitariumProject
                 dbobj.AddToDignosticTestDetails(tbobj);
                 dbobj.SaveChanges();
                 MessageBox.Show("Save Succeesed.");
-                ClearText();
-                FillGrid();
             }
-        }
-
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            ClearText();
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void btnScarch_Click(object sender, EventArgs e)
         {
             if (txtScarch.Text == "")
             {
-                MessageBox.Show("Plase write the test id",@"Message",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Plase write the test id", @"Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -157,37 +143,48 @@ namespace SanitariumProject
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Data not found.Please try another test id.",@"Message",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBox.Show("Data not found.Please try another test id.", @"Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (txtScarch.Text=="")
+            if (txtScarch.Text == "")
             {
                 MessageBox.Show("Please fast scarch the test id.Then you can edit the test valu.Thank you.");
             }
             else
             {
-                 var dbobj = new SANITARIUMEntities();
-            var tbobj =
-                dbobj.DignosticTestDetails.ToList().Where(x => x.Id == int.Parse(txtScarch.Text.Trim())).FirstOrDefault();
+                var dbobj = new SANITARIUMEntities();
+                var tbobj =
+                    dbobj.DignosticTestDetails.ToList().Where(x => x.Id == int.Parse(txtScarch.Text.Trim())).FirstOrDefault();
 
-            tbobj.TestName = txtTestName.Text.Trim();
-            tbobj.DepartmentId = Convert.ToInt32(cbxDepName.SelectedValue);
-            tbobj.CategoryId = Convert.ToInt32(cbxCatName.SelectedValue);
-            tbobj.SubCategoryId = Convert.ToInt32(cbxSubCatName.SelectedValue);
-            tbobj.GroupId = Convert.ToInt32(cbxGrpName.SelectedValue);
-            tbobj.SpecimenId = Convert.ToInt32(cbxSpeciName.SelectedValue);
-            tbobj.TestCost = Convert.ToInt32(txtCost.Text.Trim());
-            tbobj.RoomNo = Convert.ToInt32(txtRoom.Text.Trim());
+                tbobj.TestName = txtTestName.Text.Trim();
+                tbobj.DepartmentId = Convert.ToInt32(cbxDepName.SelectedValue);
+                tbobj.CategoryId = Convert.ToInt32(cbxCatName.SelectedValue);
+                tbobj.SubCategoryId = Convert.ToInt32(cbxSubCatName.SelectedValue);
+                tbobj.GroupId = Convert.ToInt32(cbxGrpName.SelectedValue);
+                tbobj.SpecimenId = Convert.ToInt32(cbxSpeciName.SelectedValue);
+                tbobj.TestCost = Convert.ToInt32(txtCost.Text.Trim());
+                tbobj.RoomNo = Convert.ToInt32(txtRoom.Text.Trim());
 
-            dbobj.SaveChanges();
-            MessageBox.Show("Edit Successfully.");
-            ClearText();
-            FillGrid();
+                dbobj.SaveChanges();
+                MessageBox.Show("Edit Successfully.");
+                ClearText();
+                FillGrid();
             }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You cann't delete the test.Thank You");
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -202,17 +199,17 @@ namespace SanitariumProject
             e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
                 new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 198));
 
-            e.Graphics.DrawString("Test Name",new Font("Arial",14,FontStyle.Bold ), Brushes.Black, new Point(65,218));
+            e.Graphics.DrawString("Test Name", new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(65, 218));
             e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 218));
             //e.Graphics.DrawString("|", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(550, 218));
             e.Graphics.DrawString(txtTestName.Text.Trim(), new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(218, 218));
-            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------", 
+            e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
                 new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 240));
 
             e.Graphics.DrawString("Department", new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(65, 260));
             e.Graphics.DrawString(":", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(200, 260));
             //e.Graphics.DrawString("|", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(550, 260));
-            e.Graphics.DrawString(cbxDepName.Text,new Font("Arial",14,FontStyle.Regular),Brushes.Black, new Point(218,260));
+            e.Graphics.DrawString(cbxDepName.Text, new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(218, 260));
             e.Graphics.DrawString("---------------------------------------------------------------------------------------------------------------------",
                 new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 282));
 
@@ -259,20 +256,14 @@ namespace SanitariumProject
                 new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(30, 534));
         }
 
-        private void btnPrint_Click(object sender, EventArgs e)
+        private void btnNew_Click(object sender, EventArgs e)
         {
-            printPreviewDialog1.Document = printDocument1;
-            printPreviewDialog1.ShowDialog();
+            ClearText();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("You cann't delete the test.Thank You");
-        }
-
-        private void printPreviewDialog1_Load(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

@@ -73,6 +73,12 @@
     <Compile Include="DiognosisTestDetailForm.Designer.cs">
       <DependentUpon>DiognosisTestDetailForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DiognosisTestDetailForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiognosisTestDetailForm2.Designer.cs">
+      <DependentUpon>DiognosisTestDetailForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FastForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DiognosisTestDetailForm.resx">
       <DependentUpon>DiognosisTestDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiognosisTestDetailForm2.resx">
+      <DependentUpon>DiognosisTestDetailForm2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FastForm.resx">
       <DependentUpon>FastForm.cs</DependentUpon>

@@ -53,7 +53,7 @@ namespace SanitariumProject
 
         private void saleOfTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var obj = new DiognosisTestDetailForm();
+            var obj = new DiognosisTestDetailForm2();
             obj.MdiParent = this;
             obj.Show();
         }
