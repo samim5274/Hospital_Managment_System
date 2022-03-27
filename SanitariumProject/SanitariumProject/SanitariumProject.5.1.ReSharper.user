@@ -19,18 +19,16 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="461" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:CreateUserForm.cs" caret="1341" fromTop="13" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1866" fromTop="20" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.Designer.cs" caret="26773" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.Designer.cs" caret="27007" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.Designer.cs" caret="8919" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="486" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2090" fromTop="25" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1474" fromTop="16" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6632" fromTop="26" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="480" fromTop="17" />
     </RecentFiles>
     <RecentEdits>
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="3128" fromTop="2" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6758" fromTop="2" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4354" fromTop="11" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.Designer.cs" caret="26773" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.Designer.cs" caret="27007" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="480" fromTop="13" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2244" fromTop="14" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.Designer.cs" caret="8919" fromTop="18" />
@@ -47,7 +45,6 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4447" fromTop="23" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="627" fromTop="13" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1474" fromTop="16" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6758" fromTop="26" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6735" fromTop="24" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6596" fromTop="21" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="1324" fromTop="26" />
@@ -57,6 +54,9 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="5487" fromTop="26" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="5697" fromTop="24" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6023" fromTop="15" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="6758" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="5568" fromTop="13" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="480" fromTop="17" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
