@@ -116,7 +116,7 @@ namespace SanitariumProject
 
                 dbobj.AddToDignosticTestDetails(tbobj);
                 dbobj.SaveChanges();
-                MessageBox.Show("Save Succeesed");
+                MessageBox.Show("Save Succeesed.");
                 ClearText();
                 FillGrid();
             }
