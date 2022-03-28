@@ -23,10 +23,10 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2090" fromTop="25" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SanitariumDb.Designer.cs" caret="59778" fromTop="1274" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1474" fromTop="16" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="488" fromTop="17" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1593" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="4379" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="3895" fromTop="1" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1590" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="486" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="10683" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1892" fromTop="17" />
@@ -40,25 +40,25 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="2252" fromTop="19" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="2324" fromTop="15" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="2532" fromTop="19" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="486" fromTop="17" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14503" fromTop="32" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="4043" fromTop="32" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14562" fromTop="32" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="3129" fromTop="14" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="3246" fromTop="19" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="5408" fromTop="35" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="5467" fromTop="35" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1590" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="14640" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="6858" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="6917" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="673" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="862" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="1369" fromTop="22" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="6683" fromTop="15" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="6742" fromTop="15" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="14640" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="7054" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14252" fromTop="32" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14365" fromTop="17" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14503" fromTop="17" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14480" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="7113" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14311" fromTop="32" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14424" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14539" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="4102" fromTop="22" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14562" fromTop="22" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="486" fromTop="17" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -74,7 +74,7 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="MotherForm`0" priority="13" />
+      <Item value="MotherForm`0" priority="14" />
       <Item value="var" priority="59" />
       <Item value="DepartmentForm`0" priority="1" />
       <Item value="new" priority="49" />
@@ -144,7 +144,7 @@
       <Item value="txtUsername" priority="5" />
       <Item value="txtPassword" priority="6" />
       <Item value="Application`0" priority="0" />
-      <Item value="LoginForm`0" priority="3" />
+      <Item value="LoginForm`0" priority="4" />
       <Item value="using" priority="0" />
       <Item value="where" priority="0" />
       <Item value="log" priority="2" />
