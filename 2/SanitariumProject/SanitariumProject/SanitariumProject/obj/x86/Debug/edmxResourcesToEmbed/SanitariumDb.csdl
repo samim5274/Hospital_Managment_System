@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SANITARIUMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SANITARIUMEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="SP_ALL_TEST_NAME" ReturnType="Collection(SANITARIUMModel.SP_ALL_TEST_NAME_Result)" />
+    <EntitySet Name="CategoryInfoes" EntityType="SANITARIUMModel.CategoryInfo" />
+    <EntitySet Name="DepartmentInfoes" EntityType="SANITARIUMModel.DepartmentInfo" />
+    <EntitySet Name="DignosticTestDetails" EntityType="SANITARIUMModel.DignosticTestDetail" />
+    <EntitySet Name="GroupInfoes" EntityType="SANITARIUMModel.GroupInfo" />
+    <EntitySet Name="SpecimenInfoes" EntityType="SANITARIUMModel.SpecimenInfo" />
+    <EntitySet Name="SubCategoryInfoes" EntityType="SANITARIUMModel.SubCategoryInfo" />
+    <EntitySet Name="sysdiagrams" EntityType="SANITARIUMModel.sysdiagram" />
+    <EntitySet Name="UserInfoes" EntityType="SANITARIUMModel.UserInfo" />
+    <AssociationSet Name="FK_DignosticTestDetail_CategoryName" Association="SANITARIUMModel.FK_DignosticTestDetail_CategoryName">
+      <End Role="CategoryInfo" EntitySet="CategoryInfoes" />
+      <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubCategoryInfo_CategoryInfo" Association="SANITARIUMModel.FK_SubCategoryInfo_CategoryInfo">
+      <End Role="CategoryInfo" EntitySet="CategoryInfoes" />
+      <End Role="SubCategoryInfo" EntitySet="SubCategoryInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosticTestDetail_DepartmentInfo" Association="SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo">
+      <End Role="DepartmentInfo" EntitySet="DepartmentInfoes" />
+      <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosticTestDetail_GroupInfo" Association="SANITARIUMModel.FK_DignosticTestDetail_GroupInfo">
+      <End Role="GroupInfo" EntitySet="GroupInfoes" />
+      <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosticTestDetail_SpecimenInfo" Association="SANITARIUMModel.FK_DignosticTestDetail_SpecimenInfo">
+      <End Role="SpecimenInfo" EntitySet="SpecimenInfoes" />
+      <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosticTestDetail_SubCategoryInfo" Association="SANITARIUMModel.FK_DignosticTestDetail_SubCategoryInfo">
+      <End Role="SubCategoryInfo" EntitySet="SubCategoryInfoes" />
+      <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="SP_ALL_TEST_NAME_Result">
+    <Property Type="String" Name="TestName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="DepartmentName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SubCategoryName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="GroupName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SpecimenName" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="TestCost" Nullable="true" />
+    <Property Type="Int32" Name="RoomNo" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="CategoryInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CategoryName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_CategoryName" FromRole="CategoryInfo" ToRole="DignosticTestDetail" />
+    <NavigationProperty Name="SubCategoryInfoes" Relationship="SANITARIUMModel.FK_SubCategoryInfo_CategoryInfo" FromRole="CategoryInfo" ToRole="SubCategoryInfo" />
+  </EntityType>
+  <EntityType Name="DepartmentInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DepartmentName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo" FromRole="DepartmentInfo" ToRole="DignosticTestDetail" />
+  </EntityType>
+  <EntityType Name="DignosticTestDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TestName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="DepartmentId" />
+    <Property Type="Int32" Name="CategoryId" />
+    <Property Type="Int32" Name="SubCategoryId" />
+    <Property Type="Int32" Name="GroupId" />
+    <Property Type="Int32" Name="SpecimenId" />
+    <Property Type="Int32" Name="TestCost" />
+    <Property Type="Int32" Name="RoomNo" />
+    <NavigationProperty Name="CategoryInfo" Relationship="SANITARIUMModel.FK_DignosticTestDetail_CategoryName" FromRole="DignosticTestDetail" ToRole="CategoryInfo" />
+    <NavigationProperty Name="DepartmentInfo" Relationship="SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo" FromRole="DignosticTestDetail" ToRole="DepartmentInfo" />
+    <NavigationProperty Name="GroupInfo" Relationship="SANITARIUMModel.FK_DignosticTestDetail_GroupInfo" FromRole="DignosticTestDetail" ToRole="GroupInfo" />
+    <NavigationProperty Name="SpecimenInfo" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SpecimenInfo" FromRole="DignosticTestDetail" ToRole="SpecimenInfo" />
+    <NavigationProperty Name="SubCategoryInfo" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SubCategoryInfo" FromRole="DignosticTestDetail" ToRole="SubCategoryInfo" />
+  </EntityType>
+  <EntityType Name="GroupInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="GroupName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_GroupInfo" FromRole="GroupInfo" ToRole="DignosticTestDetail" />
+  </EntityType>
+  <EntityType Name="SpecimenInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SpecimenName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SpecimenInfo" FromRole="SpecimenInfo" ToRole="DignosticTestDetail" />
+  </EntityType>
+  <EntityType Name="SubCategoryInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SubCategoryName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CategoryId" />
+    <NavigationProperty Name="CategoryInfo" Relationship="SANITARIUMModel.FK_SubCategoryInfo_CategoryInfo" FromRole="SubCategoryInfo" ToRole="CategoryInfo" />
+    <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SubCategoryInfo" FromRole="SubCategoryInfo" ToRole="DignosticTestDetail" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_DignosticTestDetail_CategoryName">
+    <End Type="SANITARIUMModel.CategoryInfo" Role="CategoryInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosticTestDetail">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubCategoryInfo_CategoryInfo">
+    <End Type="SANITARIUMModel.CategoryInfo" Role="CategoryInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.SubCategoryInfo" Role="SubCategoryInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubCategoryInfo">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosticTestDetail_DepartmentInfo">
+    <End Type="SANITARIUMModel.DepartmentInfo" Role="DepartmentInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DepartmentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosticTestDetail">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosticTestDetail_GroupInfo">
+    <End Type="SANITARIUMModel.GroupInfo" Role="GroupInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosticTestDetail">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosticTestDetail_SpecimenInfo">
+    <End Type="SANITARIUMModel.SpecimenInfo" Role="SpecimenInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpecimenInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosticTestDetail">
+        <PropertyRef Name="SpecimenId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosticTestDetail_SubCategoryInfo">
+    <End Type="SANITARIUMModel.SubCategoryInfo" Role="SubCategoryInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubCategoryInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosticTestDetail">
+        <PropertyRef Name="SubCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

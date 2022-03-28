@@ -1,0 +1,35 @@
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.MotherForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.Properties.Resources.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.csproj.GenerateResource.Cache
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\bin\Debug\SanitariumProject.exe
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\bin\Debug\SanitariumProject.pdb
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.exe
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.pdb
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.DepartmentForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\bin\Debug\SanitariumProject.exe.config
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.FastForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.GroupForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.SpecimenForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.csprojResolveAssemblyReference.cache
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.CategoryForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.SubCategoryForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.DiognosisTestDetailForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\bin\Debug\SanitariumProject.exe.config
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\bin\Debug\SanitariumProject.exe
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\bin\Debug\SanitariumProject.pdb
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.csprojResolveAssemblyReference.cache
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.CategoryForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.CreateUserForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.DepartmentForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.DiognosisTestDetailForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.FastForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.GroupForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.LoginForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.MotherForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.Properties.Resources.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.SpecimenForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.SubCategoryForm.resources
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.csproj.GenerateResource.Cache
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.exe
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.pdb
+E:\Softwer Devolopment\Hospital\Hospital_Managment_System\SanitariumProject\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.DiognosisTestDetailForm2.resources

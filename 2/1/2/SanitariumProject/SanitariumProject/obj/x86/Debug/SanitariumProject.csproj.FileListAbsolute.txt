@@ -1,0 +1,16 @@
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.MotherForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.Properties.Resources.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.csproj.GenerateResource.Cache
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\bin\Debug\SanitariumProject.exe
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\bin\Debug\SanitariumProject.pdb
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.exe
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.pdb
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.DepartmentForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\bin\Debug\SanitariumProject.exe.config
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.FastForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.GroupForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.SpecimenForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.csprojResolveAssemblyReference.cache
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.CategoryForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.SubCategoryForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\Web\SanitariumProject\SanitariumProject\obj\x86\Debug\SanitariumProject.DiognosisTestDetailForm.resources
