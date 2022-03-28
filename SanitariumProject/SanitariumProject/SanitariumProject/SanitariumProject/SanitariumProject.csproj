@@ -172,6 +172,7 @@
       <DependentUpon>SubCategoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.Config" />
+    <None Include="Properties\DataSources\SANITARIUMEntities.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
