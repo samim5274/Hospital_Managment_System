@@ -56,7 +56,7 @@
             this.createAccountToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1225, 39);
+            this.menuStrip1.Size = new System.Drawing.Size(1225, 33);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -68,43 +68,43 @@
             this.categoryDetailToolStripMenuItem,
             this.subCategoryDetailToolStripMenuItem,
             this.specimenDetailToolStripMenuItem});
-            this.generalToolStripMenuItem.Font = new System.Drawing.Font("Titillium Web", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.generalToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
-            this.generalToolStripMenuItem.Size = new System.Drawing.Size(91, 35);
+            this.generalToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
             this.generalToolStripMenuItem.Text = "General";
             // 
             // departmentDetailToolStripMenuItem
             // 
             this.departmentDetailToolStripMenuItem.Name = "departmentDetailToolStripMenuItem";
-            this.departmentDetailToolStripMenuItem.Size = new System.Drawing.Size(254, 36);
+            this.departmentDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
             this.departmentDetailToolStripMenuItem.Text = "Department Detail";
             this.departmentDetailToolStripMenuItem.Click += new System.EventHandler(this.departmentDetailToolStripMenuItem_Click);
             // 
             // groupDetailToolStripMenuItem
             // 
             this.groupDetailToolStripMenuItem.Name = "groupDetailToolStripMenuItem";
-            this.groupDetailToolStripMenuItem.Size = new System.Drawing.Size(254, 36);
+            this.groupDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
             this.groupDetailToolStripMenuItem.Text = "Group Detail";
             this.groupDetailToolStripMenuItem.Click += new System.EventHandler(this.groupDetailToolStripMenuItem_Click);
             // 
             // categoryDetailToolStripMenuItem
             // 
             this.categoryDetailToolStripMenuItem.Name = "categoryDetailToolStripMenuItem";
-            this.categoryDetailToolStripMenuItem.Size = new System.Drawing.Size(254, 36);
+            this.categoryDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
             this.categoryDetailToolStripMenuItem.Text = "Category Detail";
             this.categoryDetailToolStripMenuItem.Click += new System.EventHandler(this.categoryDetailToolStripMenuItem_Click);
             // 
             // subCategoryDetailToolStripMenuItem
             // 
             this.subCategoryDetailToolStripMenuItem.Name = "subCategoryDetailToolStripMenuItem";
-            this.subCategoryDetailToolStripMenuItem.Size = new System.Drawing.Size(254, 36);
+            this.subCategoryDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
             this.subCategoryDetailToolStripMenuItem.Text = "Sub Category Detail";
             this.subCategoryDetailToolStripMenuItem.Click += new System.EventHandler(this.subCategoryDetailToolStripMenuItem_Click);
             // 
             // specimenDetailToolStripMenuItem
             // 
             this.specimenDetailToolStripMenuItem.Name = "specimenDetailToolStripMenuItem";
-            this.specimenDetailToolStripMenuItem.Size = new System.Drawing.Size(254, 36);
+            this.specimenDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
             this.specimenDetailToolStripMenuItem.Text = "Specimen Detail";
             this.specimenDetailToolStripMenuItem.Click += new System.EventHandler(this.specimenDetailToolStripMenuItem_Click);
             // 
@@ -113,50 +113,51 @@
             this.outdoorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saleOfTestToolStripMenuItem,
             this.testSaleToolStripMenuItem});
-            this.outdoorToolStripMenuItem.Font = new System.Drawing.Font("Titillium Web", 12F);
+            this.outdoorToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.outdoorToolStripMenuItem.Name = "outdoorToolStripMenuItem";
-            this.outdoorToolStripMenuItem.Size = new System.Drawing.Size(135, 35);
+            this.outdoorToolStripMenuItem.Size = new System.Drawing.Size(133, 29);
             this.outdoorToolStripMenuItem.Text = "Investigation";
             // 
             // saleOfTestToolStripMenuItem
             // 
             this.saleOfTestToolStripMenuItem.Name = "saleOfTestToolStripMenuItem";
-            this.saleOfTestToolStripMenuItem.Size = new System.Drawing.Size(176, 36);
+            this.saleOfTestToolStripMenuItem.Size = new System.Drawing.Size(177, 30);
             this.saleOfTestToolStripMenuItem.Text = "Test Detail";
             this.saleOfTestToolStripMenuItem.Click += new System.EventHandler(this.saleOfTestToolStripMenuItem_Click);
             // 
             // testSaleToolStripMenuItem
             // 
             this.testSaleToolStripMenuItem.Name = "testSaleToolStripMenuItem";
-            this.testSaleToolStripMenuItem.Size = new System.Drawing.Size(176, 36);
+            this.testSaleToolStripMenuItem.Size = new System.Drawing.Size(177, 30);
             this.testSaleToolStripMenuItem.Text = "Test Sale";
+            this.testSaleToolStripMenuItem.Click += new System.EventHandler(this.testSaleToolStripMenuItem_Click);
             // 
             // indoorToolStripMenuItem
             // 
-            this.indoorToolStripMenuItem.Font = new System.Drawing.Font("Titillium Web", 12F);
+            this.indoorToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.indoorToolStripMenuItem.Name = "indoorToolStripMenuItem";
-            this.indoorToolStripMenuItem.Size = new System.Drawing.Size(84, 35);
+            this.indoorToolStripMenuItem.Size = new System.Drawing.Size(81, 29);
             this.indoorToolStripMenuItem.Text = "Report";
             // 
             // accountToolStripMenuItem
             // 
-            this.accountToolStripMenuItem.Font = new System.Drawing.Font("Titillium Web", 12F);
+            this.accountToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
-            this.accountToolStripMenuItem.Size = new System.Drawing.Size(88, 35);
+            this.accountToolStripMenuItem.Size = new System.Drawing.Size(84, 29);
             this.accountToolStripMenuItem.Text = "History";
             // 
             // accountToolStripMenuItem1
             // 
-            this.accountToolStripMenuItem1.Font = new System.Drawing.Font("Titillium Web", 12F);
+            this.accountToolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.accountToolStripMenuItem1.Name = "accountToolStripMenuItem1";
-            this.accountToolStripMenuItem1.Size = new System.Drawing.Size(96, 35);
+            this.accountToolStripMenuItem1.Size = new System.Drawing.Size(96, 29);
             this.accountToolStripMenuItem1.Text = "Account";
             // 
             // createAccountToolStripMenuItem
             // 
-            this.createAccountToolStripMenuItem.Font = new System.Drawing.Font("Titillium Web", 12F);
+            this.createAccountToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.createAccountToolStripMenuItem.Name = "createAccountToolStripMenuItem";
-            this.createAccountToolStripMenuItem.Size = new System.Drawing.Size(155, 35);
+            this.createAccountToolStripMenuItem.Size = new System.Drawing.Size(160, 29);
             this.createAccountToolStripMenuItem.Text = "Create Account";
             this.createAccountToolStripMenuItem.Click += new System.EventHandler(this.createAccountToolStripMenuItem_Click);
             // 

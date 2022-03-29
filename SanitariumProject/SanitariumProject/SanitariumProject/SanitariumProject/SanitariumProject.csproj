@@ -128,6 +128,12 @@
     <Compile Include="SubCategoryForm.Designer.cs">
       <DependentUpon>SubCategoryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestSaleForm.Designer.cs">
+      <DependentUpon>TestSaleForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CategoryForm.resx">
       <DependentUpon>CategoryForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubCategoryForm.resx">
       <DependentUpon>SubCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSaleForm.resx">
+      <DependentUpon>TestSaleForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.Config" />
     <None Include="Properties\DataSources\SANITARIUMEntities.datasource" />
