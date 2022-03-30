@@ -274,5 +274,10 @@ namespace SanitariumProject
         {
 
         }
+
+        private void cbxCatName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbxSubCatName.Text = cbxCatName.Text;
+        }
     }
 }

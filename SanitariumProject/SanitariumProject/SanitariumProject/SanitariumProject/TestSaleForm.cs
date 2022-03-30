@@ -79,5 +79,10 @@ namespace SanitariumProject
             cbxGender.ValueMember = "Id";
             cbxGender.DataSource = list;
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

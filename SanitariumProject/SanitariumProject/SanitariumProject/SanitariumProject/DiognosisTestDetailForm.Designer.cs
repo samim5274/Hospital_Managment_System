@@ -269,6 +269,7 @@
             this.cbxCatName.Name = "cbxCatName";
             this.cbxCatName.Size = new System.Drawing.Size(249, 37);
             this.cbxCatName.TabIndex = 27;
+            this.cbxCatName.SelectedIndexChanged += new System.EventHandler(this.cbxCatName_SelectedIndexChanged);
             // 
             // cbxSubCatName
             // 
