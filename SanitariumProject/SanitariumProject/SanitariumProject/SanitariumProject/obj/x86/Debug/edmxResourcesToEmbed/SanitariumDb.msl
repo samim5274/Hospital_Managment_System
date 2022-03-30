@@ -15,6 +15,14 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <EntitySetMapping Name="AgeStatusInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.AgeStatusInfo">
+        <MappingFragment StoreEntitySet="AgeStatusInfo">
+          <ScalarProperty Name="AgeStatus" ColumnName="AgeStatus" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="CategoryInfoes">
       <EntityTypeMapping TypeName="SANITARIUMModel.CategoryInfo">
         <MappingFragment StoreEntitySet="CategoryInfo">
@@ -27,6 +35,27 @@
       <EntityTypeMapping TypeName="SANITARIUMModel.DepartmentInfo">
         <MappingFragment StoreEntitySet="DepartmentInfo">
           <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DignosisTestSaleInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.DignosisTestSaleInfo">
+        <MappingFragment StoreEntitySet="DignosisTestSaleInfo">
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Due" ColumnName="Due" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Total_Cost" ColumnName="Total_Cost" />
+          <ScalarProperty Name="DiscountAuthorityId" ColumnName="DiscountAuthorityId" />
+          <ScalarProperty Name="ReferId" ColumnName="ReferId" />
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="AgeStatusId" ColumnName="AgeStatusId" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -46,10 +75,67 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="DiscountAuthorityInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.DiscountAuthorityInfo">
+        <MappingFragment StoreEntitySet="DiscountAuthorityInfo">
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DoctorInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.DoctorInfo">
+        <MappingFragment StoreEntitySet="DoctorInfo">
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Degree" ColumnName="Degree" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GenderInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.GenderInfo">
+        <MappingFragment StoreEntitySet="GenderInfo">
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="GroupInfoes">
       <EntityTypeMapping TypeName="SANITARIUMModel.GroupInfo">
         <MappingFragment StoreEntitySet="GroupInfo">
           <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MarketingInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.MarketingInfo">
+        <MappingFragment StoreEntitySet="MarketingInfo">
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.ReferInfo">
+        <MappingFragment StoreEntitySet="ReferInfo">
+          <ScalarProperty Name="MarketingOfficerId" ColumnName="MarketingOfficerId" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -79,6 +165,14 @@
           <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />
           <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeInfoes">
+      <EntityTypeMapping TypeName="SANITARIUMModel.TypeInfo">
+        <MappingFragment StoreEntitySet="TypeInfo">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

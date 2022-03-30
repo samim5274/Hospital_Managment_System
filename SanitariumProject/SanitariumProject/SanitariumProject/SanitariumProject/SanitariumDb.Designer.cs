@@ -19,18 +19,23 @@ using System.Xml.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
 
+[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_AgeStatusInfo", "AgeStatusInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.AgeStatusInfo), "DignosisTestSaleInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DignosisTestSaleInfo), true)]
 [assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DignosticTestDetail_CategoryName", "CategoryInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.CategoryInfo), "DignosticTestDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DignosticTestDetail), true)]
 [assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_SubCategoryInfo_CategoryInfo", "CategoryInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.CategoryInfo), "SubCategoryInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.SubCategoryInfo), true)]
 [assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DignosticTestDetail_DepartmentInfo", "DepartmentInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.DepartmentInfo), "DignosticTestDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DignosticTestDetail), true)]
+[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_DiscountAuthorityInfo", "DiscountAuthorityInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.DiscountAuthorityInfo), "DignosisTestSaleInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DignosisTestSaleInfo), true)]
+[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_DoctorInfo", "DoctorInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.DoctorInfo), "DignosisTestSaleInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DignosisTestSaleInfo), true)]
+[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_GenderInfo", "GenderInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.GenderInfo), "DignosisTestSaleInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DignosisTestSaleInfo), true)]
+[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_ReferInfo", "ReferInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.ReferInfo), "DignosisTestSaleInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DignosisTestSaleInfo), true)]
 [assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DignosticTestDetail_GroupInfo", "GroupInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.GroupInfo), "DignosticTestDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DignosticTestDetail), true)]
 [assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DignosticTestDetail_SpecimenInfo", "SpecimenInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.SpecimenInfo), "DignosticTestDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DignosticTestDetail), true)]
 [assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DignosticTestDetail_SubCategoryInfo", "SubCategoryInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.SubCategoryInfo), "DignosticTestDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DignosticTestDetail), true)]
 [assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DiscountAuthorityInfo_GenderInfo", "GenderInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.GenderInfo), "DiscountAuthorityInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DiscountAuthorityInfo), true)]
 [assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DiscountAuthorityInfo_TypeInfo", "TypeInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.TypeInfo), "DiscountAuthorityInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DiscountAuthorityInfo), true)]
-[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DoctorInf_GenderInfo", "GenderInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.GenderInfo), "DoctorInf", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DoctorInf), true)]
-[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_MarketingInfo_GenderInfo", "GenderInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(SanitariumProject.GenderInfo), "MarketingInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.MarketingInfo), true)]
+[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_DoctorInfo_GenderInfo", "GenderInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.GenderInfo), "DoctorInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.DoctorInfo), true)]
+[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_MarketingInfo_GenderInfo1", "GenderInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.GenderInfo), "MarketingInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.MarketingInfo), true)]
 [assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_ReferInfo_GenderInfo", "GenderInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.GenderInfo), "ReferInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.ReferInfo), true)]
-[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_ReferInfo_MarketingInfo", "MarketingInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.MarketingInfo), "ReferInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.ReferInfo), true)]
+[assembly: EdmRelationshipAttribute("SANITARIUMModel", "FK_ReferInfo_MarketingInfo1", "MarketingInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SanitariumProject.MarketingInfo), "ReferInfo", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SanitariumProject.ReferInfo), true)]
 
 #endregion
 
@@ -133,6 +138,22 @@ namespace SanitariumProject
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<DignosisTestSaleInfo> DignosisTestSaleInfoes
+        {
+            get
+            {
+                if ((_DignosisTestSaleInfoes == null))
+                {
+                    _DignosisTestSaleInfoes = base.CreateObjectSet<DignosisTestSaleInfo>("DignosisTestSaleInfoes");
+                }
+                return _DignosisTestSaleInfoes;
+            }
+        }
+        private ObjectSet<DignosisTestSaleInfo> _DignosisTestSaleInfoes;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<DignosticTestDetail> DignosticTestDetails
         {
             get
@@ -165,18 +186,18 @@ namespace SanitariumProject
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<DoctorInf> DoctorInfs
+        public ObjectSet<DoctorInfo> DoctorInfoes
         {
             get
             {
-                if ((_DoctorInfs == null))
+                if ((_DoctorInfoes == null))
                 {
-                    _DoctorInfs = base.CreateObjectSet<DoctorInf>("DoctorInfs");
+                    _DoctorInfoes = base.CreateObjectSet<DoctorInfo>("DoctorInfoes");
                 }
-                return _DoctorInfs;
+                return _DoctorInfoes;
             }
         }
-        private ObjectSet<DoctorInf> _DoctorInfs;
+        private ObjectSet<DoctorInfo> _DoctorInfoes;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -351,6 +372,14 @@ namespace SanitariumProject
         }
     
         /// <summary>
+        /// Deprecated Method for adding a new object to the DignosisTestSaleInfoes EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToDignosisTestSaleInfoes(DignosisTestSaleInfo dignosisTestSaleInfo)
+        {
+            base.AddObject("DignosisTestSaleInfoes", dignosisTestSaleInfo);
+        }
+    
+        /// <summary>
         /// Deprecated Method for adding a new object to the DignosticTestDetails EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddToDignosticTestDetails(DignosticTestDetail dignosticTestDetail)
@@ -367,11 +396,11 @@ namespace SanitariumProject
         }
     
         /// <summary>
-        /// Deprecated Method for adding a new object to the DoctorInfs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// Deprecated Method for adding a new object to the DoctorInfoes EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
-        public void AddToDoctorInfs(DoctorInf doctorInf)
+        public void AddToDoctorInfoes(DoctorInfo doctorInfo)
         {
-            base.AddObject("DoctorInfs", doctorInf);
+            base.AddObject("DoctorInfoes", doctorInfo);
         }
     
         /// <summary>
@@ -545,6 +574,32 @@ namespace SanitariumProject
         #endregion
 
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_AgeStatusInfo", "DignosisTestSaleInfo")]
+        public EntityCollection<DignosisTestSaleInfo> DignosisTestSaleInfoes
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DignosisTestSaleInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo", "DignosisTestSaleInfo");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DignosisTestSaleInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo", "DignosisTestSaleInfo", value);
+                }
+            }
+        }
+
+        #endregion
+
     }
     
     /// <summary>
@@ -775,6 +830,593 @@ namespace SanitariumProject
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DignosticTestDetail>("SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo", "DignosticTestDetail", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="SANITARIUMModel", Name="DignosisTestSaleInfo")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class DignosisTestSaleInfo : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new DignosisTestSaleInfo object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        public static DignosisTestSaleInfo CreateDignosisTestSaleInfo(global::System.Int32 id)
+        {
+            DignosisTestSaleInfo dignosisTestSaleInfo = new DignosisTestSaleInfo();
+            dignosisTestSaleInfo.Id = id;
+            return dignosisTestSaleInfo;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> Date
+        {
+            get
+            {
+                return _Date;
+            }
+            set
+            {
+                OnDateChanging(value);
+                ReportPropertyChanging("Date");
+                _Date = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Date");
+                OnDateChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _Date;
+        partial void OnDateChanging(Nullable<global::System.DateTime> value);
+        partial void OnDateChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Name
+        {
+            get
+            {
+                return _Name;
+            }
+            set
+            {
+                OnNameChanging(value);
+                ReportPropertyChanging("Name");
+                _Name = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Name");
+                OnNameChanged();
+            }
+        }
+        private global::System.String _Name;
+        partial void OnNameChanging(global::System.String value);
+        partial void OnNameChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Address
+        {
+            get
+            {
+                return _Address;
+            }
+            set
+            {
+                OnAddressChanging(value);
+                ReportPropertyChanging("Address");
+                _Address = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Address");
+                OnAddressChanged();
+            }
+        }
+        private global::System.String _Address;
+        partial void OnAddressChanging(global::System.String value);
+        partial void OnAddressChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> GenderId
+        {
+            get
+            {
+                return _GenderId;
+            }
+            set
+            {
+                OnGenderIdChanging(value);
+                ReportPropertyChanging("GenderId");
+                _GenderId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("GenderId");
+                OnGenderIdChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _GenderId;
+        partial void OnGenderIdChanging(Nullable<global::System.Int32> value);
+        partial void OnGenderIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Age
+        {
+            get
+            {
+                return _Age;
+            }
+            set
+            {
+                OnAgeChanging(value);
+                ReportPropertyChanging("Age");
+                _Age = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Age");
+                OnAgeChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Age;
+        partial void OnAgeChanging(Nullable<global::System.Int32> value);
+        partial void OnAgeChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> AgeStatusId
+        {
+            get
+            {
+                return _AgeStatusId;
+            }
+            set
+            {
+                OnAgeStatusIdChanging(value);
+                ReportPropertyChanging("AgeStatusId");
+                _AgeStatusId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("AgeStatusId");
+                OnAgeStatusIdChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _AgeStatusId;
+        partial void OnAgeStatusIdChanging(Nullable<global::System.Int32> value);
+        partial void OnAgeStatusIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Phone
+        {
+            get
+            {
+                return _Phone;
+            }
+            set
+            {
+                OnPhoneChanging(value);
+                ReportPropertyChanging("Phone");
+                _Phone = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Phone");
+                OnPhoneChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Phone;
+        partial void OnPhoneChanging(Nullable<global::System.Int32> value);
+        partial void OnPhoneChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> DoctorId
+        {
+            get
+            {
+                return _DoctorId;
+            }
+            set
+            {
+                OnDoctorIdChanging(value);
+                ReportPropertyChanging("DoctorId");
+                _DoctorId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DoctorId");
+                OnDoctorIdChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _DoctorId;
+        partial void OnDoctorIdChanging(Nullable<global::System.Int32> value);
+        partial void OnDoctorIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> ReferId
+        {
+            get
+            {
+                return _ReferId;
+            }
+            set
+            {
+                OnReferIdChanging(value);
+                ReportPropertyChanging("ReferId");
+                _ReferId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ReferId");
+                OnReferIdChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _ReferId;
+        partial void OnReferIdChanging(Nullable<global::System.Int32> value);
+        partial void OnReferIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> DiscountAuthorityId
+        {
+            get
+            {
+                return _DiscountAuthorityId;
+            }
+            set
+            {
+                OnDiscountAuthorityIdChanging(value);
+                ReportPropertyChanging("DiscountAuthorityId");
+                _DiscountAuthorityId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DiscountAuthorityId");
+                OnDiscountAuthorityIdChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _DiscountAuthorityId;
+        partial void OnDiscountAuthorityIdChanging(Nullable<global::System.Int32> value);
+        partial void OnDiscountAuthorityIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Total_Cost
+        {
+            get
+            {
+                return _Total_Cost;
+            }
+            set
+            {
+                OnTotal_CostChanging(value);
+                ReportPropertyChanging("Total_Cost");
+                _Total_Cost = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Total_Cost");
+                OnTotal_CostChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Total_Cost;
+        partial void OnTotal_CostChanging(Nullable<global::System.Int32> value);
+        partial void OnTotal_CostChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Discount
+        {
+            get
+            {
+                return _Discount;
+            }
+            set
+            {
+                OnDiscountChanging(value);
+                ReportPropertyChanging("Discount");
+                _Discount = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Discount");
+                OnDiscountChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Discount;
+        partial void OnDiscountChanging(Nullable<global::System.Int32> value);
+        partial void OnDiscountChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Due
+        {
+            get
+            {
+                return _Due;
+            }
+            set
+            {
+                OnDueChanging(value);
+                ReportPropertyChanging("Due");
+                _Due = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Due");
+                OnDueChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Due;
+        partial void OnDueChanging(Nullable<global::System.Int32> value);
+        partial void OnDueChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Paid
+        {
+            get
+            {
+                return _Paid;
+            }
+            set
+            {
+                OnPaidChanging(value);
+                ReportPropertyChanging("Paid");
+                _Paid = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Paid");
+                OnPaidChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Paid;
+        partial void OnPaidChanging(Nullable<global::System.Int32> value);
+        partial void OnPaidChanged();
+
+        #endregion
+
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_AgeStatusInfo", "AgeStatusInfo")]
+        public AgeStatusInfo AgeStatusInfo
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<AgeStatusInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo", "AgeStatusInfo").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<AgeStatusInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo", "AgeStatusInfo").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<AgeStatusInfo> AgeStatusInfoReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<AgeStatusInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo", "AgeStatusInfo");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<AgeStatusInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo", "AgeStatusInfo", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_DiscountAuthorityInfo", "DiscountAuthorityInfo")]
+        public DiscountAuthorityInfo DiscountAuthorityInfo
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<DiscountAuthorityInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo", "DiscountAuthorityInfo").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<DiscountAuthorityInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo", "DiscountAuthorityInfo").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<DiscountAuthorityInfo> DiscountAuthorityInfoReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<DiscountAuthorityInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo", "DiscountAuthorityInfo");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<DiscountAuthorityInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo", "DiscountAuthorityInfo", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_DoctorInfo", "DoctorInfo")]
+        public DoctorInfo DoctorInfo
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<DoctorInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo", "DoctorInfo").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<DoctorInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo", "DoctorInfo").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<DoctorInfo> DoctorInfoReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<DoctorInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo", "DoctorInfo");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<DoctorInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo", "DoctorInfo", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_GenderInfo", "GenderInfo")]
+        public GenderInfo GenderInfo
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_GenderInfo", "GenderInfo").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_GenderInfo", "GenderInfo").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<GenderInfo> GenderInfoReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_GenderInfo", "GenderInfo");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<GenderInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_GenderInfo", "GenderInfo", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_ReferInfo", "ReferInfo")]
+        public ReferInfo ReferInfo
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ReferInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_ReferInfo", "ReferInfo").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ReferInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_ReferInfo", "ReferInfo").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<ReferInfo> ReferInfoReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ReferInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_ReferInfo", "ReferInfo");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<ReferInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_ReferInfo", "ReferInfo", value);
                 }
             }
         }
@@ -1409,6 +2051,28 @@ namespace SanitariumProject
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_DiscountAuthorityInfo", "DignosisTestSaleInfo")]
+        public EntityCollection<DignosisTestSaleInfo> DignosisTestSaleInfoes
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DignosisTestSaleInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo", "DignosisTestSaleInfo");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DignosisTestSaleInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo", "DignosisTestSaleInfo", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DiscountAuthorityInfo_GenderInfo", "GenderInfo")]
         public GenderInfo GenderInfo
         {
@@ -1486,22 +2150,22 @@ namespace SanitariumProject
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="SANITARIUMModel", Name="DoctorInf")]
+    [EdmEntityTypeAttribute(NamespaceName="SANITARIUMModel", Name="DoctorInfo")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
-    public partial class DoctorInf : EntityObject
+    public partial class DoctorInfo : EntityObject
     {
         #region Factory Method
     
         /// <summary>
-        /// Create a new DoctorInf object.
+        /// Create a new DoctorInfo object.
         /// </summary>
         /// <param name="id">Initial value of the Id property.</param>
-        public static DoctorInf CreateDoctorInf(global::System.Int32 id)
+        public static DoctorInfo CreateDoctorInfo(global::System.Int32 id)
         {
-            DoctorInf doctorInf = new DoctorInf();
-            doctorInf.Id = id;
-            return doctorInf;
+            DoctorInfo doctorInfo = new DoctorInfo();
+            doctorInfo.Id = id;
+            return doctorInfo;
         }
 
         #endregion
@@ -1690,16 +2354,38 @@ namespace SanitariumProject
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DoctorInf_GenderInfo", "GenderInfo")]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_DoctorInfo", "DignosisTestSaleInfo")]
+        public EntityCollection<DignosisTestSaleInfo> DignosisTestSaleInfoes
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DignosisTestSaleInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo", "DignosisTestSaleInfo");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DignosisTestSaleInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo", "DignosisTestSaleInfo", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DoctorInfo_GenderInfo", "GenderInfo")]
         public GenderInfo GenderInfo
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_DoctorInf_GenderInfo", "GenderInfo").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_DoctorInfo_GenderInfo", "GenderInfo").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_DoctorInf_GenderInfo", "GenderInfo").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_DoctorInfo_GenderInfo", "GenderInfo").Value = value;
             }
         }
         /// <summary>
@@ -1711,13 +2397,13 @@ namespace SanitariumProject
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_DoctorInf_GenderInfo", "GenderInfo");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_DoctorInfo_GenderInfo", "GenderInfo");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<GenderInfo>("SANITARIUMModel.FK_DoctorInf_GenderInfo", "GenderInfo", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<GenderInfo>("SANITARIUMModel.FK_DoctorInfo_GenderInfo", "GenderInfo", value);
                 }
             }
         }
@@ -1813,6 +2499,28 @@ namespace SanitariumProject
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_GenderInfo", "DignosisTestSaleInfo")]
+        public EntityCollection<DignosisTestSaleInfo> DignosisTestSaleInfoes
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DignosisTestSaleInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_GenderInfo", "DignosisTestSaleInfo");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DignosisTestSaleInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_GenderInfo", "DignosisTestSaleInfo", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DiscountAuthorityInfo_GenderInfo", "DiscountAuthorityInfo")]
         public EntityCollection<DiscountAuthorityInfo> DiscountAuthorityInfoes
         {
@@ -1835,18 +2543,18 @@ namespace SanitariumProject
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DoctorInf_GenderInfo", "DoctorInf")]
-        public EntityCollection<DoctorInf> DoctorInfs
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DoctorInfo_GenderInfo", "DoctorInfo")]
+        public EntityCollection<DoctorInfo> DoctorInfoes
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DoctorInf>("SANITARIUMModel.FK_DoctorInf_GenderInfo", "DoctorInf");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DoctorInfo>("SANITARIUMModel.FK_DoctorInfo_GenderInfo", "DoctorInfo");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DoctorInf>("SANITARIUMModel.FK_DoctorInf_GenderInfo", "DoctorInf", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DoctorInfo>("SANITARIUMModel.FK_DoctorInfo_GenderInfo", "DoctorInfo", value);
                 }
             }
         }
@@ -1857,18 +2565,18 @@ namespace SanitariumProject
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_MarketingInfo_GenderInfo", "MarketingInfo")]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_MarketingInfo_GenderInfo1", "MarketingInfo")]
         public EntityCollection<MarketingInfo> MarketingInfoes
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<MarketingInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo", "MarketingInfo");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<MarketingInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo1", "MarketingInfo");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<MarketingInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo", "MarketingInfo", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<MarketingInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo1", "MarketingInfo", value);
                 }
             }
         }
@@ -1896,7 +2604,6 @@ namespace SanitariumProject
         }
 
         #endregion
-
     }
     
     /// <summary>
@@ -2020,12 +2727,10 @@ namespace SanitariumProject
         /// Create a new MarketingInfo object.
         /// </summary>
         /// <param name="id">Initial value of the Id property.</param>
-        /// <param name="genderId">Initial value of the GenderId property.</param>
-        public static MarketingInfo CreateMarketingInfo(global::System.Int32 id, global::System.Int32 genderId)
+        public static MarketingInfo CreateMarketingInfo(global::System.Int32 id)
         {
             MarketingInfo marketingInfo = new MarketingInfo();
             marketingInfo.Id = id;
-            marketingInfo.GenderId = genderId;
             return marketingInfo;
         }
 
@@ -2087,9 +2792,9 @@ namespace SanitariumProject
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.Int32 GenderId
+        public Nullable<global::System.Int32> GenderId
         {
             get
             {
@@ -2104,8 +2809,8 @@ namespace SanitariumProject
                 OnGenderIdChanged();
             }
         }
-        private global::System.Int32 _GenderId;
-        partial void OnGenderIdChanging(global::System.Int32 value);
+        private Nullable<global::System.Int32> _GenderId;
+        partial void OnGenderIdChanging(Nullable<global::System.Int32> value);
         partial void OnGenderIdChanged();
     
         /// <summary>
@@ -2191,16 +2896,16 @@ namespace SanitariumProject
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_MarketingInfo_GenderInfo", "GenderInfo")]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_MarketingInfo_GenderInfo1", "GenderInfo")]
         public GenderInfo GenderInfo
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo", "GenderInfo").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo1", "GenderInfo").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo", "GenderInfo").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo1", "GenderInfo").Value = value;
             }
         }
         /// <summary>
@@ -2212,13 +2917,13 @@ namespace SanitariumProject
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo", "GenderInfo");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<GenderInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo1", "GenderInfo");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<GenderInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo", "GenderInfo", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<GenderInfo>("SANITARIUMModel.FK_MarketingInfo_GenderInfo1", "GenderInfo", value);
                 }
             }
         }
@@ -2229,18 +2934,18 @@ namespace SanitariumProject
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_ReferInfo_MarketingInfo", "ReferInfo")]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_ReferInfo_MarketingInfo1", "ReferInfo")]
         public EntityCollection<ReferInfo> ReferInfoes
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<ReferInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo", "ReferInfo");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<ReferInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo1", "ReferInfo");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<ReferInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo", "ReferInfo", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<ReferInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo1", "ReferInfo", value);
                 }
             }
         }
@@ -2432,6 +3137,28 @@ namespace SanitariumProject
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_DignosisTestSaleInfo_ReferInfo", "DignosisTestSaleInfo")]
+        public EntityCollection<DignosisTestSaleInfo> DignosisTestSaleInfoes
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DignosisTestSaleInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_ReferInfo", "DignosisTestSaleInfo");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DignosisTestSaleInfo>("SANITARIUMModel.FK_DignosisTestSaleInfo_ReferInfo", "DignosisTestSaleInfo", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_ReferInfo_GenderInfo", "GenderInfo")]
         public GenderInfo GenderInfo
         {
@@ -2470,16 +3197,16 @@ namespace SanitariumProject
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_ReferInfo_MarketingInfo", "MarketingInfo")]
+        [EdmRelationshipNavigationPropertyAttribute("SANITARIUMModel", "FK_ReferInfo_MarketingInfo1", "MarketingInfo")]
         public MarketingInfo MarketingInfo
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<MarketingInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo", "MarketingInfo").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<MarketingInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo1", "MarketingInfo").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<MarketingInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo", "MarketingInfo").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<MarketingInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo1", "MarketingInfo").Value = value;
             }
         }
         /// <summary>
@@ -2491,13 +3218,13 @@ namespace SanitariumProject
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<MarketingInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo", "MarketingInfo");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<MarketingInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo1", "MarketingInfo");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<MarketingInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo", "MarketingInfo", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<MarketingInfo>("SANITARIUMModel.FK_ReferInfo_MarketingInfo1", "MarketingInfo", value);
                 }
             }
         }

@@ -2,14 +2,26 @@
 <Schema Namespace="SANITARIUMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
   <EntityContainer Name="SANITARIUMEntities" annotation:LazyLoadingEnabled="true">
     <FunctionImport Name="SP_ALL_TEST_NAME" ReturnType="Collection(SANITARIUMModel.SP_ALL_TEST_NAME_Result)" />
+    <EntitySet Name="AgeStatusInfoes" EntityType="SANITARIUMModel.AgeStatusInfo" />
     <EntitySet Name="CategoryInfoes" EntityType="SANITARIUMModel.CategoryInfo" />
     <EntitySet Name="DepartmentInfoes" EntityType="SANITARIUMModel.DepartmentInfo" />
+    <EntitySet Name="DignosisTestSaleInfoes" EntityType="SANITARIUMModel.DignosisTestSaleInfo" />
     <EntitySet Name="DignosticTestDetails" EntityType="SANITARIUMModel.DignosticTestDetail" />
+    <EntitySet Name="DiscountAuthorityInfoes" EntityType="SANITARIUMModel.DiscountAuthorityInfo" />
+    <EntitySet Name="DoctorInfoes" EntityType="SANITARIUMModel.DoctorInfo" />
+    <EntitySet Name="GenderInfoes" EntityType="SANITARIUMModel.GenderInfo" />
     <EntitySet Name="GroupInfoes" EntityType="SANITARIUMModel.GroupInfo" />
+    <EntitySet Name="MarketingInfoes" EntityType="SANITARIUMModel.MarketingInfo" />
+    <EntitySet Name="ReferInfoes" EntityType="SANITARIUMModel.ReferInfo" />
     <EntitySet Name="SpecimenInfoes" EntityType="SANITARIUMModel.SpecimenInfo" />
     <EntitySet Name="SubCategoryInfoes" EntityType="SANITARIUMModel.SubCategoryInfo" />
     <EntitySet Name="sysdiagrams" EntityType="SANITARIUMModel.sysdiagram" />
+    <EntitySet Name="TypeInfoes" EntityType="SANITARIUMModel.TypeInfo" />
     <EntitySet Name="UserInfoes" EntityType="SANITARIUMModel.UserInfo" />
+    <AssociationSet Name="FK_DignosisTestSaleInfo_AgeStatusInfo" Association="SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo">
+      <End Role="AgeStatusInfo" EntitySet="AgeStatusInfoes" />
+      <End Role="DignosisTestSaleInfo" EntitySet="DignosisTestSaleInfoes" />
+    </AssociationSet>
     <AssociationSet Name="FK_DignosticTestDetail_CategoryName" Association="SANITARIUMModel.FK_DignosticTestDetail_CategoryName">
       <End Role="CategoryInfo" EntitySet="CategoryInfoes" />
       <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
@@ -21,6 +33,22 @@
     <AssociationSet Name="FK_DignosticTestDetail_DepartmentInfo" Association="SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo">
       <End Role="DepartmentInfo" EntitySet="DepartmentInfoes" />
       <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosisTestSaleInfo_DiscountAuthorityInfo" Association="SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo">
+      <End Role="DiscountAuthorityInfo" EntitySet="DiscountAuthorityInfoes" />
+      <End Role="DignosisTestSaleInfo" EntitySet="DignosisTestSaleInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosisTestSaleInfo_DoctorInfo" Association="SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo">
+      <End Role="DoctorInfo" EntitySet="DoctorInfoes" />
+      <End Role="DignosisTestSaleInfo" EntitySet="DignosisTestSaleInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosisTestSaleInfo_GenderInfo" Association="SANITARIUMModel.FK_DignosisTestSaleInfo_GenderInfo">
+      <End Role="GenderInfo" EntitySet="GenderInfoes" />
+      <End Role="DignosisTestSaleInfo" EntitySet="DignosisTestSaleInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DignosisTestSaleInfo_ReferInfo" Association="SANITARIUMModel.FK_DignosisTestSaleInfo_ReferInfo">
+      <End Role="ReferInfo" EntitySet="ReferInfoes" />
+      <End Role="DignosisTestSaleInfo" EntitySet="DignosisTestSaleInfoes" />
     </AssociationSet>
     <AssociationSet Name="FK_DignosticTestDetail_GroupInfo" Association="SANITARIUMModel.FK_DignosticTestDetail_GroupInfo">
       <End Role="GroupInfo" EntitySet="GroupInfoes" />
@@ -34,6 +62,30 @@
       <End Role="SubCategoryInfo" EntitySet="SubCategoryInfoes" />
       <End Role="DignosticTestDetail" EntitySet="DignosticTestDetails" />
     </AssociationSet>
+    <AssociationSet Name="FK_DiscountAuthorityInfo_GenderInfo" Association="SANITARIUMModel.FK_DiscountAuthorityInfo_GenderInfo">
+      <End Role="GenderInfo" EntitySet="GenderInfoes" />
+      <End Role="DiscountAuthorityInfo" EntitySet="DiscountAuthorityInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DiscountAuthorityInfo_TypeInfo" Association="SANITARIUMModel.FK_DiscountAuthorityInfo_TypeInfo">
+      <End Role="TypeInfo" EntitySet="TypeInfoes" />
+      <End Role="DiscountAuthorityInfo" EntitySet="DiscountAuthorityInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DoctorInfo_GenderInfo" Association="SANITARIUMModel.FK_DoctorInfo_GenderInfo">
+      <End Role="GenderInfo" EntitySet="GenderInfoes" />
+      <End Role="DoctorInfo" EntitySet="DoctorInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MarketingInfo_GenderInfo1" Association="SANITARIUMModel.FK_MarketingInfo_GenderInfo1">
+      <End Role="GenderInfo" EntitySet="GenderInfoes" />
+      <End Role="MarketingInfo" EntitySet="MarketingInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReferInfo_GenderInfo" Association="SANITARIUMModel.FK_ReferInfo_GenderInfo">
+      <End Role="GenderInfo" EntitySet="GenderInfoes" />
+      <End Role="ReferInfo" EntitySet="ReferInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReferInfo_MarketingInfo1" Association="SANITARIUMModel.FK_ReferInfo_MarketingInfo1">
+      <End Role="MarketingInfo" EntitySet="MarketingInfoes" />
+      <End Role="ReferInfo" EntitySet="ReferInfoes" />
+    </AssociationSet>
   </EntityContainer>
   <ComplexType Name="SP_ALL_TEST_NAME_Result">
     <Property Type="String" Name="TestName" Nullable="true" MaxLength="200" />
@@ -45,6 +97,14 @@
     <Property Type="Int32" Name="TestCost" Nullable="true" />
     <Property Type="Int32" Name="RoomNo" Nullable="true" />
   </ComplexType>
+  <EntityType Name="AgeStatusInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="AgeStatus" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DignosisTestSaleInfoes" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo" FromRole="AgeStatusInfo" ToRole="DignosisTestSaleInfo" />
+  </EntityType>
   <EntityType Name="CategoryInfo">
     <Key>
       <PropertyRef Name="Id" />
@@ -61,6 +121,31 @@
     <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Type="String" Name="DepartmentName" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo" FromRole="DepartmentInfo" ToRole="DignosticTestDetail" />
+  </EntityType>
+  <EntityType Name="DignosisTestSaleInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="Date" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="GenderId" />
+    <Property Type="Int32" Name="Age" />
+    <Property Type="Int32" Name="AgeStatusId" />
+    <Property Type="Int32" Name="Phone" />
+    <Property Type="Int32" Name="DoctorId" />
+    <Property Type="Int32" Name="ReferId" />
+    <Property Type="Int32" Name="DiscountAuthorityId" />
+    <Property Type="Int32" Name="Total_Cost" />
+    <Property Type="Int32" Name="Discount" />
+    <Property Type="Int32" Name="Due" />
+    <Property Type="Int32" Name="Paid" />
+    <NavigationProperty Name="AgeStatusInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo" FromRole="DignosisTestSaleInfo" ToRole="AgeStatusInfo" />
+    <NavigationProperty Name="DiscountAuthorityInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo" FromRole="DignosisTestSaleInfo" ToRole="DiscountAuthorityInfo" />
+    <NavigationProperty Name="DoctorInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo" FromRole="DignosisTestSaleInfo" ToRole="DoctorInfo" />
+    <NavigationProperty Name="GenderInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_GenderInfo" FromRole="DignosisTestSaleInfo" ToRole="GenderInfo" />
+    <NavigationProperty Name="ReferInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_ReferInfo" FromRole="DignosisTestSaleInfo" ToRole="ReferInfo" />
   </EntityType>
   <EntityType Name="DignosticTestDetail">
     <Key>
@@ -81,6 +166,46 @@
     <NavigationProperty Name="SpecimenInfo" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SpecimenInfo" FromRole="DignosticTestDetail" ToRole="SpecimenInfo" />
     <NavigationProperty Name="SubCategoryInfo" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SubCategoryInfo" FromRole="DignosticTestDetail" ToRole="SubCategoryInfo" />
   </EntityType>
+  <EntityType Name="DiscountAuthorityInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="GenderId" />
+    <Property Type="String" Name="Address" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Phone" />
+    <Property Type="Int32" Name="TypeId" />
+    <NavigationProperty Name="DignosisTestSaleInfoes" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo" FromRole="DiscountAuthorityInfo" ToRole="DignosisTestSaleInfo" />
+    <NavigationProperty Name="GenderInfo" Relationship="SANITARIUMModel.FK_DiscountAuthorityInfo_GenderInfo" FromRole="DiscountAuthorityInfo" ToRole="GenderInfo" />
+    <NavigationProperty Name="TypeInfo" Relationship="SANITARIUMModel.FK_DiscountAuthorityInfo_TypeInfo" FromRole="DiscountAuthorityInfo" ToRole="TypeInfo" />
+  </EntityType>
+  <EntityType Name="DoctorInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="GenderId" />
+    <Property Type="String" Name="Designation" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Degree" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Phone" />
+    <NavigationProperty Name="DignosisTestSaleInfoes" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo" FromRole="DoctorInfo" ToRole="DignosisTestSaleInfo" />
+    <NavigationProperty Name="GenderInfo" Relationship="SANITARIUMModel.FK_DoctorInfo_GenderInfo" FromRole="DoctorInfo" ToRole="GenderInfo" />
+  </EntityType>
+  <EntityType Name="GenderInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Gender" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DignosisTestSaleInfoes" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_GenderInfo" FromRole="GenderInfo" ToRole="DignosisTestSaleInfo" />
+    <NavigationProperty Name="DiscountAuthorityInfoes" Relationship="SANITARIUMModel.FK_DiscountAuthorityInfo_GenderInfo" FromRole="GenderInfo" ToRole="DiscountAuthorityInfo" />
+    <NavigationProperty Name="DoctorInfoes" Relationship="SANITARIUMModel.FK_DoctorInfo_GenderInfo" FromRole="GenderInfo" ToRole="DoctorInfo" />
+    <NavigationProperty Name="MarketingInfoes" Relationship="SANITARIUMModel.FK_MarketingInfo_GenderInfo1" FromRole="GenderInfo" ToRole="MarketingInfo" />
+    <NavigationProperty Name="ReferInfoes" Relationship="SANITARIUMModel.FK_ReferInfo_GenderInfo" FromRole="GenderInfo" ToRole="ReferInfo" />
+  </EntityType>
   <EntityType Name="GroupInfo">
     <Key>
       <PropertyRef Name="Id" />
@@ -88,6 +213,33 @@
     <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Type="String" Name="GroupName" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_GroupInfo" FromRole="GroupInfo" ToRole="DignosticTestDetail" />
+  </EntityType>
+  <EntityType Name="MarketingInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="GenderId" />
+    <Property Type="String" Name="Address" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Phone" />
+    <Property Type="String" Name="Area" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GenderInfo" Relationship="SANITARIUMModel.FK_MarketingInfo_GenderInfo1" FromRole="MarketingInfo" ToRole="GenderInfo" />
+    <NavigationProperty Name="ReferInfoes" Relationship="SANITARIUMModel.FK_ReferInfo_MarketingInfo1" FromRole="MarketingInfo" ToRole="ReferInfo" />
+  </EntityType>
+  <EntityType Name="ReferInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="GenderId" />
+    <Property Type="String" Name="Address" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Phone" />
+    <Property Type="Int32" Name="MarketingOfficerId" />
+    <NavigationProperty Name="DignosisTestSaleInfoes" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_ReferInfo" FromRole="ReferInfo" ToRole="DignosisTestSaleInfo" />
+    <NavigationProperty Name="GenderInfo" Relationship="SANITARIUMModel.FK_ReferInfo_GenderInfo" FromRole="ReferInfo" ToRole="GenderInfo" />
+    <NavigationProperty Name="MarketingInfo" Relationship="SANITARIUMModel.FK_ReferInfo_MarketingInfo1" FromRole="ReferInfo" ToRole="MarketingInfo" />
   </EntityType>
   <EntityType Name="SpecimenInfo">
     <Key>
@@ -117,6 +269,14 @@
     <Property Type="Int32" Name="version" />
     <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
   </EntityType>
+  <EntityType Name="TypeInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DiscountAuthorityInfoes" Relationship="SANITARIUMModel.FK_DiscountAuthorityInfo_TypeInfo" FromRole="TypeInfo" ToRole="DiscountAuthorityInfo" />
+  </EntityType>
   <EntityType Name="UserInfo">
     <Key>
       <PropertyRef Name="Id" />
@@ -125,6 +285,18 @@
     <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
+  <Association Name="FK_DignosisTestSaleInfo_AgeStatusInfo">
+    <End Type="SANITARIUMModel.AgeStatusInfo" Role="AgeStatusInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DignosisTestSaleInfo" Role="DignosisTestSaleInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgeStatusInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosisTestSaleInfo">
+        <PropertyRef Name="AgeStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_DignosticTestDetail_CategoryName">
     <End Type="SANITARIUMModel.CategoryInfo" Role="CategoryInfo" Multiplicity="0..1" />
     <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
@@ -161,6 +333,54 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_DignosisTestSaleInfo_DiscountAuthorityInfo">
+    <End Type="SANITARIUMModel.DiscountAuthorityInfo" Role="DiscountAuthorityInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DignosisTestSaleInfo" Role="DignosisTestSaleInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DiscountAuthorityInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosisTestSaleInfo">
+        <PropertyRef Name="DiscountAuthorityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosisTestSaleInfo_DoctorInfo">
+    <End Type="SANITARIUMModel.DoctorInfo" Role="DoctorInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DignosisTestSaleInfo" Role="DignosisTestSaleInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DoctorInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosisTestSaleInfo">
+        <PropertyRef Name="DoctorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosisTestSaleInfo_GenderInfo">
+    <End Type="SANITARIUMModel.GenderInfo" Role="GenderInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DignosisTestSaleInfo" Role="DignosisTestSaleInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosisTestSaleInfo">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DignosisTestSaleInfo_ReferInfo">
+    <End Type="SANITARIUMModel.ReferInfo" Role="ReferInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DignosisTestSaleInfo" Role="DignosisTestSaleInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DignosisTestSaleInfo">
+        <PropertyRef Name="ReferId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_DignosticTestDetail_GroupInfo">
     <End Type="SANITARIUMModel.GroupInfo" Role="GroupInfo" Multiplicity="0..1" />
     <End Type="SANITARIUMModel.DignosticTestDetail" Role="DignosticTestDetail" Multiplicity="*" />
@@ -194,6 +414,78 @@
       </Principal>
       <Dependent Role="DignosticTestDetail">
         <PropertyRef Name="SubCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DiscountAuthorityInfo_GenderInfo">
+    <End Type="SANITARIUMModel.GenderInfo" Role="GenderInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DiscountAuthorityInfo" Role="DiscountAuthorityInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DiscountAuthorityInfo">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DiscountAuthorityInfo_TypeInfo">
+    <End Type="SANITARIUMModel.TypeInfo" Role="TypeInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DiscountAuthorityInfo" Role="DiscountAuthorityInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DiscountAuthorityInfo">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DoctorInfo_GenderInfo">
+    <End Type="SANITARIUMModel.GenderInfo" Role="GenderInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.DoctorInfo" Role="DoctorInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DoctorInfo">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MarketingInfo_GenderInfo1">
+    <End Type="SANITARIUMModel.GenderInfo" Role="GenderInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.MarketingInfo" Role="MarketingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MarketingInfo">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReferInfo_GenderInfo">
+    <End Type="SANITARIUMModel.GenderInfo" Role="GenderInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.ReferInfo" Role="ReferInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ReferInfo">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReferInfo_MarketingInfo1">
+    <End Type="SANITARIUMModel.MarketingInfo" Role="MarketingInfo" Multiplicity="0..1" />
+    <End Type="SANITARIUMModel.ReferInfo" Role="ReferInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MarketingInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ReferInfo">
+        <PropertyRef Name="MarketingOfficerId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
