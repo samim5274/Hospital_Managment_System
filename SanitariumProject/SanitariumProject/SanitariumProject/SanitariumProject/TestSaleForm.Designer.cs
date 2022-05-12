@@ -48,6 +48,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnTestLoad = new System.Windows.Forms.Button();
+            this.btnTestAdd = new System.Windows.Forms.Button();
+            this.btnRefLoad = new System.Windows.Forms.Button();
+            this.btnRefAdd = new System.Windows.Forms.Button();
+            this.btnDrLoad = new System.Windows.Forms.Button();
+            this.btnDrAdd = new System.Windows.Forms.Button();
             this.cbxTextName = new System.Windows.Forms.ComboBox();
             this.cbxRefer = new System.Windows.Forms.ComboBox();
             this.cbxDoctor = new System.Windows.Forms.ComboBox();
@@ -57,8 +63,13 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.AddCard = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -75,21 +86,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.txtPaidAmount = new System.Windows.Forms.TextBox();
-            this.btnDrAdd = new System.Windows.Forms.Button();
-            this.btnDrLoad = new System.Windows.Forms.Button();
-            this.btnRefAdd = new System.Windows.Forms.Button();
-            this.btnRefLoad = new System.Windows.Forms.Button();
-            this.btnTestAdd = new System.Windows.Forms.Button();
-            this.btnTestLoad = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AddCard)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
@@ -320,6 +318,61 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Another Detail";
             // 
+            // btnTestLoad
+            // 
+            this.btnTestLoad.Location = new System.Drawing.Point(934, 141);
+            this.btnTestLoad.Name = "btnTestLoad";
+            this.btnTestLoad.Size = new System.Drawing.Size(134, 37);
+            this.btnTestLoad.TabIndex = 38;
+            this.btnTestLoad.Text = "Reload";
+            this.btnTestLoad.UseVisualStyleBackColor = true;
+            // 
+            // btnTestAdd
+            // 
+            this.btnTestAdd.Location = new System.Drawing.Point(795, 141);
+            this.btnTestAdd.Name = "btnTestAdd";
+            this.btnTestAdd.Size = new System.Drawing.Size(134, 37);
+            this.btnTestAdd.TabIndex = 37;
+            this.btnTestAdd.Text = "Add";
+            this.btnTestAdd.UseVisualStyleBackColor = true;
+            // 
+            // btnRefLoad
+            // 
+            this.btnRefLoad.Location = new System.Drawing.Point(934, 92);
+            this.btnRefLoad.Name = "btnRefLoad";
+            this.btnRefLoad.Size = new System.Drawing.Size(134, 37);
+            this.btnRefLoad.TabIndex = 35;
+            this.btnRefLoad.Text = "Reload";
+            this.btnRefLoad.UseVisualStyleBackColor = true;
+            // 
+            // btnRefAdd
+            // 
+            this.btnRefAdd.Location = new System.Drawing.Point(795, 92);
+            this.btnRefAdd.Name = "btnRefAdd";
+            this.btnRefAdd.Size = new System.Drawing.Size(134, 37);
+            this.btnRefAdd.TabIndex = 34;
+            this.btnRefAdd.Text = "Add";
+            this.btnRefAdd.UseVisualStyleBackColor = true;
+            // 
+            // btnDrLoad
+            // 
+            this.btnDrLoad.Location = new System.Drawing.Point(934, 39);
+            this.btnDrLoad.Name = "btnDrLoad";
+            this.btnDrLoad.Size = new System.Drawing.Size(134, 37);
+            this.btnDrLoad.TabIndex = 33;
+            this.btnDrLoad.Text = "Reload";
+            this.btnDrLoad.UseVisualStyleBackColor = true;
+            // 
+            // btnDrAdd
+            // 
+            this.btnDrAdd.Location = new System.Drawing.Point(795, 39);
+            this.btnDrAdd.Name = "btnDrAdd";
+            this.btnDrAdd.Size = new System.Drawing.Size(134, 37);
+            this.btnDrAdd.TabIndex = 31;
+            this.btnDrAdd.Text = "Add";
+            this.btnDrAdd.UseVisualStyleBackColor = true;
+            this.btnDrAdd.Click += new System.EventHandler(this.btnDrAdd_Click);
+            // 
             // cbxTextName
             // 
             this.cbxTextName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
@@ -407,15 +460,6 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Doctor";
             // 
-            // AddCard
-            // 
-            this.AddCard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AddCard.Location = new System.Drawing.Point(43, 492);
-            this.AddCard.Name = "AddCard";
-            this.AddCard.RowTemplate.Height = 24;
-            this.AddCard.Size = new System.Drawing.Size(1078, 224);
-            this.AddCard.TabIndex = 14;
-            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -442,6 +486,66 @@
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Transiction Detail";
+            // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(167, 319);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(103, 33);
+            this.button2.TabIndex = 47;
+            this.button2.Text = "Reload";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Enabled = false;
+            this.button3.Location = new System.Drawing.Point(28, 319);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(103, 33);
+            this.button3.TabIndex = 46;
+            this.button3.Text = "Add";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Enabled = false;
+            this.button4.Location = new System.Drawing.Point(167, 278);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(103, 33);
+            this.button4.TabIndex = 45;
+            this.button4.Text = "Reload";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Enabled = false;
+            this.button5.Location = new System.Drawing.Point(28, 278);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(103, 33);
+            this.button5.TabIndex = 44;
+            this.button5.Text = "Add";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Enabled = false;
+            this.button6.Location = new System.Drawing.Point(167, 238);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(103, 33);
+            this.button6.TabIndex = 43;
+            this.button6.Text = "Reload";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Enabled = false;
+            this.button7.Location = new System.Drawing.Point(28, 238);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(103, 33);
+            this.button7.TabIndex = 42;
+            this.button7.Text = "Add";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // label24
             // 
@@ -597,126 +701,6 @@
             this.txtPaidAmount.Size = new System.Drawing.Size(190, 41);
             this.txtPaidAmount.TabIndex = 26;
             // 
-            // btnDrAdd
-            // 
-            this.btnDrAdd.Enabled = false;
-            this.btnDrAdd.Location = new System.Drawing.Point(795, 39);
-            this.btnDrAdd.Name = "btnDrAdd";
-            this.btnDrAdd.Size = new System.Drawing.Size(134, 37);
-            this.btnDrAdd.TabIndex = 31;
-            this.btnDrAdd.Text = "Add";
-            this.btnDrAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnDrLoad
-            // 
-            this.btnDrLoad.Enabled = false;
-            this.btnDrLoad.Location = new System.Drawing.Point(934, 39);
-            this.btnDrLoad.Name = "btnDrLoad";
-            this.btnDrLoad.Size = new System.Drawing.Size(134, 37);
-            this.btnDrLoad.TabIndex = 33;
-            this.btnDrLoad.Text = "Reload";
-            this.btnDrLoad.UseVisualStyleBackColor = true;
-            // 
-            // btnRefAdd
-            // 
-            this.btnRefAdd.Enabled = false;
-            this.btnRefAdd.Location = new System.Drawing.Point(795, 92);
-            this.btnRefAdd.Name = "btnRefAdd";
-            this.btnRefAdd.Size = new System.Drawing.Size(134, 37);
-            this.btnRefAdd.TabIndex = 34;
-            this.btnRefAdd.Text = "Add";
-            this.btnRefAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnRefLoad
-            // 
-            this.btnRefLoad.Enabled = false;
-            this.btnRefLoad.Location = new System.Drawing.Point(934, 92);
-            this.btnRefLoad.Name = "btnRefLoad";
-            this.btnRefLoad.Size = new System.Drawing.Size(134, 37);
-            this.btnRefLoad.TabIndex = 35;
-            this.btnRefLoad.Text = "Reload";
-            this.btnRefLoad.UseVisualStyleBackColor = true;
-            // 
-            // btnTestAdd
-            // 
-            this.btnTestAdd.Enabled = false;
-            this.btnTestAdd.Location = new System.Drawing.Point(795, 141);
-            this.btnTestAdd.Name = "btnTestAdd";
-            this.btnTestAdd.Size = new System.Drawing.Size(134, 37);
-            this.btnTestAdd.TabIndex = 37;
-            this.btnTestAdd.Text = "Add";
-            this.btnTestAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnTestLoad
-            // 
-            this.btnTestLoad.Enabled = false;
-            this.btnTestLoad.Location = new System.Drawing.Point(934, 141);
-            this.btnTestLoad.Name = "btnTestLoad";
-            this.btnTestLoad.Size = new System.Drawing.Size(134, 37);
-            this.btnTestLoad.TabIndex = 38;
-            this.btnTestLoad.Text = "Reload";
-            this.btnTestLoad.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(167, 319);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 33);
-            this.button2.TabIndex = 47;
-            this.button2.Text = "Reload";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(28, 319);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 33);
-            this.button3.TabIndex = 46;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(167, 278);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 33);
-            this.button4.TabIndex = 45;
-            this.button4.Text = "Reload";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Enabled = false;
-            this.button5.Location = new System.Drawing.Point(28, 278);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 33);
-            this.button5.TabIndex = 44;
-            this.button5.Text = "Add";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Enabled = false;
-            this.button6.Location = new System.Drawing.Point(167, 238);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(103, 33);
-            this.button6.TabIndex = 43;
-            this.button6.Text = "Reload";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Enabled = false;
-            this.button7.Location = new System.Drawing.Point(28, 238);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(103, 33);
-            this.button7.TabIndex = 42;
-            this.button7.Text = "Add";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // TestSaleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -725,7 +709,6 @@
             this.ClientSize = new System.Drawing.Size(1464, 728);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.AddCard);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -736,7 +719,6 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AddCard)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -777,7 +759,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dtpTestSaleDay;
-        private System.Windows.Forms.DataGridView AddCard;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button1;

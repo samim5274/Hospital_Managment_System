@@ -84,5 +84,10 @@ namespace SanitariumProject
         {
             
         }
+
+        private void btnDrAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

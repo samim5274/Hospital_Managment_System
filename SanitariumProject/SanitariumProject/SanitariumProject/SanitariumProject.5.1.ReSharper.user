@@ -16,30 +16,29 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:GroupForm.cs" caret="1287" fromTop="14" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SpecimenForm.cs" caret="1395" fromTop="21" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SubCategoryForm.cs" caret="869" fromTop="6" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="461" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:CreateUserForm.cs" caret="1341" fromTop="13" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.Designer.cs" caret="29789" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.Designer.cs" caret="8919" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2090" fromTop="25" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.Designer.cs" caret="29639" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2078" fromTop="20" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.Designer.cs" caret="38167" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.Designer.cs" caret="37231" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SanitariumDb.Designer.cs" caret="101136" fromTop="12" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="2777" fromTop="22" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="14774" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14696" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="0" fromTop="0" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2399" fromTop="30" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="2777" fromTop="22" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2078" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="485" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="1914" fromTop="27" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="700" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2399" fromTop="25" />
     </RecentFiles>
     <RecentEdits>
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.Designer.cs" caret="29639" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14719" fromTop="14" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="1590" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2078" fromTop="20" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2101" fromTop="20" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2422" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2513" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="366" fromTop="9" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.Designer.cs" caret="38167" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.Designer.cs" caret="37231" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="582" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SanitariumDb.Designer.cs" caret="101136" fromTop="12" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="1680" fromTop="22" />
@@ -55,13 +54,14 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="617" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="2777" fromTop="22" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="863" fromTop="16" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="21723" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="21722" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="14774" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2399" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2422" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14696" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="486" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="0" fromTop="0" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2513" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="700" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="485" fromTop="17" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -146,8 +146,8 @@
       <Item value="UserInfo`0" priority="1" />
       <Item value="txtUsername" priority="5" />
       <Item value="txtPassword" priority="6" />
-      <Item value="Application`0" priority="0" />
-      <Item value="LoginForm`0" priority="4" />
+      <Item value="Application`0" priority="1" />
+      <Item value="LoginForm`0" priority="5" />
       <Item value="using" priority="0" />
       <Item value="where" priority="0" />
       <Item value="log" priority="2" />
@@ -197,6 +197,7 @@
       <Item value="DataGridViewRow" priority="0" />
       <Item value="newRow" priority="6" />
       <Item value="AddCard" priority="1" />
+      <Item value="long" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.DepartmentForm">
       <Item value="MdiParent" priority="1" />
@@ -355,7 +356,7 @@
       <Item value="Password" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.Forms.Application">
-      <Item value="Exit`0" priority="0" />
+      <Item value="Exit`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBoxButtons">
       <Item value="OK" priority="2" />

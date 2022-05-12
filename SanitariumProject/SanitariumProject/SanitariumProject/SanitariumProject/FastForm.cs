@@ -23,5 +23,10 @@ namespace SanitariumProject
             obj.Closed += (s, args) => this.Close();
             obj.Show();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
