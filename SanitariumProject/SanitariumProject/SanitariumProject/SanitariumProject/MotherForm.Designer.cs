@@ -35,6 +35,8 @@
             this.categoryDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.subCategoryDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.specimenDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.doctorDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.outdoorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saleOfTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,8 +44,7 @@
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.createAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.doctorDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.referDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +72,8 @@
             this.subCategoryDetailToolStripMenuItem,
             this.specimenDetailToolStripMenuItem,
             this.toolStripSeparator1,
-            this.doctorDetailToolStripMenuItem});
+            this.doctorDetailToolStripMenuItem,
+            this.referDetailToolStripMenuItem});
             this.generalToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
             this.generalToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
@@ -111,6 +113,18 @@
             this.specimenDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
             this.specimenDetailToolStripMenuItem.Text = "Specimen Detail";
             this.specimenDetailToolStripMenuItem.Click += new System.EventHandler(this.specimenDetailToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(256, 6);
+            // 
+            // doctorDetailToolStripMenuItem
+            // 
+            this.doctorDetailToolStripMenuItem.Name = "doctorDetailToolStripMenuItem";
+            this.doctorDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.doctorDetailToolStripMenuItem.Text = "Doctor Detail";
+            this.doctorDetailToolStripMenuItem.Click += new System.EventHandler(this.doctorDetailToolStripMenuItem_Click);
             // 
             // outdoorToolStripMenuItem
             // 
@@ -165,17 +179,12 @@
             this.createAccountToolStripMenuItem.Text = "Create Account";
             this.createAccountToolStripMenuItem.Click += new System.EventHandler(this.createAccountToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
+            // referDetailToolStripMenuItem
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(256, 6);
-            // 
-            // doctorDetailToolStripMenuItem
-            // 
-            this.doctorDetailToolStripMenuItem.Name = "doctorDetailToolStripMenuItem";
-            this.doctorDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
-            this.doctorDetailToolStripMenuItem.Text = "Doctor Detail";
-            this.doctorDetailToolStripMenuItem.Click += new System.EventHandler(this.doctorDetailToolStripMenuItem_Click);
+            this.referDetailToolStripMenuItem.Name = "referDetailToolStripMenuItem";
+            this.referDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.referDetailToolStripMenuItem.Text = "Refer Detail";
+            this.referDetailToolStripMenuItem.Click += new System.EventHandler(this.referDetailToolStripMenuItem_Click);
             // 
             // MotherForm
             // 
@@ -214,6 +223,7 @@
         private System.Windows.Forms.ToolStripMenuItem createAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem doctorDetailToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem referDetailToolStripMenuItem;
 
     }
 }

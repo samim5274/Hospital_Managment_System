@@ -98,6 +98,13 @@ namespace SanitariumProject
             var q = from Doct in context.DoctorInfoes select Doct;
             return q.ToList();
         }
-        
+
+
+        internal object GetAllMarketiongOfficer()
+        {
+            var context = new SANITARIUMEntities();
+            var q = from Ref in context.ReferInfoes select Ref;
+            return q.ToList();
+        }
     }
 }
