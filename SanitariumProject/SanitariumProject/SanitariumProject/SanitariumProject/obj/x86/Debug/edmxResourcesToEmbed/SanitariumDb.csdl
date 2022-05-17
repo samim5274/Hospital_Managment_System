@@ -191,6 +191,7 @@
     <Property Type="String" Name="Degree" MaxLength="200" FixedLength="false" Unicode="false" />
     <Property Type="String" Name="Address" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Type="Int32" Name="Phone" />
+    <Property Type="Int32" Name="Fee" />
     <NavigationProperty Name="DignosisTestSaleInfoes" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo" FromRole="DoctorInfo" ToRole="DignosisTestSaleInfo" />
     <NavigationProperty Name="GenderInfo" Relationship="SANITARIUMModel.FK_DoctorInfo_GenderInfo" FromRole="DoctorInfo" ToRole="GenderInfo" />
   </EntityType>

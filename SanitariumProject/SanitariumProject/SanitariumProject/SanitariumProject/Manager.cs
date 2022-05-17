@@ -87,8 +87,17 @@ namespace SanitariumProject
         internal object GetAllDisAuthor()
         {
             var context = new SANITARIUMEntities();
-            var q = from DisA in context.DiscountAuthorityInfoes select DisA;
+            var q = from DisA in context.DiscountAuthorityInfoes 
+                    select DisA;
             return q.ToList();
         }
+
+        internal object GettAllDoctors()
+        {
+            var context = new SANITARIUMEntities();
+            var q = from Doct in context.DoctorInfoes select Doct;
+            return q.ToList();
+        }
+        
     }
 }

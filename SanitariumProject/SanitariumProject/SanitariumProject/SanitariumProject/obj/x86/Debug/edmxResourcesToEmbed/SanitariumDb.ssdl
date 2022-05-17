@@ -163,6 +163,7 @@
     <Property Name="Degree" Type="varchar" MaxLength="200" />
     <Property Name="Address" Type="varchar" MaxLength="50" />
     <Property Name="Phone" Type="int" />
+    <Property Name="Fee" Type="int" />
   </EntityType>
   <EntityType Name="GenderInfo">
     <Key>

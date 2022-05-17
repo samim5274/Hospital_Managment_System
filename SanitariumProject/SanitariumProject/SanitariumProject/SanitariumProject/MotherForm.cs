@@ -71,5 +71,12 @@ namespace SanitariumProject
             obj.MdiParent = this;
             obj.Show();
         }
+
+        private void doctorDetailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var obj = new DoctorDetailForm();
+            obj.MdiParent = this;
+            obj.Show();
+        }
     }
 }

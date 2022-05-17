@@ -42,6 +42,8 @@
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.createAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.doctorDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +69,9 @@
             this.groupDetailToolStripMenuItem,
             this.categoryDetailToolStripMenuItem,
             this.subCategoryDetailToolStripMenuItem,
-            this.specimenDetailToolStripMenuItem});
+            this.specimenDetailToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.doctorDetailToolStripMenuItem});
             this.generalToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
             this.generalToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
@@ -161,6 +165,18 @@
             this.createAccountToolStripMenuItem.Text = "Create Account";
             this.createAccountToolStripMenuItem.Click += new System.EventHandler(this.createAccountToolStripMenuItem_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(256, 6);
+            // 
+            // doctorDetailToolStripMenuItem
+            // 
+            this.doctorDetailToolStripMenuItem.Name = "doctorDetailToolStripMenuItem";
+            this.doctorDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.doctorDetailToolStripMenuItem.Text = "Doctor Detail";
+            this.doctorDetailToolStripMenuItem.Click += new System.EventHandler(this.doctorDetailToolStripMenuItem_Click);
+            // 
             // MotherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -196,6 +212,8 @@
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem testSaleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem createAccountToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem doctorDetailToolStripMenuItem;
 
     }
 }

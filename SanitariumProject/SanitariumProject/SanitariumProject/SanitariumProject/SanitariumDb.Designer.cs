@@ -2342,6 +2342,30 @@ namespace SanitariumProject
         private Nullable<global::System.Int32> _Phone;
         partial void OnPhoneChanging(Nullable<global::System.Int32> value);
         partial void OnPhoneChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Fee
+        {
+            get
+            {
+                return _Fee;
+            }
+            set
+            {
+                OnFeeChanging(value);
+                ReportPropertyChanging("Fee");
+                _Fee = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Fee");
+                OnFeeChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Fee;
+        partial void OnFeeChanging(Nullable<global::System.Int32> value);
+        partial void OnFeeChanged();
 
         #endregion
 
@@ -2604,6 +2628,7 @@ namespace SanitariumProject
         }
 
         #endregion
+
     }
     
     /// <summary>

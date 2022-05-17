@@ -362,6 +362,7 @@
             this.btnDrLoad.TabIndex = 33;
             this.btnDrLoad.Text = "Reload";
             this.btnDrLoad.UseVisualStyleBackColor = true;
+            this.btnDrLoad.Click += new System.EventHandler(this.btnDrLoad_Click);
             // 
             // btnDrAdd
             // 

@@ -90,6 +90,7 @@
     <EntitySetMapping Name="DoctorInfoes">
       <EntityTypeMapping TypeName="SANITARIUMModel.DoctorInfo">
         <MappingFragment StoreEntitySet="DoctorInfo">
+          <ScalarProperty Name="Fee" ColumnName="Fee" />
           <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="Address" ColumnName="Address" />
           <ScalarProperty Name="Degree" ColumnName="Degree" />

@@ -87,7 +87,13 @@ namespace SanitariumProject
 
         private void btnDrAdd_Click(object sender, EventArgs e)
         {
+            var obj = new DoctorDetailForm();
+            obj.ShowDialog();
+        }
 
+        private void btnDrLoad_Click(object sender, EventArgs e)
+        {
+            FillDoctor();
         }
     }
 }
