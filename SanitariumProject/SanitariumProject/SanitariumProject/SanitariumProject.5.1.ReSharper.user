@@ -9,7 +9,7 @@
   <RecentFiles>
     <RecentFiles>
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/d:Properties/f:Resources.resx" caret="5945" fromTop="16" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.Designer.cs" caret="11328" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.Designer.cs" caret="12615" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:App.Config" caret="757" fromTop="3" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:CategoryForm.cs" caret="1310" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:GroupForm.cs" caret="1287" fromTop="14" />
@@ -18,51 +18,53 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:CreateUserForm.cs" caret="1341" fromTop="13" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.Designer.cs" caret="29789" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.Designer.cs" caret="8919" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.Designer.cs" caret="29639" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.Designer.cs" caret="37315" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.Designer.cs" caret="31112" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:SanitariumDb.Designer.cs" caret="101136" fromTop="12" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14696" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="1914" fromTop="27" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="700" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="486" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm.cs" caret="719" fromTop="15" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="3029" fromTop="28" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DepartmentForm.cs" caret="1832" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="2857" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2295" fromTop="20" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2708" fromTop="15" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DepartmentForm.cs" caret="1168" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="833" fromTop="3" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:ReferDetailForm.cs" caret="2931" fromTop="19" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2748" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.Designer.cs" caret="37941" fromTop="28" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="497" fromTop="11" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="0" fromTop="0" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="461" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="485" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="274" fromTop="12" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="804" fromTop="18" />
     </RecentFiles>
     <RecentEdits>
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2399" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="14696" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="0" fromTop="0" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="700" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2055" fromTop="24" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2318" fromTop="24" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="0" fromTop="0" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="2755" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="1436" fromTop="26" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2318" fromTop="10" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2293" fromTop="20" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="486" fromTop="17" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="511" fromTop="17" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="1152" fromTop="21" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="2394" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="921" fromTop="26" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="919" fromTop="25" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="725" fromTop="21" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="2614" fromTop="28" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="2742" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="540" fromTop="21" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="0" fromTop="0" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="3029" fromTop="28" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="540" fromTop="14" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DepartmentForm.cs" caret="1868" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="2857" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DoctorDetailForm.cs" caret="2880" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2566" fromTop="19" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2706" fromTop="19" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2683" fromTop="15" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="545" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="789" fromTop="15" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="2023" fromTop="31" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="2151" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="2289" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="2266" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="833" fromTop="9" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:ReferDetailForm.cs" caret="2954" fromTop="19" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="3159" fromTop="42" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="554" fromTop="14" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="3170" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="3170" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="3170" fromTop="21" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="3170" fromTop="16" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="3170" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="2896" fromTop="3" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="461" fromTop="11" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="3170" fromTop="5" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.Designer.cs" caret="37475" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.Designer.cs" caret="37941" fromTop="28" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="510" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="497" fromTop="11" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="22385" fromTop="11" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="1466" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="2000" fromTop="28" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="485" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="0" fromTop="0" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="1846" fromTop="25" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="274" fromTop="12" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="804" fromTop="18" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -78,32 +80,32 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="MotherForm`0" priority="16" />
-      <Item value="var" priority="90" />
+      <Item value="MotherForm`0" priority="17" />
+      <Item value="var" priority="109" />
       <Item value="DepartmentForm`0" priority="1" />
-      <Item value="new" priority="66" />
-      <Item value="obj" priority="44" />
-      <Item value="this" priority="32" />
-      <Item value="SANITARIUMEntities`0" priority="22" />
+      <Item value="new" priority="81" />
+      <Item value="obj" priority="56" />
+      <Item value="this" priority="36" />
+      <Item value="SANITARIUMEntities`0" priority="25" />
       <Item value="DepartmentInfo`0" priority="1" />
       <Item value="objTB" priority="1" />
       <Item value="txtDepName" priority="3" />
-      <Item value="Convert`0" priority="13" />
-      <Item value="objDb" priority="3" />
-      <Item value="MessageBox`0" priority="18" />
-      <Item value="Manager`0" priority="10" />
-      <Item value="from" priority="15" />
-      <Item value="context" priority="15" />
+      <Item value="Convert`0" priority="18" />
+      <Item value="objDb" priority="7" />
+      <Item value="MessageBox`0" priority="22" />
+      <Item value="Manager`0" priority="13" />
+      <Item value="from" priority="16" />
+      <Item value="context" priority="17" />
       <Item value="select" priority="14" />
       <Item value="dip" priority="0" />
-      <Item value="return" priority="10" />
-      <Item value="q" priority="11" />
+      <Item value="return" priority="11" />
+      <Item value="q" priority="15" />
       <Item value="cbxDepName" priority="10" />
-      <Item value="list" priority="12" />
+      <Item value="list" priority="15" />
       <Item value="FillErrorEventArgs`0" priority="0" />
-      <Item value="string" priority="15" />
+      <Item value="string" priority="25" />
       <Item value="OutdoorForm`0" priority="2" />
-      <Item value="FastForm`0" priority="3" />
+      <Item value="FastForm`0" priority="4" />
       <Item value="Outdoor`0" priority="0" />
       <Item value="sssssssssssssssss`0" priority="0" />
       <Item value="sender" priority="2" />
@@ -117,9 +119,9 @@
       <Item value="SpecimenInfo`0" priority="2" />
       <Item value="txtSpeciName" priority="2" />
       <Item value="try" priority="3" />
-      <Item value="if" priority="18" />
+      <Item value="if" priority="24" />
       <Item value="TextBox`0" priority="0" />
-      <Item value="else" priority="14" />
+      <Item value="else" priority="16" />
       <Item value="txtCatName" priority="2" />
       <Item value="CategoryInfo`0" priority="1" />
       <Item value="CategoryForm`0" priority="0" />
@@ -132,11 +134,11 @@
       <Item value="cbxSubCatName" priority="12" />
       <Item value="SubCat" priority="0" />
       <Item value="SubCategoryForm`0" priority="0" />
-      <Item value="DiognosisTestDetailForm`0" priority="4" />
+      <Item value="DiognosisTestDetailForm`0" priority="5" />
       <Item value="txtTestName" priority="8" />
       <Item value="txtRoom" priority="5" />
       <Item value="txtCost" priority="5" />
-      <Item value="DignosticTestDetail`0" priority="0" />
+      <Item value="DignosticTestDetail`0" priority="1" />
       <Item value="btnSave" priority="3" />
       <Item value="false" priority="3" />
       <Item value="true" priority="2" />
@@ -145,10 +147,10 @@
       <Item value="dgvTestName" priority="2" />
       <Item value="CreateUserForm`0" priority="0" />
       <Item value="UserInfo`0" priority="1" />
-      <Item value="txtUsername" priority="5" />
+      <Item value="txtUsername" priority="7" />
       <Item value="txtPassword" priority="6" />
       <Item value="Application`0" priority="1" />
-      <Item value="LoginForm`0" priority="5" />
+      <Item value="LoginForm`0" priority="9" />
       <Item value="using" priority="0" />
       <Item value="where" priority="0" />
       <Item value="log" priority="2" />
@@ -183,14 +185,14 @@
       <Item value="dtpDateToday" priority="1" />
       <Item value="TestSaleForm`0" priority="0" />
       <Item value="GenderInfo`0" priority="0" />
-      <Item value="cbxGender" priority="6" />
+      <Item value="cbxGender" priority="16" />
       <Item value="Gndr" priority="0" />
       <Item value="AgS" priority="0" />
       <Item value="Dr" priority="0" />
       <Item value="Ref" priority="0" />
       <Item value="cbxAgeStatus" priority="2" />
       <Item value="cbxDoctor" priority="2" />
-      <Item value="cbxTextName" priority="5" />
+      <Item value="cbxTextName" priority="11" />
       <Item value="cbxRefer" priority="2" />
       <Item value="TS" priority="0" />
       <Item value="cbxDisAuthor" priority="2" />
@@ -204,12 +206,35 @@
       <Item value="DoctorDetailForm`0" priority="1" />
       <Item value="txtDoctorName" priority="1" />
       <Item value="txtFee" priority="1" />
-      <Item value="txtPhone" priority="1" />
+      <Item value="txtPhone" priority="5" />
       <Item value="txtDegree" priority="1" />
       <Item value="DoctorInfo`0" priority="0" />
-      <Item value="objTb" priority="7" />
+      <Item value="objTb" priority="15" />
       <Item value="txtDesignation" priority="0" />
       <Item value="txtaddress" priority="0" />
+      <Item value="ReferDetailForm`0" priority="1" />
+      <Item value="in" priority="0" />
+      <Item value="cbxMarOfficer" priority="5" />
+      <Item value="ReferInfo`0" priority="0" />
+      <Item value="txtReferName" priority="3" />
+      <Item value="txtAddress" priority="2" />
+      <Item value="MarketingInfo`0" priority="1" />
+      <Item value="MarketiongOfficerDetailForm`0" priority="1" />
+      <Item value="FillMarketingOfficer`0" priority="0" />
+      <Item value="txtArea" priority="1" />
+      <Item value="txtMarketionOfcerName" priority="1" />
+      <Item value="object" priority="0" />
+      <Item value="listBox1" priority="4" />
+      <Item value="item1" priority="0" />
+      <Item value="null" priority="1" />
+      <Item value="Object`0" priority="0" />
+      <Item value="comboBox1" priority="0" />
+      <Item value="DiognosisTestDetailForm2`0" priority="0" />
+      <Item value="public" priority="1" />
+      <Item value="static" priority="1" />
+      <Item value="UserName" priority="2" />
+      <Item value="currentUser" priority="0" />
+      <Item value="label1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.DepartmentForm">
       <Item value="MdiParent" priority="1" />
@@ -221,20 +246,21 @@
       <Item value="DepartmentName" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
-      <Item value="Text" priority="61" />
+      <Item value="Text" priority="78" />
       <Item value="Scale`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
-      <Item value="Trim`0" priority="21" />
+      <Item value="Trim`0" priority="29" />
       <Item value="ToString`0" priority="2" />
       <Item value="FirstOrDefault`1" priority="0" />
+      <Item value="TrimEnd`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Convert">
-      <Item value="ToInt32`0" priority="13" />
+      <Item value="ToInt32`0" priority="18" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.SANITARIUMEntities">
       <Item value="AddToDepartmentInfoes`0" priority="0" />
-      <Item value="SaveChanges`0" priority="9" />
+      <Item value="SaveChanges`0" priority="11" />
       <Item value="DepartmentInfoes" priority="0" />
       <Item value="AddToGroupInfoes`0" priority="0" />
       <Item value="GroupInfoes" priority="0" />
@@ -252,30 +278,33 @@
       <Item value="GenderInfoes" priority="0" />
       <Item value="AgeStatusInfoes" priority="0" />
       <Item value="DoctorInfoes" priority="1" />
-      <Item value="ReferInfoes" priority="0" />
+      <Item value="ReferInfoes" priority="2" />
       <Item value="DiscountAuthorityInfoes" priority="0" />
       <Item value="AddToDoctorInfoes`0" priority="0" />
+      <Item value="AddToReferInfoes`0" priority="0" />
+      <Item value="MarketingInfoes" priority="0" />
+      <Item value="AddToMarketingInfoes`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
-      <Item value="Show`0" priority="19" />
+      <Item value="Show`0" priority="23" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
-      <Item value="ToList`1" priority="9" />
+      <Item value="ToList`1" priority="10" />
       <Item value="SingleOrDefault`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.ComboBox">
-      <Item value="DisplayMember" priority="12" />
-      <Item value="ValueMember" priority="17" />
-      <Item value="DataSource" priority="11" />
-      <Item value="SelectedValue" priority="24" />
-      <Item value="SelectedItem" priority="6" />
-      <Item value="SelectedText" priority="3" />
-      <Item value="SelectedIndex" priority="4" />
-      <Item value="Text" priority="9" />
+      <Item value="DisplayMember" priority="15" />
+      <Item value="ValueMember" priority="24" />
+      <Item value="DataSource" priority="14" />
+      <Item value="SelectedValue" priority="28" />
+      <Item value="SelectedItem" priority="12" />
+      <Item value="SelectedText" priority="4" />
+      <Item value="SelectedIndex" priority="9" />
+      <Item value="Text" priority="13" />
       <Item value="SelectAll`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
-      <Item value="Empty" priority="15" />
+      <Item value="Empty" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.MotherForm">
       <Item value="MdiParent" priority="0" />
@@ -346,6 +375,7 @@
     <ItemStatistics item="Qualified:SanitariumProject.DiognosisTestDetailForm">
       <Item value="Close`0" priority="0" />
       <Item value="dgvTestName" priority="0" />
+      <Item value="ShowDialog`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.Button">
       <Item value="Enabled" priority="5" />
@@ -394,7 +424,7 @@
       <Item value="Value" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Object">
-      <Item value="ToString`0" priority="6" />
+      <Item value="ToString`0" priority="8" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
       <Item value="ToList`1" priority="0" />
@@ -456,7 +486,7 @@
       <Item value="ShowDialog`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.Manager">
-      <Item value="GetAllGender`0" priority="0" />
+      <Item value="GetAllGender`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.DoctorInfo">
       <Item value="Name" priority="0" />
@@ -466,6 +496,44 @@
       <Item value="Phone" priority="0" />
       <Item value="Fee" priority="0" />
       <Item value="GenderId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.ReferDetailForm">
+      <Item value="MdiParent" priority="0" />
+      <Item value="Show`0" priority="0" />
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.ReferInfo">
+      <Item value="Name" priority="0" />
+      <Item value="Address" priority="0" />
+      <Item value="Phone" priority="0" />
+      <Item value="GenderId" priority="0" />
+      <Item value="MarketingOfficerId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.MarketiongOfficerDetailForm">
+      <Item value="MdiParent" priority="0" />
+      <Item value="Show`0" priority="0" />
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.MarketingInfo">
+      <Item value="Name" priority="0" />
+      <Item value="Address" priority="0" />
+      <Item value="Phone" priority="0" />
+      <Item value="Area" priority="0" />
+      <Item value="GenderId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListBox">
+      <Item value="Items" priority="2" />
+      <Item value="SelectedItem" priority="2" />
+      <Item value="SelectedIndex" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListBox+ObjectCollection">
+      <Item value="Add`0" priority="1" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="Text" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

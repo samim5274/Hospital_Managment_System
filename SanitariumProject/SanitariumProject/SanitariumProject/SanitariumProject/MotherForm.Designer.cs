@@ -45,6 +45,7 @@
             this.accountToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.createAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.referDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marketiongOficerDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +74,8 @@
             this.specimenDetailToolStripMenuItem,
             this.toolStripSeparator1,
             this.doctorDetailToolStripMenuItem,
-            this.referDetailToolStripMenuItem});
+            this.referDetailToolStripMenuItem,
+            this.marketiongOficerDetailToolStripMenuItem});
             this.generalToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
             this.generalToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
@@ -186,6 +188,13 @@
             this.referDetailToolStripMenuItem.Text = "Refer Detail";
             this.referDetailToolStripMenuItem.Click += new System.EventHandler(this.referDetailToolStripMenuItem_Click);
             // 
+            // marketiongOficerDetailToolStripMenuItem
+            // 
+            this.marketiongOficerDetailToolStripMenuItem.Name = "marketiongOficerDetailToolStripMenuItem";
+            this.marketiongOficerDetailToolStripMenuItem.Size = new System.Drawing.Size(292, 30);
+            this.marketiongOficerDetailToolStripMenuItem.Text = "Marketiong Oficer Detail";
+            this.marketiongOficerDetailToolStripMenuItem.Click += new System.EventHandler(this.marketiongOficerDetailToolStripMenuItem_Click);
+            // 
             // MotherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -224,6 +233,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem doctorDetailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem referDetailToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem marketiongOficerDetailToolStripMenuItem;
 
     }
 }

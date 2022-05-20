@@ -86,6 +86,11 @@
             this.label19 = new System.Windows.Forms.Label();
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.txtPaidAmount = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -295,6 +300,10 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.button9);
+            this.groupBox2.Controls.Add(this.button8);
             this.groupBox2.Controls.Add(this.btnTestLoad);
             this.groupBox2.Controls.Add(this.btnTestAdd);
             this.groupBox2.Controls.Add(this.btnRefLoad);
@@ -313,7 +322,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(43, 264);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1078, 206);
+            this.groupBox2.Size = new System.Drawing.Size(1078, 245);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Another Detail";
@@ -326,6 +335,7 @@
             this.btnTestLoad.TabIndex = 38;
             this.btnTestLoad.Text = "Reload";
             this.btnTestLoad.UseVisualStyleBackColor = true;
+            this.btnTestLoad.Click += new System.EventHandler(this.btnTestLoad_Click);
             // 
             // btnTestAdd
             // 
@@ -335,6 +345,7 @@
             this.btnTestAdd.TabIndex = 37;
             this.btnTestAdd.Text = "Add";
             this.btnTestAdd.UseVisualStyleBackColor = true;
+            this.btnTestAdd.Click += new System.EventHandler(this.btnTestAdd_Click);
             // 
             // btnRefLoad
             // 
@@ -344,6 +355,7 @@
             this.btnRefLoad.TabIndex = 35;
             this.btnRefLoad.Text = "Reload";
             this.btnRefLoad.UseVisualStyleBackColor = true;
+            this.btnRefLoad.Click += new System.EventHandler(this.btnRefLoad_Click);
             // 
             // btnRefAdd
             // 
@@ -353,6 +365,7 @@
             this.btnRefAdd.TabIndex = 34;
             this.btnRefAdd.Text = "Add";
             this.btnRefAdd.UseVisualStyleBackColor = true;
+            this.btnRefAdd.Click += new System.EventHandler(this.btnRefAdd_Click);
             // 
             // btnDrLoad
             // 
@@ -702,12 +715,63 @@
             this.txtPaidAmount.Size = new System.Drawing.Size(190, 41);
             this.txtPaidAmount.TabIndex = 26;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(795, 193);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(134, 37);
+            this.button8.TabIndex = 39;
+            this.button8.Text = "Add Card";
+            this.button8.UseVisualStyleBackColor = true;
+            //this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(935, 193);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(134, 37);
+            this.button9.TabIndex = 40;
+            this.button9.Text = "Remove";
+            this.button9.UseVisualStyleBackColor = true;
+            //this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(113, 193);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(308, 28);
+            this.textBox2.TabIndex = 41;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(466, 193);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(308, 28);
+            this.textBox3.TabIndex = 42;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "RBS",
+            "CBC",
+            "HbsAg"});
+            this.comboBox1.Location = new System.Drawing.Point(368, 41);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(187, 24);
+            this.comboBox1.TabIndex = 30;
+            // 
             // TestSaleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1464, 728);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -789,5 +853,10 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

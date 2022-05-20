@@ -103,7 +103,7 @@ namespace SanitariumProject
         internal object GetAllMarketiongOfficer()
         {
             var context = new SANITARIUMEntities();
-            var q = from Ref in context.ReferInfoes select Ref;
+            var q = from Ref in context.MarketingInfoes select Ref;
             return q.ToList();
         }
     }

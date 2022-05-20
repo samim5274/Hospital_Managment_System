@@ -80,11 +80,6 @@ namespace SanitariumProject
             cbxGender.DataSource = list;
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnDrAdd_Click(object sender, EventArgs e)
         {
             var obj = new DoctorDetailForm();
@@ -94,6 +89,28 @@ namespace SanitariumProject
         private void btnDrLoad_Click(object sender, EventArgs e)
         {
             FillDoctor();
+        }
+
+        private void btnRefAdd_Click(object sender, EventArgs e)
+        {
+            var obj = new ReferDetailForm();
+            obj.ShowDialog();
+        }
+
+        private void btnRefLoad_Click(object sender, EventArgs e)
+        {
+            FillRefer();
+        }
+
+        private void btnTestAdd_Click(object sender, EventArgs e)
+        {
+            var obj = new DiognosisTestDetailForm();
+            obj.ShowDialog();
+        }
+
+        private void btnTestLoad_Click(object sender, EventArgs e)
+        {
+            FillTest();
         }
     }
 }

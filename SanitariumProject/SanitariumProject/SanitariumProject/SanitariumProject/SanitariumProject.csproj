@@ -104,6 +104,12 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs" />
+    <Compile Include="MarketiongOfficerDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketiongOfficerDetailForm.Designer.cs">
+      <DependentUpon>MarketiongOfficerDetailForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MotherForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketiongOfficerDetailForm.resx">
+      <DependentUpon>MarketiongOfficerDetailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MotherForm.resx">
       <DependentUpon>MotherForm.cs</DependentUpon>

@@ -28,5 +28,10 @@ namespace SanitariumProject
         {
             Application.Exit();
         }
+
+        private void FastForm_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DiognosisTestDetailForm2));
             this.dtpDateToday = new System.Windows.Forms.DateTimePicker();
@@ -67,7 +68,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.sANITARIUMDataSet = new SanitariumProject.SANITARIUMDataSet();
+            this.dignosticTestDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dignosticTestDetailTableAdapter = new SanitariumProject.SANITARIUMDataSetTableAdapters.DignosticTestDetailTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTestName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sANITARIUMDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dignosticTestDetailBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dtpDateToday
@@ -463,6 +469,20 @@
             this.label1.TabIndex = 44;
             this.label1.Text = "Dignosis Test Detail";
             // 
+            // sANITARIUMDataSet
+            // 
+            this.sANITARIUMDataSet.DataSetName = "SANITARIUMDataSet";
+            this.sANITARIUMDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dignosticTestDetailBindingSource
+            // 
+            this.dignosticTestDetailBindingSource.DataMember = "DignosticTestDetail";
+            this.dignosticTestDetailBindingSource.DataSource = this.sANITARIUMDataSet;
+            // 
+            // dignosticTestDetailTableAdapter
+            // 
+            this.dignosticTestDetailTableAdapter.ClearBeforeFill = true;
+            // 
             // DiognosisTestDetailForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -507,6 +527,8 @@
             this.Text = "DiognosisTestDetailForm2";
             this.Load += new System.EventHandler(this.DiognosisTestDetailForm2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTestName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sANITARIUMDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dignosticTestDetailBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -551,5 +573,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private SANITARIUMDataSet sANITARIUMDataSet;
+        private System.Windows.Forms.BindingSource dignosticTestDetailBindingSource;
+        private SANITARIUMDataSetTableAdapters.DignosticTestDetailTableAdapter dignosticTestDetailTableAdapter;
     }
 }

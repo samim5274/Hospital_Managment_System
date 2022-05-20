@@ -11,6 +11,7 @@ namespace SanitariumProject
 {
     public partial class LoginForm : Form
     {
+
         public LoginForm()
         {
             InitializeComponent();
@@ -48,10 +49,7 @@ namespace SanitariumProject
             {
                 using (var context = new SANITARIUMEntities())
                 {
-                    var q = from log in context.UserInfoes
-                            where log.Username == txtUsername.Text &&
-                                  log.Password == txtPassword.Text
-                            select log;
+                    var q = from log in context.UserInfoes where log.Username == txtUsername.Text && log.Password == txtPassword.Text select log;
                     if (q.SingleOrDefault() != null)
                     {
                         txtUsername.Text = txtPassword.Text = string.Empty;
@@ -62,8 +60,7 @@ namespace SanitariumProject
                     }
                     else
                     {
-                        MessageBox.Show("username and password is wrong.please try again", @"Message",
-                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("username and password is wrong.please try again", @"Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
