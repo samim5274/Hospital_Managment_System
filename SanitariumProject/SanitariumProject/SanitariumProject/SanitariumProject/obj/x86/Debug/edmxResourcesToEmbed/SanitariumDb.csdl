@@ -2,6 +2,7 @@
 <Schema Namespace="SANITARIUMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
   <EntityContainer Name="SANITARIUMEntities" annotation:LazyLoadingEnabled="true">
     <FunctionImport Name="SP_ALL_TEST_NAME" ReturnType="Collection(SANITARIUMModel.SP_ALL_TEST_NAME_Result)" />
+    <EntitySet Name="AdminTables" EntityType="SANITARIUMModel.AdminTable" />
     <EntitySet Name="AgeStatusInfoes" EntityType="SANITARIUMModel.AgeStatusInfo" />
     <EntitySet Name="CategoryInfoes" EntityType="SANITARIUMModel.CategoryInfo" />
     <EntitySet Name="DepartmentInfoes" EntityType="SANITARIUMModel.DepartmentInfo" />
@@ -14,6 +15,7 @@
     <EntitySet Name="MarketingInfoes" EntityType="SANITARIUMModel.MarketingInfo" />
     <EntitySet Name="ReferInfoes" EntityType="SANITARIUMModel.ReferInfo" />
     <EntitySet Name="SpecimenInfoes" EntityType="SANITARIUMModel.SpecimenInfo" />
+    <EntitySet Name="StoreTests" EntityType="SANITARIUMModel.StoreTest" />
     <EntitySet Name="SubCategoryInfoes" EntityType="SANITARIUMModel.SubCategoryInfo" />
     <EntitySet Name="sysdiagrams" EntityType="SANITARIUMModel.sysdiagram" />
     <EntitySet Name="TypeInfoes" EntityType="SANITARIUMModel.TypeInfo" />
@@ -86,6 +88,14 @@
       <End Role="MarketingInfo" EntitySet="MarketingInfoes" />
       <End Role="ReferInfo" EntitySet="ReferInfoes" />
     </AssociationSet>
+    <FunctionImport Name="SP_DAY_WISE_SALE_SUMMARY" ReturnType="Collection(SANITARIUMModel.SP_ALL_TEST_NAME_Result)">
+      <Parameter Name="SDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="EDATE" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Day_Wise_Sale_Summary_2" ReturnType="Collection(SANITARIUMModel.SP_ALL_TEST_NAME_Result)">
+      <Parameter Name="SDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="EDATE" Mode="In" Type="DateTime" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="SP_ALL_TEST_NAME_Result">
     <Property Type="String" Name="TestName" Nullable="true" MaxLength="200" />
@@ -97,6 +107,14 @@
     <Property Type="Int32" Name="TestCost" Nullable="true" />
     <Property Type="Int32" Name="RoomNo" Nullable="true" />
   </ComplexType>
+  <EntityType Name="AdminTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserAdmin" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PassAdmin" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
   <EntityType Name="AgeStatusInfo">
     <Key>
       <PropertyRef Name="Id" />
@@ -141,6 +159,14 @@
     <Property Type="Int32" Name="Discount" />
     <Property Type="Int32" Name="Due" />
     <Property Type="Int32" Name="Paid" />
+    <Property Type="String" Name="VAT" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BillOfficer" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="T_Reg" />
+    <Property Type="Int32" Name="DueCollection" />
+    <Property Type="Int32" Name="DueDiscount" />
+    <Property Type="String" Name="DueCollectionOfficer" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DueCollectionDate" />
+    <Property Type="Int32" Name="DueStatus" />
     <NavigationProperty Name="AgeStatusInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo" FromRole="DignosisTestSaleInfo" ToRole="AgeStatusInfo" />
     <NavigationProperty Name="DiscountAuthorityInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo" FromRole="DignosisTestSaleInfo" ToRole="DiscountAuthorityInfo" />
     <NavigationProperty Name="DoctorInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo" FromRole="DignosisTestSaleInfo" ToRole="DoctorInfo" />
@@ -250,6 +276,15 @@
     <Property Type="String" Name="SpecimenName" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SpecimenInfo" FromRole="SpecimenInfo" ToRole="DignosticTestDetail" />
   </EntityType>
+  <EntityType Name="StoreTest">
+    <Key>
+      <PropertyRef Name="S_Id" />
+    </Key>
+    <Property Type="Int32" Name="S_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="S_TestName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="S_TestPrice" />
+    <Property Type="Int32" Name="S_RegNumber" />
+  </EntityType>
   <EntityType Name="SubCategoryInfo">
     <Key>
       <PropertyRef Name="Id" />
@@ -285,6 +320,14 @@
     <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FastName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Phone" />
+    <Property Type="String" Name="Permission" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Profail" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Services" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="About" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Contact" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <Association Name="FK_DignosisTestSaleInfo_AgeStatusInfo">
     <End Type="SANITARIUMModel.AgeStatusInfo" Role="AgeStatusInfo" Multiplicity="0..1" />

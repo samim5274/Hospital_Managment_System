@@ -92,5 +92,12 @@ namespace SanitariumProject
             obj.MdiParent = this;
             obj.Show();
         }
+
+        private void saleReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var obj = new DayWiseSaleReportForm();
+            obj.MdiParent = this;
+            obj.Show();
+        }
     }
 }

@@ -37,6 +37,8 @@
             this.specimenDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.doctorDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.referDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marketiongOficerDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.outdoorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saleOfTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,8 +46,7 @@
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.createAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.referDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.marketiongOficerDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saleReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,49 +85,63 @@
             // departmentDetailToolStripMenuItem
             // 
             this.departmentDetailToolStripMenuItem.Name = "departmentDetailToolStripMenuItem";
-            this.departmentDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.departmentDetailToolStripMenuItem.Size = new System.Drawing.Size(292, 30);
             this.departmentDetailToolStripMenuItem.Text = "Department Detail";
             this.departmentDetailToolStripMenuItem.Click += new System.EventHandler(this.departmentDetailToolStripMenuItem_Click);
             // 
             // groupDetailToolStripMenuItem
             // 
             this.groupDetailToolStripMenuItem.Name = "groupDetailToolStripMenuItem";
-            this.groupDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.groupDetailToolStripMenuItem.Size = new System.Drawing.Size(292, 30);
             this.groupDetailToolStripMenuItem.Text = "Group Detail";
             this.groupDetailToolStripMenuItem.Click += new System.EventHandler(this.groupDetailToolStripMenuItem_Click);
             // 
             // categoryDetailToolStripMenuItem
             // 
             this.categoryDetailToolStripMenuItem.Name = "categoryDetailToolStripMenuItem";
-            this.categoryDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.categoryDetailToolStripMenuItem.Size = new System.Drawing.Size(292, 30);
             this.categoryDetailToolStripMenuItem.Text = "Category Detail";
             this.categoryDetailToolStripMenuItem.Click += new System.EventHandler(this.categoryDetailToolStripMenuItem_Click);
             // 
             // subCategoryDetailToolStripMenuItem
             // 
             this.subCategoryDetailToolStripMenuItem.Name = "subCategoryDetailToolStripMenuItem";
-            this.subCategoryDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.subCategoryDetailToolStripMenuItem.Size = new System.Drawing.Size(292, 30);
             this.subCategoryDetailToolStripMenuItem.Text = "Sub Category Detail";
             this.subCategoryDetailToolStripMenuItem.Click += new System.EventHandler(this.subCategoryDetailToolStripMenuItem_Click);
             // 
             // specimenDetailToolStripMenuItem
             // 
             this.specimenDetailToolStripMenuItem.Name = "specimenDetailToolStripMenuItem";
-            this.specimenDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.specimenDetailToolStripMenuItem.Size = new System.Drawing.Size(292, 30);
             this.specimenDetailToolStripMenuItem.Text = "Specimen Detail";
             this.specimenDetailToolStripMenuItem.Click += new System.EventHandler(this.specimenDetailToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(256, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(289, 6);
             // 
             // doctorDetailToolStripMenuItem
             // 
             this.doctorDetailToolStripMenuItem.Name = "doctorDetailToolStripMenuItem";
-            this.doctorDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.doctorDetailToolStripMenuItem.Size = new System.Drawing.Size(292, 30);
             this.doctorDetailToolStripMenuItem.Text = "Doctor Detail";
             this.doctorDetailToolStripMenuItem.Click += new System.EventHandler(this.doctorDetailToolStripMenuItem_Click);
+            // 
+            // referDetailToolStripMenuItem
+            // 
+            this.referDetailToolStripMenuItem.Name = "referDetailToolStripMenuItem";
+            this.referDetailToolStripMenuItem.Size = new System.Drawing.Size(292, 30);
+            this.referDetailToolStripMenuItem.Text = "Refer Detail";
+            this.referDetailToolStripMenuItem.Click += new System.EventHandler(this.referDetailToolStripMenuItem_Click);
+            // 
+            // marketiongOficerDetailToolStripMenuItem
+            // 
+            this.marketiongOficerDetailToolStripMenuItem.Name = "marketiongOficerDetailToolStripMenuItem";
+            this.marketiongOficerDetailToolStripMenuItem.Size = new System.Drawing.Size(292, 30);
+            this.marketiongOficerDetailToolStripMenuItem.Text = "Marketiong Oficer Detail";
+            this.marketiongOficerDetailToolStripMenuItem.Click += new System.EventHandler(this.marketiongOficerDetailToolStripMenuItem_Click);
             // 
             // outdoorToolStripMenuItem
             // 
@@ -154,6 +169,8 @@
             // 
             // indoorToolStripMenuItem
             // 
+            this.indoorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saleReportToolStripMenuItem});
             this.indoorToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.indoorToolStripMenuItem.Name = "indoorToolStripMenuItem";
             this.indoorToolStripMenuItem.Size = new System.Drawing.Size(81, 29);
@@ -181,19 +198,12 @@
             this.createAccountToolStripMenuItem.Text = "Create Account";
             this.createAccountToolStripMenuItem.Click += new System.EventHandler(this.createAccountToolStripMenuItem_Click);
             // 
-            // referDetailToolStripMenuItem
+            // saleReportToolStripMenuItem
             // 
-            this.referDetailToolStripMenuItem.Name = "referDetailToolStripMenuItem";
-            this.referDetailToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
-            this.referDetailToolStripMenuItem.Text = "Refer Detail";
-            this.referDetailToolStripMenuItem.Click += new System.EventHandler(this.referDetailToolStripMenuItem_Click);
-            // 
-            // marketiongOficerDetailToolStripMenuItem
-            // 
-            this.marketiongOficerDetailToolStripMenuItem.Name = "marketiongOficerDetailToolStripMenuItem";
-            this.marketiongOficerDetailToolStripMenuItem.Size = new System.Drawing.Size(292, 30);
-            this.marketiongOficerDetailToolStripMenuItem.Text = "Marketiong Oficer Detail";
-            this.marketiongOficerDetailToolStripMenuItem.Click += new System.EventHandler(this.marketiongOficerDetailToolStripMenuItem_Click);
+            this.saleReportToolStripMenuItem.Name = "saleReportToolStripMenuItem";
+            this.saleReportToolStripMenuItem.Size = new System.Drawing.Size(186, 30);
+            this.saleReportToolStripMenuItem.Text = "Sale Report";
+            this.saleReportToolStripMenuItem.Click += new System.EventHandler(this.saleReportToolStripMenuItem_Click);
             // 
             // MotherForm
             // 
@@ -234,6 +244,7 @@
         private System.Windows.Forms.ToolStripMenuItem doctorDetailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem referDetailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marketiongOficerDetailToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saleReportToolStripMenuItem;
 
     }
 }

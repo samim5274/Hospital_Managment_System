@@ -9,7 +9,7 @@
   <RecentFiles>
     <RecentFiles>
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/d:Properties/f:Resources.resx" caret="5945" fromTop="16" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.Designer.cs" caret="12615" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.Designer.cs" caret="13303" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:App.Config" caret="757" fromTop="3" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:CategoryForm.cs" caret="1310" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:GroupForm.cs" caret="1287" fromTop="14" />
@@ -25,22 +25,17 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DepartmentForm.cs" caret="1168" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="833" fromTop="3" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:ReferDetailForm.cs" caret="2931" fromTop="19" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2748" fromTop="20" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.Designer.cs" caret="37941" fromTop="28" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DiognosisTestDetailForm2.cs" caret="497" fromTop="11" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="0" fromTop="0" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="461" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Program.cs" caret="485" fromTop="17" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="274" fromTop="12" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="804" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2966" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DayWiseSaleReportForm.cs" caret="652" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="3286" fromTop="15" />
     </RecentFiles>
     <RecentEdits>
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="545" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="789" fromTop="15" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="2023" fromTop="31" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="2151" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="2289" fromTop="18" />
-      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="2266" fromTop="18" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MarketiongOfficerDetailForm.cs" caret="833" fromTop="9" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:ReferDetailForm.cs" caret="2954" fromTop="19" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:TestSaleForm.cs" caret="3159" fromTop="42" />
@@ -65,6 +60,12 @@
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="1846" fromTop="25" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:LoginForm.cs" caret="274" fromTop="12" />
       <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="804" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:FastForm.cs" caret="827" fromTop="18" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2966" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:MotherForm.cs" caret="2991" fromTop="20" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:DayWiseSaleReportForm.cs" caret="663" fromTop="17" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="3286" fromTop="15" />
+      <File id="94CB6876-298E-420D-A16B-62F3FB4A74FF/f:Manager.cs" caret="3411" fromTop="15" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -81,19 +82,19 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="MotherForm`0" priority="17" />
-      <Item value="var" priority="109" />
+      <Item value="var" priority="116" />
       <Item value="DepartmentForm`0" priority="1" />
-      <Item value="new" priority="81" />
-      <Item value="obj" priority="56" />
-      <Item value="this" priority="36" />
-      <Item value="SANITARIUMEntities`0" priority="25" />
+      <Item value="new" priority="84" />
+      <Item value="obj" priority="58" />
+      <Item value="this" priority="37" />
+      <Item value="SANITARIUMEntities`0" priority="26" />
       <Item value="DepartmentInfo`0" priority="1" />
       <Item value="objTB" priority="1" />
       <Item value="txtDepName" priority="3" />
-      <Item value="Convert`0" priority="18" />
+      <Item value="Convert`0" priority="20" />
       <Item value="objDb" priority="7" />
       <Item value="MessageBox`0" priority="22" />
-      <Item value="Manager`0" priority="13" />
+      <Item value="Manager`0" priority="14" />
       <Item value="from" priority="16" />
       <Item value="context" priority="17" />
       <Item value="select" priority="14" />
@@ -142,7 +143,7 @@
       <Item value="btnSave" priority="3" />
       <Item value="false" priority="3" />
       <Item value="true" priority="2" />
-      <Item value="List" priority="2" />
+      <Item value="List" priority="3" />
       <Item value="SP_ALL_TEST_NAME_Result`0" priority="0" />
       <Item value="dgvTestName" priority="2" />
       <Item value="CreateUserForm`0" priority="0" />
@@ -235,6 +236,12 @@
       <Item value="UserName" priority="2" />
       <Item value="currentUser" priority="0" />
       <Item value="label1" priority="0" />
+      <Item value="DayWiseSaleReportForm`0" priority="0" />
+      <Item value="dtpSD" priority="0" />
+      <Item value="dtpED" priority="0" />
+      <Item value="mngr" priority="0" />
+      <Item value="SD" priority="0" />
+      <Item value="ED" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.DepartmentForm">
       <Item value="MdiParent" priority="1" />
@@ -256,7 +263,8 @@
       <Item value="TrimEnd`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Convert">
-      <Item value="ToInt32`0" priority="18" />
+      <Item value="ToInt32`0" priority="19" />
+      <Item value="ToDateTime`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SanitariumProject.SANITARIUMEntities">
       <Item value="AddToDepartmentInfoes`0" priority="0" />
@@ -461,7 +469,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.DateTimePicker">
       <Item value="MaxDate" priority="0" />
-      <Item value="Value" priority="1" />
+      <Item value="Value" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
       <Item value="Now" priority="0" />
@@ -534,6 +542,10 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.Label">
       <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SanitariumProject.DayWiseSaleReportForm">
+      <Item value="MdiParent" priority="0" />
+      <Item value="Show`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

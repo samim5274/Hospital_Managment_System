@@ -15,6 +15,15 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <EntitySetMapping Name="AdminTables">
+      <EntityTypeMapping TypeName="SANITARIUMModel.AdminTable">
+        <MappingFragment StoreEntitySet="AdminTable">
+          <ScalarProperty Name="PassAdmin" ColumnName="PassAdmin" />
+          <ScalarProperty Name="UserAdmin" ColumnName="UserAdmin" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="AgeStatusInfoes">
       <EntityTypeMapping TypeName="SANITARIUMModel.AgeStatusInfo">
         <MappingFragment StoreEntitySet="AgeStatusInfo">
@@ -42,6 +51,14 @@
     <EntitySetMapping Name="DignosisTestSaleInfoes">
       <EntityTypeMapping TypeName="SANITARIUMModel.DignosisTestSaleInfo">
         <MappingFragment StoreEntitySet="DignosisTestSaleInfo">
+          <ScalarProperty Name="DueStatus" ColumnName="DueStatus" />
+          <ScalarProperty Name="DueCollectionDate" ColumnName="DueCollectionDate" />
+          <ScalarProperty Name="DueCollectionOfficer" ColumnName="DueCollectionOfficer" />
+          <ScalarProperty Name="DueDiscount" ColumnName="DueDiscount" />
+          <ScalarProperty Name="DueCollection" ColumnName="DueCollection" />
+          <ScalarProperty Name="T_Reg" ColumnName="T_Reg" />
+          <ScalarProperty Name="BillOfficer" ColumnName="BillOfficer" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
           <ScalarProperty Name="Paid" ColumnName="Paid" />
           <ScalarProperty Name="Due" ColumnName="Due" />
           <ScalarProperty Name="Discount" ColumnName="Discount" />
@@ -149,6 +166,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="StoreTests">
+      <EntityTypeMapping TypeName="SANITARIUMModel.StoreTest">
+        <MappingFragment StoreEntitySet="StoreTest">
+          <ScalarProperty Name="S_RegNumber" ColumnName="S_RegNumber" />
+          <ScalarProperty Name="S_TestPrice" ColumnName="S_TestPrice" />
+          <ScalarProperty Name="S_TestName" ColumnName="S_TestName" />
+          <ScalarProperty Name="S_Id" ColumnName="S_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="SubCategoryInfoes">
       <EntityTypeMapping TypeName="SANITARIUMModel.SubCategoryInfo">
         <MappingFragment StoreEntitySet="SubCategoryInfo">
@@ -180,11 +207,47 @@
     <EntitySetMapping Name="UserInfoes">
       <EntityTypeMapping TypeName="SANITARIUMModel.UserInfo">
         <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="Services" ColumnName="Services" />
+          <ScalarProperty Name="Profail" ColumnName="Profail" />
+          <ScalarProperty Name="Permission" ColumnName="Permission" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FastName" ColumnName="FastName" />
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_DAY_WISE_SALE_SUMMARY" FunctionName="SANITARIUMModel.Store.SP_DAY_WISE_SALE_SUMMARY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SANITARIUMModel.SP_ALL_TEST_NAME_Result">
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="SpecimenName" ColumnName="SpecimenName" />
+          <ScalarProperty Name="TestCost" ColumnName="TestCost" />
+          <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Day_Wise_Sale_Summary_2" FunctionName="SANITARIUMModel.Store.SP_Day_Wise_Sale_Summary_2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SANITARIUMModel.SP_ALL_TEST_NAME_Result">
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="SpecimenName" ColumnName="SpecimenName" />
+          <ScalarProperty Name="TestCost" ColumnName="TestCost" />
+          <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="SANITARIUMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
   <EntityContainer Name="SANITARIUMModelStoreContainer">
+    <EntitySet Name="AdminTable" EntityType="SANITARIUMModel.Store.AdminTable" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="AgeStatusInfo" EntityType="SANITARIUMModel.Store.AgeStatusInfo" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="CategoryInfo" EntityType="SANITARIUMModel.Store.CategoryInfo" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="DepartmentInfo" EntityType="SANITARIUMModel.Store.DepartmentInfo" store:Type="Tables" Schema="dbo" />
@@ -13,6 +14,7 @@
     <EntitySet Name="MarketingInfo" EntityType="SANITARIUMModel.Store.MarketingInfo" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="ReferInfo" EntityType="SANITARIUMModel.Store.ReferInfo" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="SpecimenInfo" EntityType="SANITARIUMModel.Store.SpecimenInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StoreTest" EntityType="SANITARIUMModel.Store.StoreTest" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="SubCategoryInfo" EntityType="SANITARIUMModel.Store.SubCategoryInfo" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="sysdiagrams" EntityType="SANITARIUMModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="TypeInfo" EntityType="SANITARIUMModel.Store.TypeInfo" store:Type="Tables" Schema="dbo" />
@@ -86,6 +88,14 @@
       <End Role="SubCategoryInfo" EntitySet="SubCategoryInfo" />
     </AssociationSet>
   </EntityContainer>
+  <EntityType Name="AdminTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserAdmin" Type="varchar" MaxLength="50" />
+    <Property Name="PassAdmin" Type="varchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="AgeStatusInfo">
     <Key>
       <PropertyRef Name="Id" />
@@ -126,6 +136,14 @@
     <Property Name="Discount" Type="int" />
     <Property Name="Due" Type="int" />
     <Property Name="Paid" Type="int" />
+    <Property Name="VAT" Type="varchar" MaxLength="50" />
+    <Property Name="BillOfficer" Type="varchar" MaxLength="50" />
+    <Property Name="T_Reg" Type="int" />
+    <Property Name="DueCollection" Type="int" />
+    <Property Name="DueDiscount" Type="int" />
+    <Property Name="DueCollectionOfficer" Type="varchar" MaxLength="50" />
+    <Property Name="DueCollectionDate" Type="date" />
+    <Property Name="DueStatus" Type="int" />
   </EntityType>
   <EntityType Name="DignosticTestDetail">
     <Key>
@@ -208,6 +226,15 @@
     <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="SpecimenName" Type="varchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="StoreTest">
+    <Key>
+      <PropertyRef Name="S_Id" />
+    </Key>
+    <Property Name="S_Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="S_TestName" Type="varchar" MaxLength="50" />
+    <Property Name="S_TestPrice" Type="int" />
+    <Property Name="S_RegNumber" Type="int" />
+  </EntityType>
   <EntityType Name="SubCategoryInfo">
     <Key>
       <PropertyRef Name="Id" />
@@ -240,6 +267,14 @@
     <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="Username" Type="varchar" MaxLength="50" />
     <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="FastName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="Phone" Type="int" />
+    <Property Name="Permission" Type="varchar" MaxLength="50" />
+    <Property Name="Profail" Type="varchar" MaxLength="50" />
+    <Property Name="Services" Type="varchar" MaxLength="50" />
+    <Property Name="About" Type="varchar" MaxLength="50" />
+    <Property Name="Contact" Type="varchar" MaxLength="50" />
   </EntityType>
   <Association Name="FK_DignosisTestSaleInfo_AgeStatusInfo">
     <End Role="AgeStatusInfo" Type="SANITARIUMModel.Store.AgeStatusInfo" Multiplicity="0..1" />
@@ -458,6 +493,14 @@
     <Parameter Name="owner_id" Type="int" Mode="In" />
     <Parameter Name="version" Type="int" Mode="In" />
     <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_DAY_WISE_SALE_SUMMARY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SDATE" Type="date" Mode="In" />
+    <Parameter Name="EDATE" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_Day_Wise_Sale_Summary_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SDATE" Type="date" Mode="In" />
+    <Parameter Name="EDATE" Type="date" Mode="In" />
   </Function>
   <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="diagramname" Type="nvarchar" Mode="In" />

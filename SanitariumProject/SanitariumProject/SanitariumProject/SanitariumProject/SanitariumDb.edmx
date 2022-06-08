@@ -6,6 +6,7 @@
     <edmx:StorageModels>
     <Schema Namespace="SANITARIUMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="SANITARIUMModelStoreContainer">
+          <EntitySet Name="AdminTable" EntityType="SANITARIUMModel.Store.AdminTable" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="AgeStatusInfo" EntityType="SANITARIUMModel.Store.AgeStatusInfo" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="CategoryInfo" EntityType="SANITARIUMModel.Store.CategoryInfo" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="DepartmentInfo" EntityType="SANITARIUMModel.Store.DepartmentInfo" store:Type="Tables" Schema="dbo" />
@@ -18,6 +19,7 @@
           <EntitySet Name="MarketingInfo" EntityType="SANITARIUMModel.Store.MarketingInfo" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="ReferInfo" EntityType="SANITARIUMModel.Store.ReferInfo" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="SpecimenInfo" EntityType="SANITARIUMModel.Store.SpecimenInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="StoreTest" EntityType="SANITARIUMModel.Store.StoreTest" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="SubCategoryInfo" EntityType="SANITARIUMModel.Store.SubCategoryInfo" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="sysdiagrams" EntityType="SANITARIUMModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="TypeInfo" EntityType="SANITARIUMModel.Store.TypeInfo" store:Type="Tables" Schema="dbo" />
@@ -91,6 +93,14 @@
             <End Role="SubCategoryInfo" EntitySet="SubCategoryInfo" />
           </AssociationSet>
         </EntityContainer>
+        <EntityType Name="AdminTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserAdmin" Type="varchar" MaxLength="50" />
+          <Property Name="PassAdmin" Type="varchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="AgeStatusInfo">
           <Key>
             <PropertyRef Name="Id" />
@@ -131,6 +141,14 @@
           <Property Name="Discount" Type="int" />
           <Property Name="Due" Type="int" />
           <Property Name="Paid" Type="int" />
+          <Property Name="VAT" Type="varchar" MaxLength="50" />
+          <Property Name="BillOfficer" Type="varchar" MaxLength="50" />
+          <Property Name="T_Reg" Type="int" />
+          <Property Name="DueCollection" Type="int" />
+          <Property Name="DueDiscount" Type="int" />
+          <Property Name="DueCollectionOfficer" Type="varchar" MaxLength="50" />
+          <Property Name="DueCollectionDate" Type="date" />
+          <Property Name="DueStatus" Type="int" />
         </EntityType>
         <EntityType Name="DignosticTestDetail">
           <Key>
@@ -213,6 +231,15 @@
           <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="SpecimenName" Type="varchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="StoreTest">
+          <Key>
+            <PropertyRef Name="S_Id" />
+          </Key>
+          <Property Name="S_Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="S_TestName" Type="varchar" MaxLength="50" />
+          <Property Name="S_TestPrice" Type="int" />
+          <Property Name="S_RegNumber" Type="int" />
+        </EntityType>
         <EntityType Name="SubCategoryInfo">
           <Key>
             <PropertyRef Name="Id" />
@@ -245,6 +272,14 @@
           <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Username" Type="varchar" MaxLength="50" />
           <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="FastName" Type="varchar" MaxLength="50" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" />
+          <Property Name="Phone" Type="int" />
+          <Property Name="Permission" Type="varchar" MaxLength="50" />
+          <Property Name="Profail" Type="varchar" MaxLength="50" />
+          <Property Name="Services" Type="varchar" MaxLength="50" />
+          <Property Name="About" Type="varchar" MaxLength="50" />
+          <Property Name="Contact" Type="varchar" MaxLength="50" />
         </EntityType>
         <Association Name="FK_DignosisTestSaleInfo_AgeStatusInfo">
           <End Role="AgeStatusInfo" Type="SANITARIUMModel.Store.AgeStatusInfo" Multiplicity="0..1" />
@@ -464,6 +499,14 @@
           <Parameter Name="version" Type="int" Mode="In" />
           <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
         </Function>
+        <Function Name="SP_DAY_WISE_SALE_SUMMARY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SDATE" Type="date" Mode="In" />
+          <Parameter Name="EDATE" Type="date" Mode="In" />
+        </Function>
+        <Function Name="SP_Day_Wise_Sale_Summary_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SDATE" Type="date" Mode="In" />
+          <Parameter Name="EDATE" Type="date" Mode="In" />
+        </Function>
         <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
           <Parameter Name="owner_id" Type="int" Mode="In" />
@@ -488,6 +531,7 @@
       <Schema Namespace="SANITARIUMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityContainer Name="SANITARIUMEntities" annotation:LazyLoadingEnabled="true">
           <FunctionImport Name="SP_ALL_TEST_NAME" ReturnType="Collection(SANITARIUMModel.SP_ALL_TEST_NAME_Result)" />
+          <EntitySet Name="AdminTables" EntityType="SANITARIUMModel.AdminTable" />
           <EntitySet Name="AgeStatusInfoes" EntityType="SANITARIUMModel.AgeStatusInfo" />
           <EntitySet Name="CategoryInfoes" EntityType="SANITARIUMModel.CategoryInfo" />
           <EntitySet Name="DepartmentInfoes" EntityType="SANITARIUMModel.DepartmentInfo" />
@@ -500,6 +544,7 @@
           <EntitySet Name="MarketingInfoes" EntityType="SANITARIUMModel.MarketingInfo" />
           <EntitySet Name="ReferInfoes" EntityType="SANITARIUMModel.ReferInfo" />
           <EntitySet Name="SpecimenInfoes" EntityType="SANITARIUMModel.SpecimenInfo" />
+          <EntitySet Name="StoreTests" EntityType="SANITARIUMModel.StoreTest" />
           <EntitySet Name="SubCategoryInfoes" EntityType="SANITARIUMModel.SubCategoryInfo" />
           <EntitySet Name="sysdiagrams" EntityType="SANITARIUMModel.sysdiagram" />
           <EntitySet Name="TypeInfoes" EntityType="SANITARIUMModel.TypeInfo" />
@@ -583,6 +628,14 @@
           <Property Type="Int32" Name="TestCost" Nullable="true" />
           <Property Type="Int32" Name="RoomNo" Nullable="true" />
         </ComplexType>
+        <EntityType Name="AdminTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="UserAdmin" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PassAdmin" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
         <EntityType Name="AgeStatusInfo">
           <Key>
             <PropertyRef Name="Id" />
@@ -627,6 +680,14 @@
           <Property Type="Int32" Name="Discount" />
           <Property Type="Int32" Name="Due" />
           <Property Type="Int32" Name="Paid" />
+          <Property Type="String" Name="VAT" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BillOfficer" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="T_Reg" />
+          <Property Type="Int32" Name="DueCollection" />
+          <Property Type="Int32" Name="DueDiscount" />
+          <Property Type="String" Name="DueCollectionOfficer" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DueCollectionDate" />
+          <Property Type="Int32" Name="DueStatus" />
           <NavigationProperty Name="AgeStatusInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo" FromRole="DignosisTestSaleInfo" ToRole="AgeStatusInfo" />
           <NavigationProperty Name="DiscountAuthorityInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo" FromRole="DignosisTestSaleInfo" ToRole="DiscountAuthorityInfo" />
           <NavigationProperty Name="DoctorInfo" Relationship="SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo" FromRole="DignosisTestSaleInfo" ToRole="DoctorInfo" />
@@ -736,6 +797,15 @@
           <Property Type="String" Name="SpecimenName" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="DignosticTestDetails" Relationship="SANITARIUMModel.FK_DignosticTestDetail_SpecimenInfo" FromRole="SpecimenInfo" ToRole="DignosticTestDetail" />
         </EntityType>
+        <EntityType Name="StoreTest">
+          <Key>
+            <PropertyRef Name="S_Id" />
+          </Key>
+          <Property Type="Int32" Name="S_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="S_TestName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="S_TestPrice" />
+          <Property Type="Int32" Name="S_RegNumber" />
+        </EntityType>
         <EntityType Name="SubCategoryInfo">
           <Key>
             <PropertyRef Name="Id" />
@@ -771,6 +841,14 @@
           <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FastName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Phone" />
+          <Property Type="String" Name="Permission" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Profail" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Services" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="About" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Contact" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_DignosisTestSaleInfo_AgeStatusInfo">
           <End Type="SANITARIUMModel.AgeStatusInfo" Role="AgeStatusInfo" Multiplicity="0..1" />
@@ -996,6 +1074,15 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <EntitySetMapping Name="AdminTables">
+            <EntityTypeMapping TypeName="SANITARIUMModel.AdminTable">
+              <MappingFragment StoreEntitySet="AdminTable">
+                <ScalarProperty Name="PassAdmin" ColumnName="PassAdmin" />
+                <ScalarProperty Name="UserAdmin" ColumnName="UserAdmin" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="AgeStatusInfoes">
             <EntityTypeMapping TypeName="SANITARIUMModel.AgeStatusInfo">
               <MappingFragment StoreEntitySet="AgeStatusInfo">
@@ -1023,6 +1110,14 @@
           <EntitySetMapping Name="DignosisTestSaleInfoes">
             <EntityTypeMapping TypeName="SANITARIUMModel.DignosisTestSaleInfo">
               <MappingFragment StoreEntitySet="DignosisTestSaleInfo">
+                <ScalarProperty Name="DueStatus" ColumnName="DueStatus" />
+                <ScalarProperty Name="DueCollectionDate" ColumnName="DueCollectionDate" />
+                <ScalarProperty Name="DueCollectionOfficer" ColumnName="DueCollectionOfficer" />
+                <ScalarProperty Name="DueDiscount" ColumnName="DueDiscount" />
+                <ScalarProperty Name="DueCollection" ColumnName="DueCollection" />
+                <ScalarProperty Name="T_Reg" ColumnName="T_Reg" />
+                <ScalarProperty Name="BillOfficer" ColumnName="BillOfficer" />
+                <ScalarProperty Name="VAT" ColumnName="VAT" />
                 <ScalarProperty Name="Paid" ColumnName="Paid" />
                 <ScalarProperty Name="Due" ColumnName="Due" />
                 <ScalarProperty Name="Discount" ColumnName="Discount" />
@@ -1130,6 +1225,16 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="StoreTests">
+            <EntityTypeMapping TypeName="SANITARIUMModel.StoreTest">
+              <MappingFragment StoreEntitySet="StoreTest">
+                <ScalarProperty Name="S_RegNumber" ColumnName="S_RegNumber" />
+                <ScalarProperty Name="S_TestPrice" ColumnName="S_TestPrice" />
+                <ScalarProperty Name="S_TestName" ColumnName="S_TestName" />
+                <ScalarProperty Name="S_Id" ColumnName="S_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="SubCategoryInfoes">
             <EntityTypeMapping TypeName="SANITARIUMModel.SubCategoryInfo">
               <MappingFragment StoreEntitySet="SubCategoryInfo">
@@ -1161,6 +1266,14 @@
           <EntitySetMapping Name="UserInfoes">
             <EntityTypeMapping TypeName="SANITARIUMModel.UserInfo">
               <MappingFragment StoreEntitySet="UserInfo">
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="About" ColumnName="About" />
+                <ScalarProperty Name="Services" ColumnName="Services" />
+                <ScalarProperty Name="Profail" ColumnName="Profail" />
+                <ScalarProperty Name="Permission" ColumnName="Permission" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FastName" ColumnName="FastName" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
@@ -1188,105 +1301,120 @@
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
       <Diagram Name="SanitariumDb">
-        <EntityTypeShape EntityType="SANITARIUMModel.AgeStatusInfo" Width="1.5" PointX="3" PointY="12.5" Height="1.5956835937500031" />
-        <EntityTypeShape EntityType="SANITARIUMModel.CategoryInfo" Width="1.5" PointX="5.75" PointY="3.5" Height="1.7879850260416674" />
-        <EntityTypeShape EntityType="SANITARIUMModel.DepartmentInfo" Width="1.5" PointX="8" PointY="3.5" Height="1.5956835937500031" />
-        <EntityTypeShape EntityType="SANITARIUMModel.DignosisTestSaleInfo" Width="1.5" PointX="5.25" PointY="10.875" Height="4.8648079427083388" />
-        <EntityTypeShape EntityType="SANITARIUMModel.DignosticTestDetail" Width="1.5" PointX="10.25" PointY="4.75" Height="3.7109993489583388" />
-        <EntityTypeShape EntityType="SANITARIUMModel.DiscountAuthorityInfo" Width="1.5" PointX="3" PointY="8" Height="2.7494921875000067" />
-        <EntityTypeShape EntityType="SANITARIUMModel.DoctorInfo" Width="1.5" PointX="3" PointY="15.375" Height="2.9417936197916674" />
-        <EntityTypeShape EntityType="SANITARIUMModel.GenderInfo" Width="1.5" PointX="0.75" PointY="8.25" Height="2.3648893229166674" />
-        <EntityTypeShape EntityType="SANITARIUMModel.GroupInfo" Width="1.5" PointX="8" PointY="0.875" Height="1.595683593749996" />
-        <EntityTypeShape EntityType="SANITARIUMModel.MarketingInfo" Width="1.5" PointX="3" PointY="19" Height="2.5571907552083388" />
-        <EntityTypeShape EntityType="SANITARIUMModel.ReferInfo" Width="1.5" PointX="5.25" PointY="16.5" Height="2.7494921875000102" />
-        <EntityTypeShape EntityType="SANITARIUMModel.SpecimenInfo" Width="1.5" PointX="8" PointY="11.25" Height="1.595683593749996" />
-        <EntityTypeShape EntityType="SANITARIUMModel.SubCategoryInfo" Width="1.5" PointX="8" PointY="7.875" Height="1.9802864583333388" />
-        <EntityTypeShape EntityType="SANITARIUMModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" Height="1.9802864583333246" />
-        <EntityTypeShape EntityType="SANITARIUMModel.TypeInfo" Width="1.5" PointX="0.75" PointY="5.625" Height="1.595683593749996" />
-        <EntityTypeShape EntityType="SANITARIUMModel.UserInfo" Width="1.5" PointX="2.75" PointY="0.75" Height="1.5956835937500102" />
+        <EntityTypeShape EntityType="SANITARIUMModel.AdminTable" Width="1.5" PointX="0.75" PointY="1.625" Height="1.5956835937500031" />
+        <EntityTypeShape EntityType="SANITARIUMModel.AgeStatusInfo" Width="1.5" PointX="3" PointY="15" Height="1.5956835937500014" />
+        <EntityTypeShape EntityType="SANITARIUMModel.CategoryInfo" Width="1.5" PointX="2.75" PointY="4.375" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SANITARIUMModel.DepartmentInfo" Width="1.5" PointX="5" PointY="3.375" Height="1.595683593749996" />
+        <EntityTypeShape EntityType="SANITARIUMModel.DignosisTestSaleInfo" Width="1.5" PointX="5.25" PointY="12.625" Height="6.4032194010416692" />
+        <EntityTypeShape EntityType="SANITARIUMModel.DignosticTestDetail" Width="1.5" PointX="7.25" PointY="4.75" Height="3.7109993489583388" />
+        <EntityTypeShape EntityType="SANITARIUMModel.DiscountAuthorityInfo" Width="1.5" PointX="3" PointY="9.75" Height="2.7494921875000102" />
+        <EntityTypeShape EntityType="SANITARIUMModel.DoctorInfo" Width="1.5" PointX="3" PointY="18.625" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="SANITARIUMModel.GenderInfo" Width="1.5" PointX="0.75" PointY="10" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="SANITARIUMModel.GroupInfo" Width="1.5" PointX="5" PointY="0.75" Height="1.595683593749996" />
+        <EntityTypeShape EntityType="SANITARIUMModel.MarketingInfo" Width="1.5" PointX="3" PointY="22.375" Height="2.5571907552083388" />
+        <EntityTypeShape EntityType="SANITARIUMModel.ReferInfo" Width="1.5" PointX="8.25" PointY="16" Height="2.7494921875000102" />
+        <EntityTypeShape EntityType="SANITARIUMModel.SpecimenInfo" Width="1.5" PointX="5" PointY="26.125" Height="1.595683593749996" />
+        <EntityTypeShape EntityType="SANITARIUMModel.StoreTest" Width="1.5" PointX="7.75" PointY="1.625" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SANITARIUMModel.SubCategoryInfo" Width="1.5" PointX="5" PointY="6.75" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="SANITARIUMModel.sysdiagram" Width="1.5" PointX="5.75" PointY="9.625" Height="1.9802864583333246" />
+        <EntityTypeShape EntityType="SANITARIUMModel.TypeInfo" Width="1.5" PointX="0.75" PointY="7.375" Height="1.595683593749996" />
+        <EntityTypeShape EntityType="SANITARIUMModel.UserInfo" Width="1.5" PointX="7.75" PointY="9.625" Height="3.1340950520833246" />
         <AssociationConnector Association="SANITARIUMModel.FK_DignosisTestSaleInfo_AgeStatusInfo" >
-          <ConnectorPoint PointX="4.5" PointY="13.297841796875002" />
-          <ConnectorPoint PointX="5.25" PointY="13.297841796875002" />
+          <ConnectorPoint PointX="4.5" PointY="15.797841796875002" />
+          <ConnectorPoint PointX="5.25" PointY="15.797841796875002" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_CategoryName" >
-          <ConnectorPoint PointX="7.25" PointY="5.2230843098958353" />
-          <ConnectorPoint PointX="10.25" PointY="5.2230843098958353" />
+          <ConnectorPoint PointX="4.25" PointY="5.5980843098958317" />
+          <ConnectorPoint PointX="7.25" PointY="5.5980843098958317" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_SubCategoryInfo_CategoryInfo" >
-          <ConnectorPoint PointX="6.5" PointY="5.2879850260416674" />
-          <ConnectorPoint PointX="6.5" PointY="8.86514322916667" />
-          <ConnectorPoint PointX="8" PointY="8.86514322916667" />
+          <ConnectorPoint PointX="3.5" PointY="6.1629850260416674" />
+          <ConnectorPoint PointX="3.5" PointY="7.7401432291666694" />
+          <ConnectorPoint PointX="5" PointY="7.7401432291666694" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_DepartmentInfo" >
-          <ConnectorPoint PointX="9.5" PointY="4.9228417968750016" />
-          <ConnectorPoint PointX="10.25" PointY="4.9228417968750016" />
+          <ConnectorPoint PointX="6.5" PointY="4.1127420130208332" />
+          <ConnectorPoint PointX="7.2447891666666671" PointY="4.1127420130208323" />
+          <ConnectorPoint PointX="7.4114558333333331" PointY="4.1127420130208332" />
+          <ConnectorPoint PointX="7.46875" PointY="4.1127420130208332" />
+          <ConnectorPoint PointX="7.46875" PointY="4.75" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DignosisTestSaleInfo_DiscountAuthorityInfo" >
-          <ConnectorPoint PointX="4.5" PointY="9.807317708333338" />
-          <ConnectorPoint PointX="5.875" PointY="9.807317708333338" />
-          <ConnectorPoint PointX="5.875" PointY="10.875" />
+          <ConnectorPoint PointX="4.5" PointY="12.083639322916667" />
+          <ConnectorPoint PointX="5.46875" PointY="12.083639322916667" />
+          <ConnectorPoint PointX="5.46875" PointY="12.625" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DignosisTestSaleInfo_DoctorInfo" >
-          <ConnectorPoint PointX="4.5" PointY="15.557403971354169" />
-          <ConnectorPoint PointX="5.25" PointY="15.557403971354169" />
+          <ConnectorPoint PointX="4.5" PointY="18.826609700520834" />
+          <ConnectorPoint PointX="5.25" PointY="18.826609700520834" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DignosisTestSaleInfo_GenderInfo" >
-          <ConnectorPoint PointX="1.5" PointY="10.614889322916667" />
-          <ConnectorPoint PointX="1.5" PointY="11.65625" />
-          <ConnectorPoint PointX="1.8229191666666667" PointY="11.65625" />
-          <ConnectorPoint PointX="1.9895858333333332" PointY="11.65625" />
-          <ConnectorPoint PointX="2.0260454166666664" PointY="11.65625" />
-          <ConnectorPoint PointX="2.1927120833333333" PointY="11.65625" />
-          <ConnectorPoint PointX="5.25" PointY="11.65625" />
+          <ConnectorPoint PointX="1.5" PointY="12.364889322916667" />
+          <ConnectorPoint PointX="1.5" PointY="13.78125" />
+          <ConnectorPoint PointX="1.8229191666666667" PointY="13.78125" />
+          <ConnectorPoint PointX="1.9895858333333332" PointY="13.78125" />
+          <ConnectorPoint PointX="5.25" PointY="13.78125" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DignosisTestSaleInfo_ReferInfo" >
-          <ConnectorPoint PointX="6" PointY="16.5" />
-          <ConnectorPoint PointX="6" PointY="15.739807942708339" />
+          <ConnectorPoint PointX="8.25" PointY="17.374746093750005" />
+          <ConnectorPoint PointX="7.583333333333333" PointY="17.374746093750005" />
+          <ConnectorPoint PointX="7.416666666666667" PointY="17.374746093750005" />
+          <ConnectorPoint PointX="6.75" PointY="17.374746093750005" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_GroupInfo" >
-          <ConnectorPoint PointX="9.5" PointY="1.672841796874998" />
-          <ConnectorPoint PointX="11" PointY="1.672841796874998" />
-          <ConnectorPoint PointX="11" PointY="4.75" />
+          <ConnectorPoint PointX="6.5" PointY="1.15625" />
+          <ConnectorPoint PointX="7.3281225" PointY="1.15625" />
+          <ConnectorPoint PointX="7.3281225" PointY="4.75" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_SpecimenInfo" >
-          <ConnectorPoint PointX="9.5" PointY="12.047841796874998" />
-          <ConnectorPoint PointX="11" PointY="12.047841796874998" />
-          <ConnectorPoint PointX="11" PointY="8.4609993489583388" />
+          <ConnectorPoint PointX="6.5" PointY="26.922841796874998" />
+          <ConnectorPoint PointX="7.5" PointY="26.922841796874998" />
+          <ConnectorPoint PointX="7.5" PointY="8.4609993489583388" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DignosticTestDetail_SubCategoryInfo" >
-          <ConnectorPoint PointX="9.5" PointY="8.16799967447917" />
-          <ConnectorPoint PointX="10.25" PointY="8.16799967447917" />
+          <ConnectorPoint PointX="6.5" PointY="7.6054996744791694" />
+          <ConnectorPoint PointX="7.25" PointY="7.6054996744791694" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DiscountAuthorityInfo_GenderInfo" >
-          <ConnectorPoint PointX="2.25" PointY="9.4324446614583337" />
-          <ConnectorPoint PointX="3" PointY="9.4324446614583337" />
+          <ConnectorPoint PointX="2.25" PointY="11.182444661458334" />
+          <ConnectorPoint PointX="3" PointY="11.182444661458334" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DiscountAuthorityInfo_TypeInfo" >
-          <ConnectorPoint PointX="2.25" PointY="6.422841796874998" />
-          <ConnectorPoint PointX="3.75" PointY="6.422841796874998" />
-          <ConnectorPoint PointX="3.75" PointY="8" />
+          <ConnectorPoint PointX="2.25" PointY="8.3554134114583327" />
+          <ConnectorPoint PointX="4" PointY="8.3554134114583327" />
+          <ConnectorPoint PointX="4" PointY="9.75" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_DoctorInfo_GenderInfo" >
-          <ConnectorPoint PointX="1.9062525" PointY="10.614889322916667" />
-          <ConnectorPoint PointX="1.9062525" PointY="16.845896809895834" />
-          <ConnectorPoint PointX="2.0260454166666664" PointY="16.845896809895834" />
-          <ConnectorPoint PointX="2.1927120833333333" PointY="16.845896809895834" />
-          <ConnectorPoint PointX="3" PointY="16.845896809895834" />
+          <ConnectorPoint PointX="1.9062525" PointY="12.364889322916667" />
+          <ConnectorPoint PointX="1.9062525" PointY="20.095896809895834" />
+          <ConnectorPoint PointX="3" PointY="20.095896809895834" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_MarketingInfo_GenderInfo1" >
-          <ConnectorPoint PointX="1.0937475" PointY="10.614889322916667" />
-          <ConnectorPoint PointX="1.0937475" PointY="20.278595377604169" />
-          <ConnectorPoint PointX="3" PointY="20.278595377604169" />
+          <ConnectorPoint PointX="1.0937475" PointY="12.364889322916667" />
+          <ConnectorPoint PointX="1.0937475" PointY="23.653595377604169" />
+          <ConnectorPoint PointX="3" PointY="23.653595377604169" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_ReferInfo_GenderInfo" >
-          <ConnectorPoint PointX="2.10937875" PointY="10.614889322916667" />
-          <ConnectorPoint PointX="2.10937875" PointY="18.658396809895834" />
-          <ConnectorPoint PointX="5.25" PointY="18.658396809895834" />
+          <ConnectorPoint PointX="2.25" PointY="11.804918992187496" />
+          <ConnectorPoint PointX="2.75" PointY="11.804918992187496" />
+          <ConnectorPoint PointX="2.75" PointY="12.74949218750001" />
+          <ConnectorPoint PointX="5" PointY="12.74949218750001" />
+          <ConnectorPoint PointX="5" PointY="12.375" />
+          <ConnectorPoint PointX="5.385416666666667" PointY="12.375" />
+          <ConnectorPoint PointX="5.552083333333333" PointY="12.375" />
+          <ConnectorPoint PointX="7.25" PointY="12.375" />
+          <ConnectorPoint PointX="7.25" PointY="13.009095052083325" />
+          <ConnectorPoint PointX="7.416666666666667" PointY="13.009095052083325" />
+          <ConnectorPoint PointX="7.583333333333333" PointY="13.009095052083325" />
+          <ConnectorPoint PointX="9" PointY="13.009095052083325" />
+          <ConnectorPoint PointX="9" PointY="16" />
         </AssociationConnector>
         <AssociationConnector Association="SANITARIUMModel.FK_ReferInfo_MarketingInfo1" >
-          <ConnectorPoint PointX="4.5" PointY="20.403341971354173" />
-          <ConnectorPoint PointX="6" PointY="20.403341971354173" />
-          <ConnectorPoint PointX="6" PointY="19.24949218750001" />
+          <ConnectorPoint PointX="4.5" PointY="23.653595377604169" />
+          <ConnectorPoint PointX="7.416666666666667" PointY="23.653595377604169" />
+          <ConnectorPoint PointX="7.583333333333333" PointY="23.653595377604169" />
+          <ConnectorPoint PointX="9" PointY="23.653595377604169" />
+          <ConnectorPoint PointX="9" PointY="18.74949218750001" />
         </AssociationConnector>
       </Diagram>
     </Diagrams>
